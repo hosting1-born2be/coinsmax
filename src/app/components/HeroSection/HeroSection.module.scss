@@ -1,0 +1,86 @@
+.heroSection {
+  padding: 290px 0 320px 0;
+  margin-top: -124px;
+  position: relative;
+  background-image: url("/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  @media (max-width: 1600px) {
+    padding: 250px 0 280px 0;
+  }
+  > img {
+    &:first-child {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      @media (max-width: 1600px) {
+        left: -50px;
+        bottom: -50px;
+      }
+    }
+    &:nth-child(2) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 0;
+      @media (max-width: 1600px) {
+        right: -200px;
+        bottom: -200px;
+      }
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    h1 {
+      color: #fff;
+      font-family: var(--font-outfit), sans-serif;
+      font-size: 128px;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 100%; /* 128px */
+      span {
+        background: linear-gradient(90deg, #eb00af 0.2%, #f3a936 112.45%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-outfit), sans-serif;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+      }
+    }
+    p {
+      color: #fff;
+      font-family: var(--font-outfit), sans-serif;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 104%;
+    }
+    a {
+      color: #000;
+      text-align: center;
+      font-family: var(--font-outfit), sans-serif;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      display: flex;
+      width: 288px;
+      padding: 16px 31px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 99px;
+      background: #fff;
+    }
+  }
+}
