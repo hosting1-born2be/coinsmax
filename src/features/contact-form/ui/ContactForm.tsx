@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { submitContactForm } from "../api/submitContactForm";
 import { ContactFormSchema } from "../model/ContactForm.schema";
 import styles from "./ContactForm.module.scss";
-import { ContactFormSuccess } from "./ContactFormSuccess";
 
 export const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
