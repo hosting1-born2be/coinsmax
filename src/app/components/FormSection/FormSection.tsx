@@ -6,7 +6,7 @@ import Image from "next/image";
 import { ContactForm } from "@/features/contact-form/ui/ContactForm";
 export const FormSection = () => {
   return (
-    <section className={styles.formSection}>
+    <section className={styles.formSection} id="contact">
       <div className={styles.formSection__row}>
         <motion.div
           initial="hidden"

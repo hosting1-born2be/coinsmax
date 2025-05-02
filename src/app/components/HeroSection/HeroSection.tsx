@@ -55,7 +55,7 @@ export const HeroSection = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <Link href="#">Get In Touch</Link>
+            <Link href="#contact">Get In Touch</Link>
           </motion.div>
         </div>
       </div>
