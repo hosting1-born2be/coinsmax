@@ -2,8 +2,15 @@
   padding: 120px 0 80px 0;
   &__row {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 14px;
+      align-items: flex-start;
+    }
   }
   &__col1 {
     display: flex;
@@ -38,6 +45,10 @@
       font-weight: 400;
       line-height: 140%;
       text-align: right;
+      @media (max-width: 992px) {
+        text-align: left;
+        font-size: 16px;
+      }
     }
   }
 }

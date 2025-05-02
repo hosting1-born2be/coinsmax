@@ -22,6 +22,12 @@ export const HeroSection = () => {
         width={890}
         height={850}
       />
+      <Image
+        src="/images/hero-circle-mobile.svg"
+        alt="hero-bg"
+        width={125}
+        height={235}
+      />
       <div className={"_container"}>
         <div className={styles.heroSection__body}>
           <motion.h1

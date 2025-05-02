@@ -6,7 +6,6 @@ import { Instagram } from "../icons/instagram/Instagram";
 import { TikTok } from "../icons/tiktok/TikTok";
 import { Youtube } from "../icons/youtube/Youtube";
 
-
 export const Header = () => {
   return (
     <header className={styles.header}>
@@ -21,7 +20,7 @@ export const Header = () => {
               quality={100}
             />
           </Link>
-          <div className={styles.header__social}>
+          {/* <div className={styles.header__social}>
             <Link href="#">
               <Facebook />
             </Link>
@@ -34,7 +33,7 @@ export const Header = () => {
             <Link href="#">
               <Youtube />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

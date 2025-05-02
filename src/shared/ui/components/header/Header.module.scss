@@ -6,6 +6,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    > a {
+      img {
+        @media (max-width: 992px) {
+          width: 170px;
+          height: auto;
+        }
+      }
+    }
   }
   &__social {
     display: flex;
