@@ -45,9 +45,8 @@ export const HeroSection = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Upload invoices. Pay with Bitcoin, Ethereum, or USDC. Fiat settles
-            directly <br />
-            to any bank account. Fast, compliant, and easy to use.
+            Upload invoices. Pay with Bitcoin, Ethereum, or USDC. <br/>
+            Fast, compliant, and easy to use.
           </motion.p>
           <motion.div
             initial="hidden"
