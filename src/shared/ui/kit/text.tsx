@@ -44,8 +44,23 @@ export const Text = ({
   color,
   size,
   weight,
-}: PropsWithChildren<TextVariants & { className?: string }>) => (
-  <p className={cn(textVariants({ color, size, weight }), className)}>
+  capitalize = false,
+  uppercase = false,
+}: PropsWithChildren<
+  TextVariants & {
+    className?: string;
+    capitalize?: boolean;
+    uppercase?: boolean;
+  }
+>) => (
+  <p
+    className={cn(
+      textVariants({ color, size, weight }),
+      className,
+      capitalize && 'capitalize',
+      uppercase && 'uppercase',
+    )}
+  >
     {children}
   </p>
 );

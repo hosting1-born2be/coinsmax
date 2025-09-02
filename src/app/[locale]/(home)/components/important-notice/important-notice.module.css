@@ -1,0 +1,5 @@
+.bg {
+  background:
+    linear-gradient(180deg, #161616 0%, rgba(22, 22, 22, 0) 50%, #161616 100%),
+    url('/images/home/notice.png') lightgray 50% / cover no-repeat;
+}

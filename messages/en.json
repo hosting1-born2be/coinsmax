@@ -11,7 +11,7 @@
     "english": "English",
     "german": "German",
     "italian": "Italian",
-    "czech": "Czech"
+    "slovak": "Slovak"
   },
   "footer": {
     "subtitle": "Turn Crypto Into Fiat. Anytime.",
@@ -54,5 +54,90 @@
       "text": "This website and its content are intended only for users outside the United Kingdom. The information presented here is not directed to, or intended for use by, individuals or entities based in the UK. The services offered on Coinsmax.io are not available to UK retail clients. Please note that in the UK, cryptoassets are classified as Restricted Mass Market Investments — a high-risk category that may not be appropriate for most retail investors."
     },
     "copyright": "Coinsmax.io — Crypto. Fiat. Exchanged."
+  },
+  "home": {
+    "hero": {
+      "title": "Where Crypto Meets Fiat.",
+      "button": "Start Now"
+    },
+    "meetCoinsmax": {
+      "title": "Meet Coinsmax!",
+      "cards": {
+        "0": "Coinsmax functions as a cryptocurrency exchange, built on clear and regulated processes. Our platform enables the conversion between digital assets and fiat currencies in a transparent environment supported by robust technology.",
+        "1": "Coinsmax applies a comprehensive safeguard framework designed to counter internal risks and protect data, funds, and transactions. Each transaction undergoes thorough screening and review to maintain the security of the platform and its users."
+      }
+    },
+    "howToGetStarted": {
+      "title": "How to get started",
+      "register": "Register",
+      "cards": {
+        "0": "Create your account in minutes",
+        "1": "Confirm your identity with quick verification",
+        "2": "Choose currency, crypto and go!"
+      }
+    },
+    "tip": {
+      "title": "Tip",
+      "text": "For a smoother start, check our User Essentials section – it explains the requirements and helps you complete registration and verification faster.",
+      "button": "Check"
+    },
+    "importantNotice": {
+      "title": {
+        "0": "Important notice on",
+        "1": "processing time!"
+      },
+      "text": "Most transactions are processed instantly, but timing can depend on the blockchain network and required compliance checks. Coinsmax ensures your transaction is processed in the most reliable way, so you get funds without unnecessary delays.",
+      "button": "Register"
+    },
+    "whyCoinsmax": {
+      "title": "Why Coinsmax",
+      "button": "Get Started",
+      "cards": {
+        "0": {
+          "title": "Simple by Design",
+          "text": "From sign-up to exchange – everything is clear, minimal, and easy to follow."
+        },
+        "1": {
+          "title": "Fast Results",
+          "text": "Transactions are processed quickly, with no unnecessary steps in between."
+        },
+        "2": {
+          "title": "Support That Cares",
+          "text": "Our support team is here to help you every step of the way, with a focus on security and transparency."
+        }
+      }
+    },
+    "trustedBy": {
+      "title": "Trusted by",
+      "text": "Trusted by authoritative crypto media worldwide!"
+    },
+    "complianceAndProtection": {
+      "title": "Compliance & Protection",
+      "at": "at",
+      "cards": {
+        "0": {
+          "title": "Verified Users Only",
+          "text": "All clients complete KYC and AML checks. This is a strict requirement for any licensed financial service, and it helps keep the platform compliant and trustworthy."
+        },
+        "1": {
+          "title": "Data Kept Private",
+          "text": "Your documents and personal details are stored securely and encrypted — never exposed or shared outside regulated checks."
+        },
+        "2": {
+          "title": "Safe Transactions",
+          "text": "Every payment passes through regulated banking channels, giving you clarity and peace of mind with every exchange."
+        },
+        "3": {
+          "title": "Helpful Support",
+          "text": "If you have questions during verification or payment, our team is here to guide you step by step."
+        }
+      }
+    },
+    "ourAssistanceHub": {
+      "title": "Our assistance hub",
+      "text": "We know crypto feels frustrating — that’s why we’ve prepared resources to make things easier.",
+      "button": "Q&A",
+      "button2": "News & Insights"
+    }
   }
 }

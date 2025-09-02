@@ -10,14 +10,18 @@ const btnVariants = cva(
   {
     variants: {
       variant: {
-        primary:
-          'bg-[#222] border border-[#222] text-base text-white hover:opacity-70',
-        secondary:
-          'bg-white border border-white text-black text-base hover:opacity-70',
+        primary: 'bg-[#222] border border-[#222] text-white hover:opacity-70',
+        secondary: 'bg-white border border-white text-black hover:opacity-70',
+        glass: 'bg-white/10 text-white text-xl font-medium',
+      },
+      size: {
+        sm: 'px-4 py-3 text-base',
+        md: 'py-4 px-8 text-xl',
       },
     },
     defaultVariants: {
       variant: 'primary',
+      size: 'md',
     },
   },
 );
@@ -30,6 +34,7 @@ export const Button = ({
   variant,
   onClick,
   disabled,
+  size,
   fullWidth = false,
   type = 'button',
 }: {
@@ -43,7 +48,7 @@ export const Button = ({
   return (
     <button
       className={cn(
-        btnVariants({ variant }),
+        btnVariants({ variant, size }),
         fullWidth ? 'w-full' : 'w-max',
         className,
       )}

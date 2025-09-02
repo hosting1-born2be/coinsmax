@@ -1,7 +1,8 @@
 @import 'tailwindcss';
 
 body {
-  background-color: #161717;
+  background: #161616;
+  font-family: 'Outfit', sans-serif;
 }
 
 :root {

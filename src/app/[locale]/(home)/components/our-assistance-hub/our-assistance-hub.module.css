@@ -1,0 +1,6 @@
+.bg {
+  background:
+    url('/images/home/hub.jpg') center / cover no-repeat,
+    lightgray;
+  background-blend-mode: multiply;
+}

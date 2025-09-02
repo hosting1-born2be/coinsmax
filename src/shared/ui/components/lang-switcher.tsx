@@ -15,10 +15,10 @@ import { useTranslations } from 'use-intl';
 import { ChevronDownIcon } from '@/shared/ui/icons/chevron-down';
 import { Text } from '@/shared/ui/kit/text';
 
-import { CsIcon } from '../icons/countries/cs';
 import { DeIcon } from '../icons/countries/de';
 import { EnIcon } from '../icons/countries/en';
 import { ItIcon } from '../icons/countries/it';
+import { SlIcon } from '../icons/countries/sl';
 import { TranslationIcon } from '../icons/translation';
 
 export const LangSwitcher = () => {
@@ -44,7 +44,7 @@ export const LangSwitcher = () => {
     { value: 'en', label: t('english', { fallback: 'English' }), icon: EnIcon },
     { value: 'de', label: t('german', { fallback: 'German' }), icon: DeIcon },
     { value: 'it', label: t('italian', { fallback: 'Italian' }), icon: ItIcon },
-    { value: 'cs', label: t('czech', { fallback: 'Czech' }), icon: CsIcon },
+    { value: 'sl', label: t('slovak', { fallback: 'Slovak' }), icon: SlIcon },
   ];
 
   return (
@@ -63,7 +63,7 @@ export const LangSwitcher = () => {
         >
           {languages.map(({ icon: Icon, label, value }) => (
             <DropdownMenuItem
-              key={value}
+              key={label}
               onClick={() => {
                 setOpen(false);
                 switchLanguage(value);
@@ -71,7 +71,9 @@ export const LangSwitcher = () => {
               className="flex cursor-pointer items-center gap-2 border-b border-white/5 p-3 outline-0 last:border-b-0"
             >
               <Icon />
-              <p className="text-sm text-[#B3B3B5]">{label}</p>
+              <Text color="tint" uppercase>
+                {value}
+              </Text>
             </DropdownMenuItem>
           ))}
         </DropdownMenuContent>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat, Outfit } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 
@@ -10,10 +10,10 @@ import { Header } from '@/shared/ui/components/header';
 import './globals.css';
 import { routing } from '@/i18n/routing';
 
-const montserrat = Montserrat({
-  variable: '--font-montserrat',
-  subsets: ['latin'],
-});
+// const montserrat = Montserrat({
+//   variable: '--font-montserrat',
+//   subsets: ['latin'],
+// });
 
 const outfit = Outfit({
   variable: '--font-outfit',
@@ -40,7 +40,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={cn(montserrat.variable, outfit.variable)}>
+      <body className={cn(outfit.variable, 'antialiased')}>
         <NextIntlClientProvider>
           <Header />
           {children}

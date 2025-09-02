@@ -34,8 +34,8 @@ export const Header = () => {
         <Image src="/logo.svg" alt="Coinsmax" width={128} height={30} />
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-3 max-md:hidden">
-            <Button>{t('logIn', { fallback: 'Log In' })}</Button>
-            <Button variant="secondary">
+            <Button size="sm">{t('logIn', { fallback: 'Log In' })}</Button>
+            <Button variant="secondary" size="sm">
               {t('signUp', { fallback: 'Sign Up' })}
             </Button>
           </div>
