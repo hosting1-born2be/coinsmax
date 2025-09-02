@@ -1,6 +1,5 @@
-import { NextResponse } from "next/server";
-
-import { google } from "googleapis";
+import { NextResponse } from 'next/server';
+import { google } from 'googleapis';
 
 type OrderData = {
   companyName: string;
@@ -13,7 +12,7 @@ function makeBody(
   to: string,
   from: string,
   subject: string,
-  message: string
+  message: string,
 ): string {
   const emailLines = [
     `To: ${to}`,
@@ -21,15 +20,15 @@ function makeBody(
     `Subject: ${subject}`,
     `MIME-Version: 1.0`,
     `Content-Type: text/html; charset=UTF-8`,
-    "",
+    '',
     message,
   ];
 
-  return Buffer.from(emailLines.join("\n"))
-    .toString("base64")
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
+  return Buffer.from(emailLines.join('\n'))
+    .toString('base64')
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=+$/, '');
 }
 
 export async function POST(request: Request): Promise<NextResponse> {
@@ -41,7 +40,7 @@ export async function POST(request: Request): Promise<NextResponse> {
     const oauth2Client = new OAuth2(
       process.env.EMAIL_CLIENT_ID!,
       process.env.EMAIL_CLIENT_SECRET!,
-      "https://developers.google.com/oauthplayground"
+      'https://developers.google.com/oauthplayground',
     );
 
     oauth2Client.setCredentials({
@@ -50,36 +49,36 @@ export async function POST(request: Request): Promise<NextResponse> {
 
     const accessToken = await oauth2Client.getAccessToken();
     if (!accessToken.token) {
-      throw new Error("Failed to generate access token.");
+      throw new Error('Failed to generate access token.');
     }
 
-    const gmail = google.gmail({ version: "v1", auth: oauth2Client });
+    const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
 
     const adminEmailBody = makeBody(
-      process.env.EMAIL_USER || "",
-      process.env.EMAIL_USER || "",
-      "New Request Received",
+      process.env.EMAIL_USER || '',
+      process.env.EMAIL_USER || '',
+      'New Request Received',
       `
         <p><strong>Company Name:</strong> ${companyName}</p>
         <p><strong>Contact Name:</strong> ${contactName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong> ${message}</p>
-      `
+      `,
     );
 
     await gmail.users.messages.send({
-      userId: "me",
+      userId: 'me',
       requestBody: { raw: adminEmailBody },
     });
 
-    return NextResponse.json({ message: "Order email sent successfully." });
+    return NextResponse.json({ message: 'Order email sent successfully.' });
   } catch (error: unknown) {
     const errorMessage =
-      error instanceof Error ? error.message : "Unknown error occurred";
-    console.error("Error sending order email:", errorMessage);
+      error instanceof Error ? error.message : 'Unknown error occurred';
+    console.error('Error sending order email:', errorMessage);
     return NextResponse.json(
-      { message: "Failed to send order email.", error: errorMessage },
-      { status: 500 }
+      { message: 'Failed to send order email.', error: errorMessage },
+      { status: 500 },
     );
   }
 }

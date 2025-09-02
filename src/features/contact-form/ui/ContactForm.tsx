@@ -14,8 +14,6 @@ export const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    setValue,
-    watch,
     reset,
     formState: { errors },
   } = useForm({
