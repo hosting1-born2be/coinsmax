@@ -1,7 +1,8 @@
 'use client';
 
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
+
 import { cn } from '@/shared/lib/utils/cn';
 
 const textVariants = cva('transition duration-300 ease-in-out', {
@@ -17,6 +18,8 @@ const textVariants = cva('transition duration-300 ease-in-out', {
     color: {
       white: 'text-white',
       gray: 'text-[#717173]',
+      tint: 'text-[#B3B3B5]',
+      faded: 'text-[rgba(179,179,181,0.50)]',
     },
     weight: {
       300: 'font-light',
@@ -37,9 +40,12 @@ export type TextVariants = VariantProps<typeof textVariants>;
 
 export const Text = ({
   children,
+  className,
   color,
   size,
   weight,
-}: PropsWithChildren<TextVariants>) => (
-  <p className={cn(textVariants({ color, size, weight }))}>{children}</p>
+}: PropsWithChildren<TextVariants & { className?: string }>) => (
+  <p className={cn(textVariants({ color, size, weight }), className)}>
+    {children}
+  </p>
 );

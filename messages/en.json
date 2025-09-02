@@ -12,5 +12,47 @@
     "german": "German",
     "italian": "Italian",
     "czech": "Czech"
+  },
+  "footer": {
+    "subtitle": "Turn Crypto Into Fiat. Anytime.",
+    "description": "Coinsmax is owned and operated by Limitless Technologies s.r.o, identification number 55165451, authorised to provide virtual currency service, with registered and operational address at Černyševského 1287/10, Bratislava, 851 01, Slovak Republic.",
+    "workHours": {
+      "title": "Work hours",
+      "weekdays": "Weekdays",
+      "weekends": "Weekends"
+    },
+    "customer": {
+      "title": "Customer",
+      "items": {
+        "userEssentials": "User Essentials",
+        "qa": "Q&A",
+        "cryptoInsights": "Crypto Insights"
+      }
+    },
+    "company": {
+      "title": "Company",
+      "items": {
+        "insideCoinsmax": "Inside Coinsmax",
+        "partnership": "Partnership",
+        "contactUs": "Contact Us"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "items": {
+        "termsOfUse": "Terms of Use",
+        "privacyPolicy": "Privacy Policy",
+        "refundPolicy": "Refund Policy",
+        "cookiePolicy": "Cookie Policy"
+      }
+    },
+    "addresses": {
+      "title": "Addresses"
+    },
+    "importantNotice": {
+      "title": "Important Notice:",
+      "text": "This website and its content are intended only for users outside the United Kingdom. The information presented here is not directed to, or intended for use by, individuals or entities based in the UK. The services offered on Coinsmax.io are not available to UK retail clients. Please note that in the UK, cryptoassets are classified as Restricted Mass Market Investments — a high-risk category that may not be appropriate for most retail investors."
+    },
+    "copyright": "Coinsmax.io — Crypto. Fiat. Exchanged."
   }
 }

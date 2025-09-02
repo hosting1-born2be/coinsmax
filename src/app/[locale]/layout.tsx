@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import { Montserrat, Outfit } from 'next/font/google';
-import { Header } from '@/shared/ui/components/header';
+import { notFound } from 'next/navigation';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
+
 import { cn } from '@/shared/lib/utils/cn';
+import { Footer } from '@/shared/ui/components/footer';
+import { Header } from '@/shared/ui/components/header';
 
 import './globals.css';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
 const montserrat = Montserrat({
@@ -42,6 +44,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

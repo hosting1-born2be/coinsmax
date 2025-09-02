@@ -2,6 +2,7 @@
 
 import { useCallback, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import {
   DropdownMenuContent,
   DropdownMenuItem,
@@ -9,16 +10,16 @@ import {
   DropdownMenuTrigger,
   Root,
 } from '@radix-ui/react-dropdown-menu';
-
-import { Text } from '@/shared/ui/kit/text';
-import { ChevronDownIcon } from '@/shared/ui/icons/chevron-down';
-import { TranslationIcon } from '../icons/translation';
-import { EnIcon } from '../icons/countries/en';
-import { DeIcon } from '../icons/countries/de';
-import { ItIcon } from '../icons/countries/it';
-import { CsIcon } from '../icons/countries/cs';
-import { useLocale } from 'next-intl';
 import { useTranslations } from 'use-intl';
+
+import { ChevronDownIcon } from '@/shared/ui/icons/chevron-down';
+import { Text } from '@/shared/ui/kit/text';
+
+import { CsIcon } from '../icons/countries/cs';
+import { DeIcon } from '../icons/countries/de';
+import { EnIcon } from '../icons/countries/en';
+import { ItIcon } from '../icons/countries/it';
+import { TranslationIcon } from '../icons/translation';
 
 export const LangSwitcher = () => {
   const [open, setOpen] = useState(false);
