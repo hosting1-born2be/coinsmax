@@ -1,0 +1,16 @@
+{
+  "header": {
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "text": {
+      "0": "Notice:",
+      "1": "Coinsmax.io services are not available to users based in the United Kingdom. If you are accessing this website from the UK, please exit the site. At this time, our services are not accessible to Retail Clients residing in the UK."
+    }
+  },
+  "langSwitcher": {
+    "english": "English",
+    "german": "German",
+    "italian": "Italian",
+    "czech": "Czech"
+  }
+}
