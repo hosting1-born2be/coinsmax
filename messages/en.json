@@ -138,6 +138,51 @@
       "text": "We know crypto feels frustrating — that’s why we’ve prepared resources to make things easier.",
       "button": "Q&A",
       "button2": "News & Insights"
+    },
+    "contactOurTeam": {
+      "title": "Our team is one form away!"
+    }
+  },
+  "contactForm": {
+    "form": {
+      "failed": "Failed to send message. Please try again later.",
+      "fullName": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Enter your company name"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter your phone number"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+      },
+      "sendRequest": {
+        "loading": "Sending...",
+        "label": "Send Request"
+      }
+    },
+    "thankYou": {
+      "title": "Your message has been sent successfully!",
+      "text": "Thank you for reaching out to Coinsmax. Our team will review your request and get back to you as soon as possible.",
+      "button": "Continue"
+    }
+  },
+  "importantNoticeDialog": {
+    "title": "Important Notice",
+    "text": {
+      "0": "By using",
+      "1": "you confirm that you understand the risks linked to buying or selling cryptocurrency. Digital asset transactions can be volatile, and it’s important to be fully aware before proceeding. For details, please review our risk disclosure.",
+      "2": "Once an order is confirmed, it cannot be changed or reversed. Please make sure your personal details and wallet address are entered correctly before completing your transaction."
     }
   }
 }

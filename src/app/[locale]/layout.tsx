@@ -7,6 +7,7 @@ import { Toaster } from 'sonner';
 import { cn } from '@/shared/lib/utils/cn';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
+import { ImportantNoticeDialog } from '@/shared/ui/components/importance-notice';
 
 import './globals.css';
 import { routing } from '@/i18n/routing';
@@ -47,6 +48,7 @@ export default async function RootLayout({
           {children}
           <Footer />
           <Toaster />
+          <ImportantNoticeDialog />
         </NextIntlClientProvider>
       </body>
     </html>

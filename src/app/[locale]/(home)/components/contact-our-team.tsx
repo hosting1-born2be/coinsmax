@@ -1,15 +1,20 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { ContactForm } from '@/features/contact-form/ui/contact-form';
 
 import { Title } from '@/shared/ui/kit/title';
 
 export const ContactOurTeam = () => {
+  const t = useTranslations('home.contactOurTeam');
+
   return (
     <section className="flex flex-col gap-[60px] px-[160px] py-[80px] max-md:px-4 max-md:py-16">
-      <Title className="text-center">Our team is one form away!</Title>
+      <Title className="text-center">
+        {t('title', { fallback: 'Our team is one form away!' })}
+      </Title>
       <section className="flex w-full gap-[60px] max-lg:flex-col">
         <section className="w-1/2 max-lg:w-full">
           <ContactForm />
