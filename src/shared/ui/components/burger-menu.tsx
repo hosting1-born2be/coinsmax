@@ -14,6 +14,7 @@ import {
   Trigger,
 } from '@radix-ui/react-dialog';
 
+import { cn } from '@/shared/lib/utils/cn';
 import { ThreeLinesIcon } from '@/shared/ui/icons/three-lines';
 import { Button } from '@/shared/ui/kit/button';
 import { Divider } from '@/shared/ui/kit/divider';
@@ -51,16 +52,14 @@ export const BurgerMenu = () => {
                   height={64}
                 />
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center gap-3 max-lg:hidden">
-                    <Button>Log In</Button>
-                    <Button variant="secondary">Sign Up</Button>
-                  </div>
+                  <AuthButtons />
                   <Close className="flex h-[72px] w-[72px] cursor-pointer items-center justify-center rounded-full border border-white/15 outline-0 max-md:h-12 max-md:w-12">
                     <CloseIcon />
                   </Close>
                 </div>
               </div>
               <Divider />
+              <AuthButtons mobile />
               <nav className="flex w-full max-lg:flex-col">
                 <div className="flex w-1/2 flex-col border-r border-[rgba(255,255,255,0.10)] max-lg:w-full max-lg:border-r-0 max-lg:border-b">
                   <NavBtn href="/inside-coinsmax" label="Inside Coinsmax" />
@@ -89,7 +88,7 @@ export const BurgerMenu = () => {
 const NavBtn = ({ href, label }: { href: string; label: string }) => (
   <Link
     href={href}
-    className="group flex w-full items-center justify-between gap-2.5 border-b border-b-[rgba(255,255,255,0.10)] p-6 transition duration-300 ease-in-out last:border-b-0 hover:bg-white/5"
+    className="group flex w-full items-center justify-between gap-2.5 border-b border-b-[rgba(255,255,255,0.10)] p-6 transition duration-300 ease-in-out last:border-b-0 hover:bg-white/5 max-md:px-0 max-md:py-4"
   >
     <Title
       size="5xl"
@@ -103,6 +102,28 @@ const NavBtn = ({ href, label }: { href: string; label: string }) => (
     </div>
   </Link>
 );
+
+const AuthButtons = ({ mobile }: { mobile?: boolean }) => {
+  return (
+    <div
+      className={cn(
+        'items-center gap-3',
+        mobile ? 'hidden max-lg:flex' : 'flex max-lg:hidden',
+      )}
+    >
+      <Button size={mobile ? 'sm' : 'md'} fullWidth={mobile}>
+        Log In
+      </Button>
+      <Button
+        variant="secondary"
+        size={mobile ? 'sm' : 'md'}
+        fullWidth={mobile}
+      >
+        Sign Up
+      </Button>
+    </div>
+  );
+};
 
 export const CloseIcon = () => (
   <svg
