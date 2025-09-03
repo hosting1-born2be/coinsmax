@@ -1,4 +1,5 @@
 export * from './compliance-and-protection';
+export * from './contact-our-team';
 export * from './hero/hero';
 export * from './how-to-get-started';
 export * from './important-notice/important-notice';
