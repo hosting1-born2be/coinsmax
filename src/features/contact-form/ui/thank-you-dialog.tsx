@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import {
   Close,
   Content,
@@ -22,6 +23,8 @@ export const ThankYouDialog = ({
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
 }) => {
+  const t = useTranslations('contactForm.thankYou');
+
   return (
     <Root open={isOpen} onOpenChange={setIsOpen}>
       <Trigger />
@@ -37,16 +40,20 @@ export const ThankYouDialog = ({
               <SuccessIcon />
               <div className="flex flex-col items-center justify-center gap-4 text-center">
                 <Title as="h4" size="3xl" className="leading-11">
-                  Your message has been sent successfully!
+                  {t('title', {
+                    fallback: 'Your message has been sent successfully!',
+                  })}
                 </Title>
                 <Text size="base" color="faded">
-                  Thank you for reaching out to Coinsmax. Our team will review
-                  your request and get back to you as soon as possible.
+                  {t('text', {
+                    fallback:
+                      'Thank you for reaching out to Coinsmax. Our team will review your request and get back to you as soon as possible.',
+                  })}
                 </Text>
               </div>
               <Close asChild>
                 <Button variant="secondary" fullWidth>
-                  Continue
+                  {t('button', { fallback: 'Continue' })}
                 </Button>
               </Close>
             </section>
