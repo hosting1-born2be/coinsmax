@@ -7,6 +7,7 @@ import { ThreeLinesIcon } from '@/shared/ui/icons/three-lines';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 
+import { BurgerMenu } from './burger-menu';
 import { LangSwitcher } from './lang-switcher';
 import { SocialNetworks } from './social-networks';
 
@@ -14,7 +15,7 @@ export const Header = () => {
   const t = useTranslations('header');
 
   return (
-    <header className="flex flex-col">
+    <header className="sticky top-0 z-50 flex flex-col">
       <section className="flex items-center justify-between gap-[96px] bg-[#101010] px-[130px] py-3 max-md:px-4">
         <Text>
           <span className="font-bold">
@@ -39,9 +40,7 @@ export const Header = () => {
               {t('signUp', { fallback: 'Sign Up' })}
             </Button>
           </div>
-          <Button>
-            <ThreeLinesIcon />
-          </Button>
+          <BurgerMenu />
         </div>
       </section>
     </header>
