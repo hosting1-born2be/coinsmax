@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import {
   Close,
   Content,
@@ -26,6 +27,8 @@ import { LongSocialNetworks } from './long-social-networks';
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const t = useTranslations('burgerMenu');
 
   return (
     <Root open={isOpen} onOpenChange={setIsOpen}>
@@ -62,14 +65,29 @@ export const BurgerMenu = () => {
               <AuthButtons mobile />
               <nav className="flex w-full max-lg:flex-col">
                 <div className="flex w-1/2 flex-col border-r border-[rgba(255,255,255,0.10)] max-lg:w-full max-lg:border-r-0 max-lg:border-b">
-                  <NavBtn href="/inside-coinsmax" label="Inside Coinsmax" />
-                  <NavBtn href="/partnership" label="Partnership" />
-                  <NavBtn href="/crypto-insights" label="Crypto Insights" />
+                  <NavBtn
+                    href="/inside-coinsmax"
+                    label={t('insideCoinsmax', { fallback: 'Inside Coinsmax' })}
+                  />
+                  <NavBtn
+                    href="/partnership"
+                    label={t('partnership', { fallback: 'Partnership' })}
+                  />
+                  <NavBtn
+                    href="/crypto-insights"
+                    label={t('cryptoInsights', { fallback: 'Crypto Insights' })}
+                  />
                 </div>
                 <div className="flex w-1/2 flex-col max-lg:w-full">
-                  <NavBtn href="/user-essentials" label="User Essentials" />
-                  <NavBtn href="/qa" label="Q&A" />
-                  <NavBtn href="/contact-us" label="Contact Us" />
+                  <NavBtn
+                    href="/user-essentials"
+                    label={t('userEssentials', { fallback: 'User Essentials' })}
+                  />
+                  <NavBtn href="/qa" label={t('qa', { fallback: 'Q&A' })} />
+                  <NavBtn
+                    href="/contact-us"
+                    label={t('contactUs', { fallback: 'Contact Us' })}
+                  />
                 </div>
               </nav>
               <Divider />
@@ -104,6 +122,8 @@ const NavBtn = ({ href, label }: { href: string; label: string }) => (
 );
 
 const AuthButtons = ({ mobile }: { mobile?: boolean }) => {
+  const t = useTranslations('burgerMenu');
+
   return (
     <div
       className={cn(
@@ -112,14 +132,14 @@ const AuthButtons = ({ mobile }: { mobile?: boolean }) => {
       )}
     >
       <Button size={mobile ? 'sm' : 'md'} fullWidth={mobile}>
-        Log In
+        {t('logIn', { fallback: 'Log In' })}
       </Button>
       <Button
         variant="secondary"
         size={mobile ? 'sm' : 'md'}
         fullWidth={mobile}
       >
-        Sign Up
+        {t('signUp', { fallback: 'Sign Up' })}
       </Button>
     </div>
   );

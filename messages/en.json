@@ -184,5 +184,15 @@
       "1": "you confirm that you understand the risks linked to buying or selling cryptocurrency. Digital asset transactions can be volatile, and it’s important to be fully aware before proceeding. For details, please review our risk disclosure.",
       "2": "Once an order is confirmed, it cannot be changed or reversed. Please make sure your personal details and wallet address are entered correctly before completing your transaction."
     }
+  },
+  "burgerMenu": {
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "insideCoinsmax": "Inside Coinsmax",
+    "partnership": "Partnership",
+    "cryptoInsights": "Crypto Insights",
+    "userEssentials": "User Essentials",
+    "qa": "Q&A",
+    "contactUs": "Contact Us"
   }
 }
