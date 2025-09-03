@@ -3,7 +3,6 @@ import {
   ContactOurTeam,
   Hero,
   HowToGetStarted,
-  ImportantNotice,
   MeetCoinsmax,
   OurAssistanceHub,
   Tip,
@@ -18,7 +17,6 @@ export default function Home() {
       <MeetCoinsmax />
       <HowToGetStarted />
       <Tip />
-      <ImportantNotice />
       <WhyCoinsmax />
       <TrustedBy />
       <ComplianceAndProtection />
