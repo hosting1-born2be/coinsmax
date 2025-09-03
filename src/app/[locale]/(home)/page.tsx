@@ -1,5 +1,6 @@
 import {
   ComplianceAndProtection,
+  ContactOurTeam,
   Hero,
   HowToGetStarted,
   ImportantNotice,
@@ -22,6 +23,7 @@ export default function Home() {
       <TrustedBy />
       <ComplianceAndProtection />
       <OurAssistanceHub />
+      <ContactOurTeam />
     </main>
   );
 }

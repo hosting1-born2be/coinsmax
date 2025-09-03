@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils/cn';
 import { Footer } from '@/shared/ui/components/footer';
@@ -45,6 +46,7 @@ export default async function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>
