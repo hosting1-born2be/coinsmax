@@ -2,35 +2,42 @@
 
 import type { ReactNode } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const WhoWeAre = () => {
+  const t = useTranslations('insideCoinsmax.whoWeAre');
+
   return (
     <section className="my-[80px] flex gap-8 px-[160px] max-md:my-[64px] max-md:flex-col max-md:px-4">
       <section className="flex w-1/2 flex-col gap-8 max-md:w-full">
         <CardLayout>
-          <Title size="5xl">Who We Are</Title>
+          <Title size="5xl">{t('title', { fallback: 'Who We Are' })}</Title>
           <Text size="xl" weight={300}>
-            Coinsmax is built by a team of crypto and technology professionals
-            united by a single vision: to make digital assets practical in
-            everyday life.
+            {t('text', {
+              fallback:
+                'Coinsmax is built by a team of crypto and technology professionals united by a single vision: to make digital assets practical in everyday life.',
+            })}
           </Text>
         </CardLayout>
         <CardLayout special>
-          <Title size="3xl">Our focus</Title>
+          <Title size="3xl">{t('title2', { fallback: 'Our focus' })}</Title>
           <Text size="xl" weight={300}>
-            Delivering a straightforward platform for converting Bitcoin and
-            Ethereum to fiat currencies, and back again.
+            {t('text2', {
+              fallback:
+                'Delivering a straightforward platform for converting Bitcoin and Ethereum to fiat currencies, and back again.',
+            })}
           </Text>
         </CardLayout>
         <CardLayout>
           <Text size="xl" weight={300}>
-            With backgrounds across finance, compliance, and technology, we
-            bring expertise that ensures every transaction is fast, transparent,
-            and aligned with global standards.
+            {t('text3', {
+              fallback:
+                'With backgrounds across finance, compliance, and technology, we bring expertise that ensures every transaction is fast, transparent, and aligned with global standards.',
+            })}
           </Text>
         </CardLayout>
       </section>

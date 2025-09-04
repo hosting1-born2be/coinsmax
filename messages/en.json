@@ -198,5 +198,24 @@
   "contacts": {
     "title": "Always Here to Help",
     "text": "Have questions or issues? Reach out. We’re just a message away!"
+  },
+  "insideCoinsmax": {
+    "hero": {
+      "title": "Welcome to Coinsmax",
+      "text": "We’re glad you’re here to learn more about who we are, what we stand for, and how we see the future of crypto exchange."
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "text": "Coinsmax is built by a team of crypto and technology professionals united by a single vision: to make digital assets practical in everyday life.",
+      "title2": "Our focus",
+      "text2": "Delivering a straightforward platform for converting Bitcoin and Ethereum to fiat currencies, and back again.",
+      "text3": "With backgrounds across finance, compliance, and technology, we bring expertise that ensures every transaction is fast, transparent, and aligned with global standards."
+    },
+    "exchangeWithExperts": {
+      "title": "Exchange with Experts",
+      "text": "Coinsmax is operated by a licensed company supported by a qualified team with solid experience in the financial and digital asset sectors.",
+      "text2": "We provide a reliable exchange service for both newcomers to cryptocurrency and those already familiar with the market.",
+      "button": "Join Us"
+    }
   }
 }
