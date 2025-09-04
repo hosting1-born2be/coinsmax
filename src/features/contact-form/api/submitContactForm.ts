@@ -1,6 +1,11 @@
-import type { ContactFormSchema } from '../model/form.schema';
+import type {
+  ContactFormSchema,
+  ShortContactFormSchema,
+} from '../model/form.schema';
 
-export const submitContactForm = async (data: ContactFormSchema) => {
+export const submitContactForm = async (
+  data: ContactFormSchema | ShortContactFormSchema,
+) => {
   const res = await fetch('/api/contact', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
