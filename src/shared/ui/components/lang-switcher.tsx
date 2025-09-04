@@ -15,9 +15,7 @@ import { useTranslations } from 'use-intl';
 import { ChevronDownIcon } from '@/shared/ui/icons/chevron-down';
 import { Text } from '@/shared/ui/kit/text';
 
-import { DeIcon } from '../icons/countries/de';
 import { EnIcon } from '../icons/countries/en';
-import { ItIcon } from '../icons/countries/it';
 import { SlIcon } from '../icons/countries/sl';
 import { TranslationIcon } from '../icons/translation';
 
@@ -42,8 +40,6 @@ export const LangSwitcher = () => {
 
   const languages = [
     { value: 'en', label: t('english', { fallback: 'English' }), icon: EnIcon },
-    { value: 'de', label: t('german', { fallback: 'German' }), icon: DeIcon },
-    { value: 'it', label: t('italian', { fallback: 'Italian' }), icon: ItIcon },
     { value: 'sk', label: t('slovak', { fallback: 'Slovak' }), icon: SlIcon },
   ];
 
