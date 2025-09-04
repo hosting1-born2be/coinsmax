@@ -194,5 +194,9 @@
     "userEssentials": "User Essentials",
     "qa": "Q&A",
     "contactUs": "Contact Us"
+  },
+  "contacts": {
+    "title": "Always Here to Help",
+    "text": "Have questions or issues? Reach out. We’re just a message away!"
   }
 }
