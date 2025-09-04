@@ -59,7 +59,7 @@ export async function POST(request: Request): Promise<NextResponse> {
       process.env.EMAIL_USER || '',
       'New Request Received',
       `
-        <p><strong>Company Name:</strong> ${companyName}</p>
+        <p><strong>Company Name:</strong> ${companyName ?? 'N/A'}</p>
         <p><strong>Contact Name:</strong> ${contactName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong> ${message}</p>
