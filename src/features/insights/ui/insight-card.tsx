@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { ArrowRightIcon } from '@/shared/ui/icons/arrow-right';
 import { Text } from '@/shared/ui/kit/text';
@@ -15,6 +16,8 @@ export const InsightCard = ({
   imgUrl,
   title,
 }: InsightPreview) => {
+  const t = useTranslations('cryptoInsights');
+
   return (
     <article className="flex h-full max-w-[544px] flex-col overflow-hidden rounded-4xl border border-white/10 max-md:w-full">
       <Image
@@ -38,7 +41,7 @@ export const InsightCard = ({
             className="flex items-center gap-1.5"
             underline
           >
-            Read <ArrowRightIcon />
+            {t('read', { fallback: 'Read' })} <ArrowRightIcon />
           </Text>
         </Link>
       </section>

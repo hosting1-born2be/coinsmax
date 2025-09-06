@@ -448,5 +448,12 @@
   },
   "dropdown": {
     "placeholder": "Select your project type"
+  },
+  "cryptoInsights": {
+    "hero": {
+      "title": "Crypto Insights",
+      "description": "Essentials you need to know."
+    },
+    "read": "Read"
   }
 }
