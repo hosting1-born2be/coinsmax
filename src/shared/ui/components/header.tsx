@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useTranslations } from 'use-intl';
 
-import { ThreeLinesIcon } from '@/shared/ui/icons/three-lines';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 
