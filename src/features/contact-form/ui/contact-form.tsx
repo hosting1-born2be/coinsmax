@@ -16,19 +16,12 @@ import { TextField } from '@/shared/ui/kit/text-field';
 import { submitContactForm } from '../api/submitContactForm';
 import type { ContactFormSchema } from '../model/form.schema';
 import { contactFormSchema } from '../model/form.schema';
-
-const ThankYouDialog = dynamic(
-  () => import('./thank-you-dialog').then(mod => mod.ThankYouDialog),
-  {
-    ssr: false,
-  },
-);
+import { useThankYouDialog } from './thank-you-dialog';
 
 export const ContactForm = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const countryCode = useCountryCode();
   const t = useTranslations('contactForm.form');
+  const { setIsOpen } = useThankYouDialog();
 
   const {
     register,
@@ -116,7 +109,6 @@ export const ContactForm = () => {
           ? t('sendRequest.loading', { fallback: 'Sending...' })
           : t('sendRequest.label', { fallback: 'Send Request' })}
       </Button>
-      <ThankYouDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </form>
   );
 };

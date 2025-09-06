@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { StepCard } from '@/shared/ui/components/step-card';
 import { Button } from '@/shared/ui/kit/button';
 import { Title } from '@/shared/ui/kit/title';
 
-const getCards = () => [
+const getCards = (t: ReturnType<typeof useTranslations>) => [
   {
     number: '01',
     title: 'Register and create your profile',
@@ -47,17 +48,21 @@ const getCards = () => [
 ];
 
 export const HowToExchange = () => {
+  const t = useTranslations('userEssentials.howToExchange');
+
   return (
     <section className="flex flex-col gap-[60px] px-[160px] py-20 max-md:px-4">
-      <Title className="text-center">How to Exchange with Coinsmax</Title>
+      <Title className="text-center">
+        {t('title', { fallback: 'How to Exchange with Coinsmax' })}
+      </Title>
       <section className="flex flex-col overflow-hidden rounded-4xl">
-        {getCards().map(item => (
+        {getCards(t).map(item => (
           <StepCard key={item.number} {...item} mobileReverse />
         ))}
       </section>
       <Link href="/registration" className="mx-auto">
         <Button size="md" variant="secondary">
-          Exchange with Coinsmax
+          {t('button', { fallback: 'Exchange with Coinsmax' })}
         </Button>
       </Link>
     </section>

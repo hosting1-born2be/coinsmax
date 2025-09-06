@@ -15,10 +15,13 @@ export const PageHero = ({
   imgUrl: string;
 }) => {
   return (
-    <section className="relative flex h-[455px] flex-col items-center justify-center gap-2.5 text-center">
+    <section className="relative flex h-[455px] flex-col items-center justify-center gap-2.5 px-4 text-center">
       <Image src={imgUrl} alt={title} fill className="absolute inset-0" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#161616] via-[#161616]/70 to-[#161616]/70" />
-      <Title size="7xl" className="z-10">
+      <Title
+        size="7xl"
+        className="z-10 w-[1120px] leading-25 max-[1200px]:w-full max-md:leading-normal"
+      >
         {title}
       </Title>
       <Text size="xl" color="faded" className="z-10">

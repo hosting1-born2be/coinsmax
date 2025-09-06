@@ -11,19 +11,28 @@ import {
   Title as DTitle,
   Trigger,
 } from '@radix-ui/react-dialog';
+import { create } from 'zustand';
 
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-export const ThankYouDialog = ({
-  isOpen,
-  setIsOpen,
-}: {
+export const useThankYouDialog = create<{
   isOpen: boolean;
+  open: () => void;
+  close: () => void;
   setIsOpen: (value: boolean) => void;
-}) => {
+}>(set => ({
+  isOpen: false,
+  open: () => set({ isOpen: true }),
+  close: () => set({ isOpen: false }),
+  setIsOpen: value => set({ isOpen: value }),
+}));
+
+export const ThankYouDialog = () => {
   const t = useTranslations('contactForm.thankYou');
+
+  const { isOpen, setIsOpen } = useThankYouDialog();
 
   return (
     <Root open={isOpen} onOpenChange={setIsOpen}>
