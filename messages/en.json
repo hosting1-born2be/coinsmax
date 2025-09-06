@@ -217,5 +217,236 @@
       "text2": "We provide a reliable exchange service for both newcomers to cryptocurrency and those already familiar with the market.",
       "button": "Join Us"
     }
+  },
+  "userEssentials": {
+    "hero": {
+      "title": "User Essentials",
+      "text": "Everything you need to start using Coinsmax is gathered here."
+    },
+    "howToExchange": {
+      "title": "How to Exchange with Coinsmax",
+      "button": "Exchange with Coinsmax",
+      "cards": {
+        "0": {
+          "title": "Register and create your profile",
+          "text": "Sign up with Coinsmax in a few minutes. Registration is free and straightforward, simply complete the form and confirm your account."
+        },
+        "1": {
+          "title": "Complete verification",
+          "text": "Depending on the transaction amount, verification may vary. Submitting the required documents ensures compliance with regulations and keeps your exchanges secure."
+        },
+        "2": {
+          "title": "Link your crypto wallet",
+          "text": "Coinsmax does not hold your funds. To exchange cryptocurrency, connect your personal wallet, we recommend using official Bitcoin or Ethereum wallets, or a trusted multi-currency wallet of your choice."
+        },
+        "3": {
+          "title": "Choose necessary coins you want to buy or sell",
+          "text": "Choose what you need: buy or sell crypto, the coin and exchange."
+        },
+        "4": {
+          "title": "Confirm and track your transaction",
+          "text": "Once confirmed, the transaction will be processed securely. You can monitor its status in real time."
+        }
+      }
+    },
+    "verificationPackage": {
+      "title": "Coinsmax Verification Package",
+      "text": "To ensure every transaction complies with international standards, Coinsmax requires a full KYC package before payments can be processed:",
+      "cards": {
+        "0": {
+          "title": "Personal Identification",
+          "text": "Government-issued photo identification such as a passport, ID card, driver’s licence, or official residence permit."
+        },
+        "1": {
+          "title": "Residential Proof",
+          "text": "Recent documentation confirming your place of residence, e.g. utility statement, bank record, or telecom bill (issued within the past three months)."
+        },
+        "2": {
+          "title": "Financial Background",
+          "text": "A completed Source of Funds declaration together with supporting evidence to validate the origin of the assets used."
+        },
+        "3": {
+          "title": "Verification Procedures",
+          "text": "All identity checks are carried out through accredited third-party providers. In some cases, enhanced due diligence may require an additional questionnaire or a brief video interview."
+        },
+        "4": {
+          "title": "Supporting Forms",
+          "text": "Depending on the payment volume, Coinsmax may request short compliance forms related to purchase details or customer experience."
+        }
+      }
+    },
+    "documentsCannotAccept": {
+      "title": "Documents We Cannot Accept",
+      "button": "Join Us",
+      "text": "For compliance reasons, Coinsmax can only process valid and verifiable document",
+      "cards": {
+        "0": {
+          "title": "Invalid or fraudulent",
+          "text": "Forged, stolen, or altered identity papers."
+        },
+        "1": {
+          "title": "Low quality",
+          "text": "Scans or photos that are  blurred, cropped, poorly lit, or otherwise unclear."
+        },
+        "2": {
+          "title": "Outdated or duplicated",
+          "text": "Expired IDs, or copies of copies instead of original documents."
+        }
+      }
+    },
+    "importantMsg": {
+      "title": "Important Message on Wallets",
+      "pleaseNote": "Please note",
+      "text": {
+        "0": "Coinsmax does not provide custody of crypto or fiat.",
+        "1": "We operate solely as an exchange service.",
+        "2": "To manage your assets securely, you may consider creating personal wallets via:",
+        "3": "Bitcoin",
+        "4": "Ethereum"
+      }
+    }
+  },
+  "partnership": {
+    "hero": {
+      "title": "Partnership Opportunities with Coinsmax",
+      "text": "Earn as you grow with us."
+    },
+    "ourOffer": {
+      "title": "Our Offer",
+      "text": "The Coinsmax partnership program is built on a simple idea",
+      "cards": {
+        "0": {
+          "title": "When you bring people to our platform, you share in the value they create.",
+          "text": "Our model is designed to create mutual growth"
+        },
+        "1": {
+          "0": "Value for users",
+          "1": "they gain access to a clean, compliant crypto platform."
+        },
+        "2": {
+          "0": "Value for you",
+          "1": "you receive ongoing rewards based on the activity of the community you help build."
+        }
+      }
+    },
+    "whoCanJoin": {
+      "title": "Who Can Join",
+      "text": "Coinsmax is open to partners whose followers, readers, or clients are exploring crypto as a payment method:",
+      "cards": {
+        "0": {
+          "title": "Influencers",
+          "text": "Your voice can guide your audience to discover how simple it is to exchange crypto."
+        },
+        "1": {
+          "title": "Affiliate Marketers",
+          "text": "Turn your reach into opportunity by introducing your audience to a service designed for crypto payments."
+        },
+        "2": {
+          "title": "Industry Media",
+          "text": "You explain crypto to readers. We offer a trustworthy platform they can use."
+        },
+        "3": {
+          "title": "Educational Platforms",
+          "text": "Help learners discover practical crypto tools that simplify payments."
+        },
+        "4": {
+          "title": "Developers & Fintechs",
+          "text": "If you have a community exploring financial technologies, we provide the crypto payment service that they can apply in practice.."
+        }
+      }
+    },
+    "howToJoin": {
+      "title": "How to Join",
+      "cards": {
+        "0": {
+          "title": "Apply",
+          "value": "Fill out the application form below.  We’ll review your request and send you the agreement and KYB requirements."
+        },
+        "1": {
+          "title": "Verify",
+          "value": "Submit the requested documents. Once approved, you’ll receive your partner ID and access to your resources."
+        },
+        "2": {
+          "title": "Share",
+          "value": "Promote Coinsmax with your unique link across your platforms and communities."
+        },
+        "3": {
+          "title": "Earn",
+          "value": "Receive commissions for every invoice payment made by users you bring in. Track everything from your dashboard."
+        }
+      }
+    },
+    "applyNow": {
+      "title": "Apply Now!",
+      "text": "Complete the form and get your partner account, promo resources, and direct support."
+    }
+  },
+  "detailedContactForm": {
+    "title": "About Your",
+    "aboutYourProject": "About Your Project",
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "Enter your first name"
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Enter your last name"
+    },
+    "phone": {
+      "label": "Phone",
+      "placeholder": "Enter your phone number"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email"
+    },
+    "projectName": {
+      "label": "Project Name",
+      "placeholder": "Enter your project name"
+    },
+    "projectLink": {
+      "label": "Project Link",
+      "placeholder": "Enter your project link"
+    },
+    "projectOverview": {
+      "label": "Project Overview",
+      "placeholder": "Enter your project overview"
+    },
+    "projectType": {
+      "label": "Project Type",
+      "options": {
+        "0": "Trade solution",
+        "1": "Content / Reviews Network",
+        "2": "Cross Audience Monetization",
+        "3": "Social influencer",
+        "4": "Media arbitration",
+        "5": "Transaction / vouchers",
+        "6": "Third Choice loyalty / rewards",
+        "7": "Other"
+      }
+    },
+    "append": "By joining the Coinsmax Partnership Program, you acknowledge that cooperation in promoting our services may involve certain risks such as chargebacks, cancellations, or fraud alerts. All partners are expected to follow our policies and compliance guidelines. If such risks occur, Coinsmax reserves the right to offset related costs against pending partner payouts.",
+    "explanations": {
+      "title": "Explanations:",
+      "0": {
+        "0": "Chargeback",
+        "1": "when a customer’s bank reverses a completed payment."
+      },
+      "1": {
+        "0": "Fraud alert",
+        "1": "a flagged transaction identified as potentially fraudulent by banks or payment providers."
+      },
+      "2": {
+        "0": "Cancellation",
+        "1": "a when a customer, their bank, or an intermediary requests funds to be returned after initiating a payment."
+      }
+    },
+    "button": {
+      "label": "Apply",
+      "loading": "Sending..."
+    }
+  },
+  "dropdown": {
+    "placeholder": "Select your project type"
   }
 }

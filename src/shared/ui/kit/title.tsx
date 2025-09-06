@@ -43,9 +43,11 @@ export const Title = ({
   size,
   as = 'h2',
   capitalize = false,
+  style,
 }: PropsWithChildren<
   {
     className?: string;
+    style?: React.CSSProperties;
     as?: ElementType;
     capitalize?: boolean;
   } & TitleVariants
@@ -59,6 +61,7 @@ export const Title = ({
         capitalize && 'capitalize',
         className,
       )}
+      style={style}
     >
       {children}
     </Tag>

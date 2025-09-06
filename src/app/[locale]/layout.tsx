@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { Toaster } from 'sonner';
 
+import { ThankYouDialog } from '@/features/contact-form/ui/thank-you-dialog';
+
 import { cn } from '@/shared/lib/utils/cn';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
@@ -49,6 +51,7 @@ export default async function RootLayout({
           <Footer />
           <Toaster />
           <ImportantNoticeDialog />
+          <ThankYouDialog />
         </NextIntlClientProvider>
       </body>
     </html>

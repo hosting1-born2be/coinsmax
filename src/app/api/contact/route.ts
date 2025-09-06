@@ -1,35 +1,14 @@
 import { NextResponse } from 'next/server';
 import { google } from 'googleapis';
 
+import { makeEmailBody } from '@/shared/lib/utils/make-email-body';
+
 type OrderData = {
   companyName: string;
   contactName: string;
   email: string;
   message: string;
 };
-
-function makeBody(
-  to: string,
-  from: string,
-  subject: string,
-  message: string,
-): string {
-  const emailLines = [
-    `To: ${to}`,
-    `From: ${from}`,
-    `Subject: ${subject}`,
-    `MIME-Version: 1.0`,
-    `Content-Type: text/html; charset=UTF-8`,
-    '',
-    message,
-  ];
-
-  return Buffer.from(emailLines.join('\n'))
-    .toString('base64')
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=+$/, '');
-}
 
 export async function POST(request: Request): Promise<NextResponse> {
   try {
@@ -54,7 +33,7 @@ export async function POST(request: Request): Promise<NextResponse> {
 
     const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
 
-    const adminEmailBody = makeBody(
+    const adminEmailBody = makeEmailBody(
       process.env.EMAIL_USER || '',
       process.env.EMAIL_USER || '',
       'New Request Received',

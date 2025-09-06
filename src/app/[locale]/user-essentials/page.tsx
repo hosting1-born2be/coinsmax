@@ -1,3 +1,5 @@
+import { getTranslations } from 'next-intl/server';
+
 import { PageHero } from '@/shared/ui/components/page-hero';
 
 import {
@@ -7,12 +9,17 @@ import {
   VerificationPackage,
 } from './components';
 
-export default function UserEssentials() {
+export default async function UserEssentials() {
+  const t = await getTranslations('userEssentials.hero');
+
   return (
     <main>
       <PageHero
-        title="User Essentials"
-        description="Everything you need to start using Coinsmax is gathered here."
+        title={t('title', { fallback: 'User Essentials' })}
+        description={t('text', {
+          fallback:
+            'Everything you need to start using Coinsmax is gathered here.',
+        })}
         imgUrl="/images/user-essentials/hero.jpg"
       />
       <HowToExchange />
