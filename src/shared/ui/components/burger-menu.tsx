@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import {
   Close,
@@ -27,6 +28,10 @@ import { LongSocialNetworks } from './long-social-networks';
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const pathname = usePathname();
+
+  useEffect(() => setIsOpen(false), [pathname]);
 
   const t = useTranslations('burgerMenu');
 

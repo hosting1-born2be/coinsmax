@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'use-intl';
 
 import { Button } from '@/shared/ui/kit/button';
@@ -31,7 +32,9 @@ export const Header = () => {
         </section>
       </section>
       <section className="flex items-center justify-between border-b border-white/10 bg-[#161616] px-[130px] py-6 max-md:px-4">
-        <Image src="/logo.svg" alt="Coinsmax" width={128} height={30} />
+        <Link href="/">
+          <Image src="/logo.svg" alt="Coinsmax" width={128} height={30} />
+        </Link>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-3 max-md:hidden">
             <Button size="sm">{t('logIn', { fallback: 'Log In' })}</Button>
