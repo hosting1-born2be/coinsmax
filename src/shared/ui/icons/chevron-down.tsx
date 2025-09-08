@@ -1,12 +1,13 @@
 'use client';
 
-export const ChevronDownIcon = () => (
+export const ChevronDownIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
     height="8"
     viewBox="0 0 16 8"
     fill="none"
+    className={className}
   >
     <g clipPath="url(#clip0_119_637)">
       <path
