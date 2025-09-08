@@ -42,8 +42,6 @@ export default async function RootLayout({
     notFound();
   }
 
-  console.log('locale', locale);
-
   return (
     <html lang={locale}>
       <body className={cn(outfit.variable, 'antialiased')}>
