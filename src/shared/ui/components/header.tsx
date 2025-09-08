@@ -18,7 +18,7 @@ export const Header = () => {
       <section className="flex items-center justify-between gap-[96px] bg-[#101010] px-[130px] py-3 max-md:px-4">
         <Text>
           <span className="font-bold">
-            {t('text.0', { fallback: 'Notice:' })}:
+            {t('text.0', { fallback: 'Notice:' })}
           </span>{' '}
           {t('text.1', {
             fallback:
