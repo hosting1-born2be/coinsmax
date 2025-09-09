@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
@@ -43,9 +44,11 @@ export const HowToGetStarted = () => {
           <Card key={item.number} {...item} />
         ))}
       </section>
-      <Button variant="secondary">
-        {t('register', { fallback: 'Register' })}
-      </Button>
+      <Link href="https://exchange.coinsmax.io/register">
+        <Button variant="secondary">
+          {t('register', { fallback: 'Register' })}
+        </Button>
+      </Link>
     </section>
   );
 };

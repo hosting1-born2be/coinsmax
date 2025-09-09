@@ -1,9 +1,26 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { getInsights } from '@/features/insights/api/get-insights';
 import { InsightCard } from '@/features/insights/ui/insight-card';
 
 import { PageHero } from '@/shared/ui/components/page-hero';
+
+export const metadata: Metadata = {
+  title: 'Crypto Insights | Coinsmax',
+  description:
+    'Explore the latest articles on cryptocurrency, blockchain, and everyday usage of crypto. Learn, discover, and stay informed with Coinsmax.',
+  openGraph: {
+    title: 'Crypto Insights | Coinsmax',
+    description:
+      'Explore the latest articles on cryptocurrency, blockchain, and everyday usage of crypto. Learn, discover, and stay informed with Coinsmax.',
+  },
+  twitter: {
+    title: 'Crypto Insights | Coinsmax',
+    description:
+      'Explore the latest articles on cryptocurrency, blockchain, and everyday usage of crypto. Learn, discover, and stay informed with Coinsmax.',
+  },
+};
 
 export default async function CryptoInsights({
   params,

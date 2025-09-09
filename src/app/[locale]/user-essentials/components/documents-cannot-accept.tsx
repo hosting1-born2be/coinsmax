@@ -55,7 +55,7 @@ export const DocumentsCannotAccept = () => {
                 'Expired IDs, or copies of copies instead of original documents.',
             })}
           />
-          <Link href="/registration" className="w-full">
+          <Link href="https://exchange.coinsmax.io/register" className="w-full">
             <Button variant="secondary" size="md" fullWidth>
               {t('button', { fallback: 'Join Us' })}
             </Button>

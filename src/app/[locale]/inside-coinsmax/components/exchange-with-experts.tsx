@@ -31,7 +31,7 @@ export const ExchangeWithExperts = () => {
           })}
         />
       </section>
-      <Link href="/registration" className="mx-auto">
+      <Link href="https://exchange.coinsmax.io/register" className="mx-auto">
         <Button variant="secondary" size="md">
           {t('button', { fallback: 'Join Us' })}
         </Button>

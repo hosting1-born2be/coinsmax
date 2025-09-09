@@ -1,8 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
@@ -34,6 +36,11 @@ export const MeetCoinsmax = () => {
           <Card key={item.imgUrl} {...item} />
         ))}
       </section>
+      <Link href="/inside-coinsmax" className="mx-auto">
+        <Button variant="secondary">
+          {t('button', { fallback: 'Explore Coinsmax' })}
+        </Button>
+      </Link>
     </section>
   );
 };

@@ -4,6 +4,8 @@ export type InsightPreview = {
   excerpt: string;
   imgUrl: string;
   slug: string;
+  seo_title: string;
+  seo_description: string;
 };
 
 export type Insight = InsightPreview & {

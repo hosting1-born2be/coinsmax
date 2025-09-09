@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
@@ -36,12 +37,16 @@ export const OurAssistanceHub = () => {
           </Text>
         </div>
         <div className="flex w-full justify-center gap-4 max-md:flex-col">
-          <Button variant="secondary" className="w-[201px] max-md:w-full">
-            {t('button', { fallback: 'Q&A' })}
-          </Button>
-          <Button variant="glass" className="max-md:w-full">
-            {t('button2', { fallback: 'News & Insights' })}
-          </Button>
+          <Link href="/qa">
+            <Button variant="secondary" className="w-[201px] max-md:w-full">
+              {t('button', { fallback: 'Q&A' })}
+            </Button>
+          </Link>
+          <Link href="/crypto-insights">
+            <Button variant="glass" className="max-md:w-full">
+              {t('button2', { fallback: 'News & Insights' })}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
     title: t('cards.0.title', { fallback: 'Verified Users Only' }),
     text: t('cards.0.text', {
       fallback:
-        'All clients complete KYC and AML checks. This is a strict requirement for any licensed financial service, and it helps keep the platform compliant and trustworthy.',
+        'Document verification is required for all clients. This is a strict requirement for any licensed financial service, and it helps keep the platform compliant and trustworthy.',
     }),
   },
   {

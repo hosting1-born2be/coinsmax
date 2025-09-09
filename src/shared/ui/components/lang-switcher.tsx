@@ -30,9 +30,9 @@ export const LangSwitcher = () => {
 
   const switchLanguage = useCallback(
     (value: string) => {
-      const segments = pathname.split('/');
-      segments[1] = value;
-      const newPath = segments.join('/');
+      const pathWithoutLocale = pathname.replace(/^\/(en|sk)/, '');
+      const newPath = `/${value}${pathWithoutLocale}`;
+      console.log('newPath', newPath);
       router.replace(newPath);
     },
     [pathname, router],

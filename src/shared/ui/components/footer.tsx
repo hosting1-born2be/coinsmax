@@ -31,7 +31,7 @@ export const Footer = () => {
           </Text>
           <div className="flex flex-col gap-6">
             <Text color="faded">
-              {t('workHours.title', { fallback: 'Work hours' })}
+              {t('workHours.title', { fallback: 'Customer support hours' })}
             </Text>
             <div className="flex flex-col gap-3">
               <WorkHours
