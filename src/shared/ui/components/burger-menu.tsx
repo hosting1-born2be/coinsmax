@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import {
@@ -25,6 +24,7 @@ import { ChevronRightIcon } from '../icons/chevron-right';
 import { Title } from '../kit/title';
 import { LangSwitcher } from './lang-switcher';
 import { LongSocialNetworks } from './long-social-networks';
+import { Link } from '@/i18n/navigation';
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
