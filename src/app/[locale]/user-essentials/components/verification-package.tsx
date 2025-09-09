@@ -77,7 +77,7 @@ export const VerificationPackage = () => {
           {getCards(t)
             .slice(3, 5)
             .map(item => (
-              <InfoCard key={item.title} {...item} />
+              <InfoCard key={item.title} alignImage {...item} />
             ))}
         </div>
       </section>
