@@ -32,9 +32,9 @@ export const submitContactForm = async (
     `,
     };
 
-    const res = await sgMail.send(msg);
+    await sgMail.send(msg);
 
-    return { success: true, res };
+    return { success: true };
   } catch (err) {
     console.error(err);
 
