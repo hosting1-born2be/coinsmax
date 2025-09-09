@@ -25,12 +25,12 @@ export const InsightRenderer = ({ data }: { data: Insight }) => {
         />
       ))}
       <section className="mt-[60px] flex items-center justify-center gap-3">
-        <Link href="/registration">
+        <Link href="https://exchange.coinsmax.io/register">
           <Button variant="secondary">
             {t('joinNow', { fallback: 'Join Now' })}
           </Button>
         </Link>
-        <Link href="/contacts">
+        <Link href="/contact-us">
           <Button>{t('contactUs', { fallback: 'Contact Us' })}</Button>
         </Link>
       </section>

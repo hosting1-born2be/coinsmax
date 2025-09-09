@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
@@ -21,9 +22,11 @@ export const Hero = () => {
         <span className={st.title}>Coinsmax.</span> <br />
         {t('title', { fallback: 'Where Crypto Meets Fiat.' })}
       </h1>
-      <Button variant="secondary">
-        {t('button', { fallback: 'Start Now' })}
-      </Button>
+      <Link href="https://exchange.coinsmax.io/register">
+        <Button variant="secondary">
+          {t('button', { fallback: 'Start Now' })}
+        </Button>
+      </Link>
     </section>
   );
 };

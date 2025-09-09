@@ -1,12 +1,14 @@
 'use client';
 
 import { Controller, useForm } from 'react-hook-form';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import { useCountryCode } from '@/shared/lib/hooks/use-country-code';
 import { notifyError } from '@/shared/lib/utils/notify';
 import { Button } from '@/shared/ui/kit/button';
+import { Checkbox } from '@/shared/ui/kit/checkbox';
 import { Divider } from '@/shared/ui/kit/divider';
 import { Dropdown } from '@/shared/ui/kit/dropdown';
 import { PhoneField } from '@/shared/ui/kit/phone-field';
@@ -139,9 +141,16 @@ export const DetailedContactForm = () => {
             name="projectType"
             render={({ field }) => (
               <div className="flex flex-col gap-2">
-                <Text size="xl" color="white">
-                  {t('projectType.label', { fallback: 'Project Type' })}
-                </Text>
+                <div className="flex items-center gap-1">
+                  <Text size="xl" color="white">
+                    {t('projectType.label', { fallback: 'Project Type' })}
+                  </Text>
+                  {errors.projectType?.message && (
+                    <Text size="xl" color="danger">
+                      {errors.projectType?.message}
+                    </Text>
+                  )}
+                </div>
                 <Dropdown
                   options={[
                     {
@@ -197,6 +206,29 @@ export const DetailedContactForm = () => {
             )}
           />
         </div>
+        <Controller
+          control={control}
+          name="isAgree"
+          render={({ field }) => (
+            <Checkbox
+              label={
+                <>
+                  I agree to the{' '}
+                  <Link
+                    href="/terms-and-conditions"
+                    className="decoration-skip-ink-none underline-position-from-font underline decoration-solid underline-offset-auto"
+                  >
+                    Terms and Conditions
+                  </Link>
+                  .
+                </>
+              }
+              checked={field.value}
+              onCheckedChange={field.onChange}
+              intent={errors.isAgree?.message ? 'danger' : 'default'}
+            />
+          )}
+        />
         <Text color="faded">
           {t('append', {
             fallback:
@@ -246,7 +278,7 @@ export const DetailedContactForm = () => {
             </li>
           </ul>
         </div>
-        <Button size="md" variant="secondary" fullWidth>
+        <Button size="md" variant="secondary" type="submit" fullWidth>
           {isSubmitting
             ? t('button.loading', { fallback: 'Sending...' })
             : t('button.label', { fallback: 'Apply' })}

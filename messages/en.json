@@ -17,7 +17,7 @@
     "subtitle": "Turn Crypto Into Fiat. Anytime.",
     "description": "Coinsmax is owned and operated by Limitless Technologies s.r.o, identification number 55165451, authorised to provide virtual currency service, with registered and operational address at Černyševského 1287/10, Bratislava, 851 01, Slovak Republic.",
     "workHours": {
-      "title": "Work hours",
+      "title": "Customer support hours",
       "weekdays": "Weekdays",
       "weekends": "Weekends"
     },
@@ -65,7 +65,8 @@
       "cards": {
         "0": "Coinsmax functions as a cryptocurrency exchange, built on clear and regulated processes. Our platform enables the conversion between digital assets and fiat currencies in a transparent environment supported by robust technology.",
         "1": "Coinsmax applies a comprehensive safeguard framework designed to counter internal risks and protect data, funds, and transactions. Each transaction undergoes thorough screening and review to maintain the security of the platform and its users."
-      }
+      },
+      "button": "Explore Coinsmax"
     },
     "howToGetStarted": {
       "title": "How to get started",
@@ -79,7 +80,9 @@
     "tip": {
       "title": "Tip",
       "text": "For a smoother start, check our User Essentials section – it explains the requirements and helps you complete registration and verification faster.",
-      "button": "Check"
+      "button": "Check",
+      "text2": "Important notice on processing time!",
+      "text3": "Most transactions are processed instantly, but timing can depend on the blockchain network and required compliance checks. Coinsmax ensures your transaction is processed in the most reliable way, so you get funds without unnecessary delays."
     },
     "importantNotice": {
       "title": {
@@ -117,7 +120,7 @@
       "cards": {
         "0": {
           "title": "Verified Users Only",
-          "text": "All clients complete KYC and AML checks. This is a strict requirement for any licensed financial service, and it helps keep the platform compliant and trustworthy."
+          "text": "Document verification is required for all clients. This is a strict requirement for any licensed financial service, and it helps keep the platform compliant and trustworthy."
         },
         "1": {
           "title": "Data Kept Private",
@@ -201,7 +204,7 @@
   },
   "insideCoinsmax": {
     "hero": {
-      "title": "Welcome to Coinsmax",
+      "title": "Welcome to Coinsmaxx",
       "text": "We’re glad you’re here to learn more about who we are, what we stand for, and how we see the future of crypto exchange."
     },
     "whoWeAre": {

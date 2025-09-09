@@ -37,10 +37,14 @@ export const Header = () => {
         </Link>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-3 max-md:hidden">
-            <Button size="sm">{t('logIn', { fallback: 'Log In' })}</Button>
-            <Button variant="secondary" size="sm">
-              {t('signUp', { fallback: 'Sign Up' })}
-            </Button>
+            <Link href="https://exchange.coinsmax.io/login">
+              <Button size="sm">{t('logIn', { fallback: 'Log In' })}</Button>
+            </Link>
+            <Link href="https://exchange.coinsmax.io/register">
+              <Button variant="secondary" size="sm">
+                {t('signUp', { fallback: 'Sign Up' })}
+              </Button>
+            </Link>
           </div>
           <BurgerMenu />
         </div>

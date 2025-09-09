@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { InfoCard } from '@/shared/ui/components/info-card';
@@ -44,9 +45,11 @@ export const WhyCoinsmax = () => {
           <InfoCard key={item.imgUrl} {...item} />
         ))}
       </section>
-      <Button variant="secondary">
-        {t('button', { fallback: 'Get Started' })}
-      </Button>
+      <Link href="https://exchange.coinsmax.io/register">
+        <Button variant="secondary">
+          {t('button', { fallback: 'Get Started' })}
+        </Button>
+      </Link>
     </section>
   );
 };

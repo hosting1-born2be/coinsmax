@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { InfoIcon } from '@/shared/ui/icons/info';
@@ -31,9 +32,11 @@ export const Tip = () => {
               })}
             </Text>
           </div>
-          <Button variant="secondary">
-            {t('button', { fallback: 'Check' })}
-          </Button>
+          <Link href="/user-essentials">
+            <Button variant="secondary">
+              {t('button', { fallback: 'Check' })}
+            </Button>
+          </Link>
           <span className="absolute top-8 left-8 max-md:hidden">
             <QuoteUpIcon />
           </span>
@@ -44,13 +47,13 @@ export const Tip = () => {
         <div className="flex flex-col items-center gap-0.5 px-8 py-4 text-center">
           <Text color="white" className="flex items-center gap-1.5">
             <InfoIcon />
-            Important notice on processing time!
+            {t('text2', { fallback: 'Important notice on processing time!' })}
           </Text>
           <Text color="faded" size="base">
-            Most transactions are processed instantly, but timing can depend on
-            the blockchain network and required compliance checks. Coinsmax
-            ensures your transaction is processed in the most reliable way, so
-            you get funds without unnecessary delays.
+            {t('text3', {
+              fallback:
+                'Most transactions are processed instantly, but timing can depend on the blockchain network and required compliance checks. Coinsmax ensures your transaction is processed in the most reliable way, so you get funds without unnecessary delays.',
+            })}
           </Text>
         </div>
       </section>

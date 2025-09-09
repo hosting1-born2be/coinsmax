@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
@@ -5,6 +6,22 @@ import { ShortContactForm } from '@/features/contact-form/ui/short-contact-form'
 
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
+
+export const metadata: Metadata = {
+  title: 'Contacts | Coinsmax',
+  description:
+    'Get in touch with Coinsmax for support, inquiries, or assistance with exchange of crypto. Reach out and receive fast, helpful guidance.',
+  openGraph: {
+    title: 'Contacts | Coinsmax',
+    description:
+      'Get in touch with Coinsmax for support, inquiries, or assistance with exchange of crypto. Reach out and receive fast, helpful guidance.',
+  },
+  twitter: {
+    title: 'Contacts | Coinsmax',
+    description:
+      'Get in touch with Coinsmax for support, inquiries, or assistance with exchange of crypto. Reach out and receive fast, helpful guidance.',
+  },
+};
 
 export default async function ContactsPage() {
   const t = await getTranslations('contacts');

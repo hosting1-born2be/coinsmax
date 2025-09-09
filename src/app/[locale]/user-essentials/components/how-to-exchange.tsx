@@ -79,7 +79,7 @@ export const HowToExchange = () => {
           <StepCard key={item.number} {...item} mobileReverse />
         ))}
       </section>
-      <Link href="/registration" className="mx-auto">
+      <Link href="https://exchange.coinsmax.io/register" className="mx-auto">
         <Button size="md" variant="secondary">
           {t('button', { fallback: 'Exchange with Coinsmax' })}
         </Button>
