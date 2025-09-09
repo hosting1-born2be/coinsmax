@@ -66,14 +66,14 @@ export const VerificationPackage = () => {
         </Text>
       </section>
       <section className="flex flex-col gap-8">
-        <div className="flex gap-8 max-md:flex-col">
+        <div className="flex gap-8 max-[1210px]:flex-col">
           {getCards(t)
             .slice(0, 3)
             .map(item => (
               <InfoCard key={item.title} {...item} />
             ))}
         </div>
-        <div className="flex gap-8 max-md:flex-col">
+        <div className="flex gap-8 max-[1210px]:flex-col">
           {getCards(t)
             .slice(3, 5)
             .map(item => (

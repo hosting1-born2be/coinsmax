@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { InfoIcon } from '@/shared/ui/icons/info';
@@ -9,6 +8,8 @@ import { QuoteUpIcon } from '@/shared/ui/icons/quote-up';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
+
+import { Link } from '@/i18n/navigation';
 
 export const Tip = () => {
   const t = useTranslations('home.tip');

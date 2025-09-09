@@ -60,9 +60,14 @@ export const DetailedContactForm = () => {
   });
 
   return (
-    <form className="flex gap-[60px] max-lg:flex-col" onSubmit={onSubmit}>
-      <section className="flex w-1/2 flex-col gap-8 max-lg:w-full">
-        <Title as="h3">{t('title', { fallback: 'About You' })}</Title>
+    <form
+      className="mx-auto flex w-[600px] flex-col gap-[60px] max-lg:flex-col max-md:w-full"
+      onSubmit={onSubmit}
+    >
+      <section className="flex w-full flex-col gap-8 max-lg:w-full">
+        <Title as="h3" size="3xl">
+          {t('title', { fallback: 'About You' })}
+        </Title>
         <Divider />
         <div className="flex flex-col gap-4">
           <TextField
@@ -106,8 +111,8 @@ export const DetailedContactForm = () => {
           />
         </div>
       </section>
-      <section className="flex w-1/2 flex-col gap-8 max-lg:w-full">
-        <Title as="h3">
+      <section className="flex w-full flex-col gap-8 max-lg:w-full">
+        <Title as="h3" size="3xl">
           {t('aboutYourProject', { fallback: 'About Your Project' })}
         </Title>
         <Divider />
@@ -229,19 +234,19 @@ export const DetailedContactForm = () => {
             />
           )}
         />
-        <Text color="faded">
+        <Text color="white" className="opacity-80">
           {t('append', {
             fallback:
               'By joining the Coinsmax Partnership Program, you acknowledge that',
           })}
         </Text>
         <div className="flex flex-col gap-3">
-          <Text color="faded">
+          <Text color="white" className="opacity-80">
             {t('explanations.title', { fallback: 'Explanations:' })}
           </Text>
           <ul className="flex flex-col">
             <li>
-              <Text>
+              <Text color="white" className="opacity-80">
                 <span className="font-bold">
                   {t('explanations.0.0', { fallback: 'Chargeback' })}
                 </span>{' '}
@@ -253,7 +258,7 @@ export const DetailedContactForm = () => {
               </Text>
             </li>
             <li>
-              <Text>
+              <Text color="white" className="opacity-80">
                 <span className="font-bold">
                   {t('explanations.1.0', { fallback: 'Fraud alert' })}
                 </span>{' '}
@@ -265,7 +270,7 @@ export const DetailedContactForm = () => {
               </Text>
             </li>
             <li>
-              <Text>
+              <Text color="white" className="opacity-80">
                 <span className="font-bold">
                   {t('explanations.2.0', { fallback: 'Cancellation' })}
                 </span>{' '}

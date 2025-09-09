@@ -1,12 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
+
+import { Link } from '@/i18n/navigation';
 
 const getCards = (t: ReturnType<typeof useTranslations>) => [
   {

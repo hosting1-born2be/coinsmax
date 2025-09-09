@@ -24,7 +24,7 @@ export const Accordion = ({
 
   return (
     <div
-      className={`cursor-pointer rounded-4xl border-[2px] border-solid border-[rgba(255,255,255,0.15)] bg-[#2B2B2B] p-5 transition-transform ${openedIndex === index ? 'bg-[#2B2B2B]' : 'bg-[#222]'}`}
+      className={`cursor-pointer rounded-4xl border-[2px] border-solid bg-[#2B2B2B] p-5 transition-transform ${openedIndex === index ? 'border-[rgba(255,255,255,0.15)] bg-[#2B2B2B]' : 'border-[#222] bg-[#222]'}`}
       onClick={() => handleOpen(index)}
     >
       <div className="flex items-center justify-between gap-3">

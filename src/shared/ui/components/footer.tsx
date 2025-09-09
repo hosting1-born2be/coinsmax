@@ -2,13 +2,13 @@
 
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Divider } from '@/shared/ui/kit/divider';
 import { Text } from '@/shared/ui/kit/text';
 
 import { SocialNetworks } from './social-networks';
+import { Link } from '@/i18n/navigation';
 
 export const Footer = () => {
   const t = useTranslations('footer');
@@ -20,7 +20,9 @@ export const Footer = () => {
           <div className="flex flex-col gap-3">
             <Image src="/logo.svg" alt="Coinsmax" width={128} height={30} />
             <Text size="base" color="tint">
-              {t('subtitle', { fallback: 'Turn Crypto Into Fiat. Anytime.' })}
+              {t('subtitle', {
+                fallback: 'Coinsmax: Your Gateway to Crypto and Cash.',
+              })}
             </Text>
           </div>
           <Text size="base" color="tint">
@@ -151,7 +153,7 @@ export const Footer = () => {
       <Divider />
       <section className="flex items-center justify-between gap-8 max-md:flex-col">
         <Text color="tint">
-          © ${new Date().getFullYear()}{' '}
+          © {new Date().getFullYear()}{' '}
           {t('copyright', {
             fallback: 'Coinsmax.io — Crypto. Fiat. Exchanged.',
           })}

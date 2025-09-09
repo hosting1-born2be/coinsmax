@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -9,7 +10,13 @@ import { Title } from '@/shared/ui/kit/title';
 const getCards = (t: ReturnType<typeof useTranslations>) => [
   {
     imgUrl: '/images/partnership/inf.png',
-    title: t('cards.0.title', { fallback: 'Influencers' }),
+    title: (
+      <>
+        {t('cards.0.title.0', { fallback: 'Thought' })}
+        <br />
+        {t('cards.0.title.1', { fallback: 'Leaders' })}
+      </>
+    ),
     text: t('cards.0.text', {
       fallback:
         'Your voice can guide your audience to discover how simple it is to exchange crypto.',
@@ -17,7 +24,13 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
   },
   {
     imgUrl: '/images/partnership/marketers.png',
-    title: t('cards.1.title', { fallback: 'Affiliate Marketers' }),
+    title: (
+      <>
+        {t('cards.1.title.0', { fallback: 'Affiliate' })}
+        <br />
+        {t('cards.1.title.1', { fallback: 'Marketers' })}
+      </>
+    ),
     text: t('cards.1.text', {
       fallback:
         'Turn your reach into opportunity by introducing your audience to a service designed for crypto payments.',
@@ -25,7 +38,13 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
   },
   {
     imgUrl: '/images/partnership/media.png',
-    title: t('cards.2.title', { fallback: 'Industry Media' }),
+    title: (
+      <>
+        {t('cards.2.title.0', { fallback: 'Industry' })}
+        <br />
+        {t('cards.2.title.1', { fallback: 'Media' })}
+      </>
+    ),
     text: t('cards.2.text', {
       fallback:
         'You explain crypto to readers. We offer a trustworthy platform they can use.',
@@ -93,7 +112,7 @@ const Card = ({
   text,
 }: {
   imgUrl: string;
-  title: string;
+  title: ReactNode;
   text: string;
 }) => {
   return (
@@ -101,7 +120,7 @@ const Card = ({
       <Image
         className="w-full rounded-2xl"
         src={imgUrl}
-        alt={title}
+        alt="background-img"
         width={288}
         height={150}
         unoptimized

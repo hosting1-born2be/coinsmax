@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRightIcon } from '@/shared/ui/icons/arrow-right';
@@ -9,6 +8,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import type { InsightPreview } from '../model/types';
+import { Link } from '@/i18n/navigation';
 
 export const InsightCard = ({
   excerpt,

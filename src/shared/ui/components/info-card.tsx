@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import Image from 'next/image';
 
 import { Text } from '@/shared/ui/kit/text';
@@ -11,13 +12,14 @@ export const InfoCard = ({
   title,
 }: {
   imgUrl: string;
-  title?: string;
+  title?: ReactNode;
   text: string;
 }) => (
   <article className="flex flex-1 flex-col gap-8 rounded-4xl bg-[#222] p-8">
     <Image
+      className="my-auto"
       src={imgUrl}
-      alt={title ?? 'info-img'}
+      alt="info-img"
       width={96}
       height={96}
       unoptimized

@@ -40,7 +40,7 @@ export const ThankYouDialog = () => {
       <Portal>
         <Overlay className="animate-overlayShow fixed inset-0 z-[998] bg-black/10 backdrop-blur-sm" />
         <Content
-          className="animate-contentShow fixed top-1/2 left-1/2 z-[999] h-max w-[500px] -translate-x-1/2 -translate-y-1/2 transform overflow-hidden rounded-4xl border border-white/15 bg-[#222] focus:outline-none max-lg:w-[96%]"
+          className="animate-contentShow fixed top-1/2 left-1/2 z-[999] h-max w-[500px] -translate-x-1/2 -translate-y-1/2 transform overflow-hidden rounded-4xl border border-white/15 bg-[#222] focus:outline-none max-lg:w-[96%] max-md:h-[80%]"
           onCloseAutoFocus={e => e.preventDefault()}
         >
           <DTitle />
