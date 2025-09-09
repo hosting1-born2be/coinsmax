@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
@@ -9,6 +8,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './our-assistance-hub.module.css';
+import { Link } from '@/i18n/navigation';
 
 export const OurAssistanceHub = () => {
   const t = useTranslations('home.ourAssistanceHub');

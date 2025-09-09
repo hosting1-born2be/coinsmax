@@ -28,11 +28,6 @@ export const ImportantNoticeDialog = () => {
 
     if (!hasAcceptedImportantNotice) {
       setIsOpen(true);
-
-      setTimeout(() => {
-        lsWrite('isImportantNoticeAccepted', 'true');
-        setIsOpen(false);
-      }, 10000);
     } else {
       setIsOpen(false);
     }

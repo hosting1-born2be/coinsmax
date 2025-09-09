@@ -103,7 +103,10 @@ const VerticalCard = ({
         </Text>
       </section>
       <Image
-        className="mt-auto max-h-[341px] w-full object-cover"
+        className={cn(
+          'max-h-[341px] w-full object-cover',
+          !reverse && 'mt-auto',
+        )}
         src={imgUrl}
         alt={title.value}
         width={268}

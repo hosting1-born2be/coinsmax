@@ -1,12 +1,12 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
 import { Button } from '@/shared/ui/kit/button';
 
 import st from './hero.module.css';
+import { Link } from '@/i18n/navigation';
 
 export const Hero = () => {
   const t = useTranslations('home.hero');

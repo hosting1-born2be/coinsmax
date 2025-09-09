@@ -14,7 +14,7 @@
     "slovak": "Slovak"
   },
   "footer": {
-    "subtitle": "Turn Crypto Into Fiat. Anytime.",
+    "subtitle": "Coinsmax: Your Gateway to Crypto and Cash.",
     "description": "Coinsmax is owned and operated by Limitless Technologies s.r.o, identification number 55165451, authorised to provide virtual currency service, with registered and operational address at Černyševského 1287/10, Bratislava, 851 01, Slovak Republic.",
     "workHours": {
       "title": "Customer support hours",
@@ -97,15 +97,24 @@
       "button": "Get Started",
       "cards": {
         "0": {
-          "title": "Simple by Design",
+          "title": {
+            "0": "Simple by",
+            "1": "Design"
+          },
           "text": "From sign-up to exchange – everything is clear, minimal, and easy to follow."
         },
         "1": {
-          "title": "Fast Results",
+          "title": {
+            "0": "Fast",
+            "1": "Results"
+          },
           "text": "Transactions are processed quickly, with no unnecessary steps in between."
         },
         "2": {
-          "title": "Support That Cares",
+          "title": {
+            "0": "Support That",
+            "1": "Cares"
+          },
           "text": "Our support team is here to help you every step of the way, with a focus on security and transparency."
         }
       }
@@ -204,7 +213,7 @@
   },
   "insideCoinsmax": {
     "hero": {
-      "title": "Welcome to Coinsmaxx",
+      "title": "Welcome to Coinsmax",
       "text": "We’re glad you’re here to learn more about who we are, what we stand for, and how we see the future of crypto exchange."
     },
     "whoWeAre": {
@@ -337,15 +346,24 @@
       "text": "Coinsmax is open to partners whose followers, readers, or clients are exploring crypto as a payment method:",
       "cards": {
         "0": {
-          "title": "Influencers",
+          "title": {
+            "0": "Thought",
+            "1": "Leaders"
+          },
           "text": "Your voice can guide your audience to discover how simple it is to exchange crypto."
         },
         "1": {
-          "title": "Affiliate Marketers",
+          "title": {
+            "0": "Affiliate",
+            "1": "Marketers"
+          },
           "text": "Turn your reach into opportunity by introducing your audience to a service designed for crypto payments."
         },
         "2": {
-          "title": "Industry Media",
+          "title": {
+            "0": "Industry",
+            "1": "Media"
+          },
           "text": "You explain crypto to readers. We offer a trustworthy platform they can use."
         },
         "3": {
@@ -385,7 +403,7 @@
     }
   },
   "detailedContactForm": {
-    "title": "About Your",
+    "title": "About You",
     "aboutYourProject": "About Your Project",
     "firstName": {
       "label": "First Name",

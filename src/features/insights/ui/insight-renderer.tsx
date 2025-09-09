@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/kit/button';
@@ -8,6 +7,7 @@ import { Title } from '@/shared/ui/kit/title';
 
 import type { Insight } from '../model/types';
 import { InsightStrategies } from './insight-strategies';
+import { Link } from '@/i18n/navigation';
 
 export const InsightRenderer = ({ data }: { data: Insight }) => {
   const t = useTranslations('cryptoInsights');
@@ -24,14 +24,22 @@ export const InsightRenderer = ({ data }: { data: Insight }) => {
           type={node.type}
         />
       ))}
-      <section className="mt-[60px] flex items-center justify-center gap-3">
-        <Link href="https://exchange.coinsmax.io/register">
-          <Button variant="secondary">
+      <section className="mt-[60px] flex items-center justify-center gap-3 max-md:flex-col">
+        <Link
+          href="https://exchange.coinsmax.io/register"
+          className="max-md:w-full"
+        >
+          <Button
+            variant="secondary"
+            className="max-md:w-full max-md:justify-center"
+          >
             {t('joinNow', { fallback: 'Join Now' })}
           </Button>
         </Link>
-        <Link href="/contact-us">
-          <Button>{t('contactUs', { fallback: 'Contact Us' })}</Button>
+        <Link href="/contact-us" className="max-md:w-full">
+          <Button className="max-md:w-full max-md:justify-center">
+            {t('contactUs', { fallback: 'Contact Us' })}
+          </Button>
         </Link>
       </section>
     </section>

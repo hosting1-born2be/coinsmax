@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'use-intl';
 
 import { Button } from '@/shared/ui/kit/button';
@@ -10,13 +9,14 @@ import { Text } from '@/shared/ui/kit/text';
 import { BurgerMenu } from './burger-menu';
 import { LangSwitcher } from './lang-switcher';
 import { SocialNetworks } from './social-networks';
+import { Link } from '@/i18n/navigation';
 
 export const Header = () => {
   const t = useTranslations('header');
 
   return (
-    <header className="sticky top-0 z-50 flex flex-col">
-      <section className="flex items-center justify-between gap-[96px] bg-[#101010] px-[130px] py-3 max-md:px-4">
+    <header className="z-50 flex flex-col">
+      <section className="flex items-center justify-between gap-[96px] bg-[#101010] px-[130px] py-3 max-md:gap-3 max-md:px-4">
         <Text>
           <span className="font-bold">
             {t('text.0', { fallback: 'Notice:' })}
