@@ -13,7 +13,7 @@ export const PolicySectionLayout = ({
   className?: string;
 }) => {
   return (
-    <section className={cn('flex flex-col gap-2', className)}>
+    <section className={cn('flex flex-col gap-6', className)}>
       <Title size="3xl">{title}</Title>
       {children}
     </section>
