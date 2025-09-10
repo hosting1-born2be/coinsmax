@@ -585,5 +585,228 @@
         }
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "0": {
+      "0": "Limitless Technologies s.r.o. (“Company” or “we”, “us” or “our”) is dedicated to protecting the privacy rights of our online users and customers (“users” or “you”). This Privacy and Cookie Policy (the “Policy”) applies to the on-line platform (including any applicable mobile applications used to access the same, if available) (collectively the “Platform”) and when you use or visit our website Coinsmax.io (the “Website”), or any of our products or services offered through the Platform and/or the Website (collectively, the “Service”).",
+      "1": "This Policy is incorporated by reference and forms an integral part of our Terms of Use.",
+      "2": "This Policy supplements the other notices and is not intended to override them. Terms used within it shall have the meaning(s) given in the Regulation (EU) 2016/679 (General Data Protection Regulation (GDPR)), as applicable.",
+      "3": "This Policy is designed to help you understand what kind of Personal Data we collect in connection with our services and how we will process and use this Personal Data. When you use our services, you are trusting us with your Personal Data. We understand this is a big responsibility and work hard to protect your Personal Data and put you in control.",
+      "4": "By accessing or using our Services, Website, or the Platform, or by creating a profile, you agree that you have read, understand the terms and conditions contained in this Policy. If you do not agree with or are not comfortable with any aspect of this Policy, you should immediately discontinue access or use of the Platform and our Services."
+    },
+    "1": {
+      "title": "Which Personal Data Do We Collect About You?",
+      "0": "Personal Data is any information which is related to an identified or identifiable natural person. This Policy covers all Personal Data that you voluntarily submit to us and that we obtain from our partners and service providers. This Policy does not apply to anonymized data, as it cannot be used to identify you. Personal Data means any information that is unique to you such as the following personal information and documentation we, our partners or service providers may collect from you",
+      "1": "biographical information and contact information such as full legal name, user ID, date of birth, birth place, age, nationality, citizenship, gender, signature, contact details (e.g. phone number and email address, etc.) and residential address;",
+      "2": "supplemental identification information such as government-issued identity documents (e.g. passport, driver’s license, or state identification card, etc.), selfies, photographs and/or videos, social security number, employment information (e.g. company name), proof of residency, including utility bills and visa information;",
+      "3": "Information collected in accordance with the requirements of the laws: Results from Politically Exposed Persons (PEP) screening & sanction screening, any additional Personal Data required for proving Source of Funds (e. g. employment contract, certificate of inheritance, etc.), AML screening, address, ID document, video and e-mail verification, Selfie check, data on the management structure and business activity, etc.",
+      "4": "financial information such as bank account information, payment card primary account number, credit card details, details about your source of funds, tax identification number, information about your income, assets and liabilities, and information relating to economic and trade sanctions lists;",
+      "5": "wallet information such as wallet addresses or multi-coin crypto wallet information, and information related to wallet integrations that you select, ownership information;",
+      "6": "transactional information made using our Services such as digital asset preferences, payment method, date, and/or timestamp, settings, and preferences you select, your inquiries and our responses;",
+      "7": "communication and referral information (including emails, text messages, correspondence sent through the “contact” section of the Platform and call recordings) or information obtained from events or public social networking platforms and your contacts’ phone or email addresses if you choose to refer people to us, along with our responses to you;",
+      "8": "employment information: includes your employment history, education background and income levels;",
+      "9": "marketing information includes your consent and preferences in receiving direct marketing from us and our third parties and your communication preferences;",
+      "10": "other Personal Data or commercial and/or identification information including Personal Data we, in our sole discretion, deem necessary to comply with our legal obligations, such as anti-money laundering laws."
+    },
+    "2": {
+      "title": "How Do We Collect Personal Data?",
+      "0": "Personal Data is collected from your use of Services, as well as from trusted service providers who provide us with financial services, know-your-customer services and financial intelligence services We may combine the information that we collect about you from these various sources.",
+      "list": {
+        "0": "apply to use our services;",
+        "1": "create a profile on our Platform;",
+        "2": "make exchange transactions;",
+        "3": "give us some feedback or lodge a query."
+      },
+      "1": "Data We Collect Automatically",
+      "2": "When you use the Platform, our servers automatically record information using cookies and other tracking technologies, including information that your browser sends whenever you visit the Platform or your mobile application sends when you are using it. This log data may include your Internet Protocol address, the address of the web page you visited before coming to the Platform, your browser type and settings, the date and time of your request, information about your browser configuration and plug-ins, language preferences, and cookie data.",
+      "3": "In addition to log data, we may also collect information about the device you use for the Platform, including what type of device it is, what operating system you are using, device settings, unique device identifiers, and crash data. Whether we collect some or all this information may depend on what type of device you are using and its settings.",
+      "4": "We may combine this information with other information that we have collected about you, including, where applicable, your full name, username, email address, and other Personal Data.",
+      "5": "We collect information about your current IP address to determine general location data, such as city or region. We do not collect precise physical location information (e.g., GPS coordinates). If you have any questions about how IP-based location data is used, feel free to contact us.",
+      "6": "Information from Third Parties or publicly available sources",
+      "7": "In some cases, we may receive Personal Data about you from a third party, such as a data provider, credit reference agency, or other trusted source. This Personal Data may be used to verify your identity, address, or creditworthiness, and to improve the quality of our services.",
+      "8": "The third parties we receive Personal Data from are carefully selected and are bound by strict confidentiality agreements to protect your Personal Data. They are also subject to applicable data protection laws and regulations, such as the GDPR.",
+      "9": "We may receive Personal Data about you from various third parties and public sources as set out below:",
+      "list2": {
+        "0": "Our partner who shares your Personal Data with us so that (a) you can use our services on their behalf; and (b) they can pay money to you (for example, your salary if you are their employee or payment for goods and/or services if you are their supplier);",
+        "1": "analytics providers such as Google based outside the EU;",
+        "2": "advertising networks such as Google based inside OR outside the EU; and",
+        "3": "search information providers Google based inside OR outside the EU;",
+        "4": "Electronic Identity Verification providers from data brokers or aggregators based inside or outside the EU;",
+        "5": "We may also record and verify personal identity documents such as passports electronically including screen grabs;",
+        "6": "Identity data and contact data from publicly availably sources based inside the EU;"
+      },
+      "10": "In order to provide contracted services, we may need verify details with Credit Reference agencies, anti-Fraud agencies, Sanction screening and politically exposed persons (PEP) listings."
+    },
+    "3": {
+      "title": "What Are the Purposes of the Collection and Processing of Data?",
+      "0": "We collect and process your Personal Data for the following purposes:",
+      "list": {
+        "0": "To provide and improve our services: We use your Personal Data to provide and improve the Services we offer, including processing transactions and providing customer support.",
+        "1": "To process transactions – to allow you to make the purchase order transactions by using your payment devices and through the Platform;",
+        "2": "To verify your identity - to verify your identity, perform transactions you instruct on us or for the purposes of fraud detection or protection, or in other situations involving suspicious or illegal activities we use and share your data with credit-checking/reference agencies and fraud prevention agencies. We may as well perform a search of your credit file, if this is necessary and/or required to deliver our services to you;",
+        "3": "To perform our services and payments – we use and share your data with banking, including Electronic Money Institutions, crypto liquidity exchanges and financial service partners such as banking intermediaries, international payment services providers and regulated distribution agents;",
+        "4": "To communicate with you: We use your Personal Data to communicate with you, such as sending you updates about your profile with us or our services, responding to your inquiries, and sending you promotional materials. For more information about opting out of certain communications, please see the “Your rights and choices in relation to your Personal Data” section below.",
+        "5": "To comply with legal obligations: We may use your Personal Data to comply with legal obligations, such as to comply with tax laws or to respond to subpoenas and other legal requests.",
+        "6": "To protect our rights and interests: We may use your Personal Data to protect our rights and interests, such as to enforce our terms of service, to prevent fraud and abuse, and to protect the security of our services.",
+        "7": "To personalize your experience: We may use your Personal Data to personalize your experience, such as to provide recommendations and advertisements that are more relevant to you.",
+        "8": "To personalize your experience. We may use your Personal Data to analyze how you interact with the Service; to monitor and analyze usage and activity trends; and for other research, analytical, and statistical purposes.",
+        "9": "Carry out any other purpose described to you at the time the information was collected."
+      }
+    },
+    "4": {
+      "title": "Lawful Basis to Processing",
+      "0": "When we process your Personal Data, we will only do so using one of the following legal basis:",
+      "list": {
+        "0": "Consent: We have your consent to do so. When consent is the legal basis for our processing, you may withdraw such consent at any time.",
+        "1": "Performance of a Contract: We may process your Personal Data to perform our obligations under a contract with you, such as to deliver the services you have requested or to take steps at your request before entering into such a contract.",
+        "2": "Legal Obligation: We may process your Personal Data to comply with legal obligations, such as to comply with tax laws or to respond to subpoenas and other legal requests.",
+        "3": "Legitimate Interest: We may process your Personal Data for our legitimate interests, such as to improve our services, to communicate with you, and to protect our rights and interests, enforce our Terms of Use and legal notices and for the establishment, exercise and defence of legal claims, conclude corporate transactions (e.g., corporate restructuring, sale or assignment of assets, merger), share your information with third party marketplaces and service providers for adverting purposes, enforce our Terms of Use and prevent fraud illegal activity and/or any violation of our intellectual property rights."
+      },
+      "1": "Note that we may process your Personal Data for more than one lawful ground depending on the specific purpose for which we are using your data. Please contact us if you need details about the specific legal ground, we are relying on to process your Personal Data.",
+      "2": "Generally, we do not rely on consent as a legal basis for processing your Personal Data other than in relation to sending third party direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by contacting us."
+    },
+    "5": {
+      "title": "Sharing Personal Data with Third Parties",
+      "0": "We respect your privacy and will not disclose, share, rent, or sell your Personal Data to any third party unless the sharing of your Personal Data is made upon performance of the contract, your specific and explicit request or due to compliance with regulatory requirements or legitimate interest, as set out below.",
+      "list": {
+        "0": "Affiliates. We may disclose the information we collect from you to our affiliates or subsidiaries solely for the purpose of providing the Services and the Platform available  to you; however, if we do so, their use and disclosure of your personally identifiable information will be maintained by such affiliates and subsidiaries in accordance with this Policy.",
+        "1": "Service Providers. We may disclose the information we collect from you to third-party vendors, service providers, contractors or agents who perform functions on our behalf (e.g. auditors, accountants, lawyers, credit-checking/reference agencies and fraud prevention agencies, banking institutions, AML and KYC providers), provided such third parties have agreed to only use such information to provide services to us. These third parties will be subject to appropriate data protection obligations and they will only use your Personal Data as described in this Privacy Policy;",
+        "2": "Business Transfers. If we are in negotiations with, or are acquired by or merged with another company or entity, if substantially all of our assets are transferred to another company or entity, or as part of a bankruptcy proceeding, we may transfer the information we have collected from you to the other company or entity.",
+        "3": "In Response to Legal Process. We also may disclose the information we collect from you in order to comply with the law, a judicial proceeding, court order, or other legal process, such as in response to a subpoena.",
+        "4": "To Protect Us and Others. We also may disclose the information we collect from you if we believe it is necessary to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the safety of any person, violations of our Service Agreement or this Policy, or as evidence in litigation in which we are involved.",
+        "5": "Aggregate and De-Identified Data. We may collect, process, analyse and share aggregate or de-identified information about Users with third parties and publicly for product development, marketing, advertising, research or similar purposes."
+      },
+      "1": "This list is non-exhaustive and there may be circumstances where we need to share Personal Data with other third parties, unless prohibited under law from doing so.",
+      "2": "Where necessary (such as when we transfer data to service providers), we put in place appropriate contractual arrangements and security mechanisms to protect the Personal Data shared and to comply with our data protection, confidentiality and security standards and obligations.",
+      "3": "Note that we may also disclose data to comply with authorized data requests from governmental agencies or judicial warrants. Unless prohibited under law from doing so, we shall notify you about such request."
+    },
+    "6": {
+      "title": "Your Personal Data Rights",
+      "0": "You have certain individual rights regarding the Personal Data that we collect and process about you through the Platform.",
+      "1": "Pursuant to applicable data protection laws, you may have certain legal rights in respect of the Personal Data which is processed by us including the right to:",
+      "list": {
+        "0": "Request access to your Personal Data (commonly known as a “data subject access request”). This enables you to receive a copy of the Personal Data we hold about you and to check that we are lawfully processing it.",
+        "1": "Request correction of the Personal Data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.",
+        "2": "Request erasure of your Personal Data. This enables you to ask us to delete or remove Personal Data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your Personal Data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your Personal Data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.",
+        "3": "Object to processing of your Personal Data where we are relying on a legitimate interest (or those of a third party) and there is something about your situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your Personal Data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate interest to process your information which override your rights and freedoms.",
+        "4": "Request restriction of processing of your Personal Data. This enables you to ask us to suspend the processing of your Personal Data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.",
+        "5": "Request the transfer of your Personal Data to you or to a third party. We will provide to you, or a third party you have chosen, your Personal Data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.",
+        "6": "Withdraw consent at any time where we are relying on consent to process your Personal Data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent;",
+        "7": "Not to be the subject only to automated processing, including profiling. You have a right to demand that processing of your Personal Data would be reviewed by a real person and to object to the decision made by automated means.",
+        "8": "To submit an appeal on the actions or inactions of us, related to the implementation of the data subject's rights to the Data Protection authority that is located in member state of the European Union where you reside; and",
+        "9": "You are entitled to compensation, which you must apply for to the competent court that is located in member state of the European Union where you reside, if you have suffered damage as a result of a violation of the data subject's rights."
+      },
+      "2": "Please note that notwithstanding the foregoing, there may be circumstances in which we are unable to accommodate a request to edit, update, access, or delete an account profile or Personal Data. This includes but is not limited to:",
+      "list2": {
+        "0": "any basis where such request can be denied under applicable law;",
+        "1": "where we need to retain the information to comply with international or national laws or for accounting or tax purposes;",
+        "2": "where we need to comply with a civil, criminal, or regulatory inquiry, investigation, subpoena, or summons by state, or local authorities;",
+        "3": "where we need to cooperate with law enforcement agencies concerning conduct or activity that the business, service provider, or third party reasonably and in good faith believes may violate laws;",
+        "4": "where we need to retain information to exercise or defend legal claims;",
+        "5": "where the information contains legal privilege or proprietary information of another party; or where complying with the request would compromise others’ privacy or other legitimate rights."
+      }
+    },
+    "7": {
+      "title": "Exercising Your Rights",
+      "0": "We acknowledge your right to access and change the Personal Data we collect and process. If you wish to access or to correct, amend, or delete Personal Data, please send us an email to dpo@coinsmax.io",
+      "1": "You may also designate an authorized agent to make a request on your behalf by verifying your identity and providing the agent with a written permission to make the request on your behalf.",
+      "2": "Subject to applicable law, you can freely exercise these rights and choices. We will not charge you different prices or provide different quality of services unless those differences are related to your information or otherwise permitted by law. Once we receive your request from you, we may need to request additional information from you to verify your identity or process your request.",
+      "3": "If we determine that we cannot respond to any request in any particular instance, we will provide you with an explanation of why that determination has been made and a contact point for any further inquiries. To protect your privacy, we will take commercially reasonable steps to verify your identity before responding to any request under this provision, including complying with any applicable legal requirement for verifying your identity.",
+      "4": "We will respond to your requests without undue delay and in any event within one month of receipt of the request. However, period may be extended up to two months as per circumstances designated by GDPR.",
+      "5": "You can also complain to the State Data Protection Inspectorate (Valstybinė duomenų apsaugos inspekcija) if you are unhappy with how we have used your data. We would, however, appreciate the chance to deal with your concerns before you approach the State Data Protection Inspectorate so, please contact us in the first instance.",
+      "6": "The State Data Protection Inspectorate’s address:",
+      "7": "Budova Park One,",
+      "8": "Námestie 1. mája 18,",
+      "9": "811 06 Bratislava, Slovakia",
+      "10": "Email: statny.dozor@pdp.gov.sk",
+      "11": "Website: https://dataprotection.gov.sk/ "
+    },
+    "8": {
+      "title": "Links to Other Websites",
+      "0": "The Services may contain links to other websites. Please note that we are not responsible for the privacy or information security practices of other websites. These other websites and applications maintain their own policies regarding cookies and the collection and use of Personal Data. We encourage you to review and assess the provisions of those policies yourself."
+    },
+    "9": {
+      "title": "Transfer of Your Personal Data",
+      "0": "We may transfer your personal data to recipients located outside the European Economic Area (EEA) or outside your country of residence. The countries to which we may transfer your Personal Data may not have the same level of data protection as your country of residence.",
+      "1": "We ensure that appropriate safeguards are in place to protect your Personal Data, including the use of Standard Contractual Clauses approved by the European Commission, and Binding Corporate Rules for our group companies, where required by law.",
+      "2": "If you would like to receive more information about the safeguards we have in place for international transfers, or if you have any concerns about the transfer of your Personal Data, please contact us.",
+      "3": "International Data Transfers",
+      "4": "We may transfer your Personal Data to recipients located outside the European Economic Area (EEA), including to countries that do not offer the same level of data protection as your home jurisdiction. In such cases, we ensure that appropriate safeguards are in place, as required by Chapter V of the General Data Protection Regulation (GDPR).",
+      "5": "These safeguards may include:",
+      "6": "Transfers to countries deemed by the European Commission to provide an adequate level of data protection (adequacy decisions);",
+      "7": "The use of Standard Contractual Clauses (SCCs) adopted by the European Commission to ensure data protection obligations are met;",
+      "8": "Where applicable, Binding Corporate Rules (BCRs) for intra-group transfers;",
+      "9": "Your explicit consent, provided you are informed of the possible risks;",
+      "10": "Transfers necessary for the performance of a contract with you or in your interest (e.g. payment processing, customer support).",
+      "11": "We conduct transfer impact assessments (TIAs) where required to evaluate the laws and practices of the destination country in relation to EU data protection standards. In cases where additional technical or organizational measures are needed to supplement SCCs, we will implement them accordingly.",
+      "12": "If you would like more information on the specific mechanism used for international transfers of your Personal Data, or if you would like to request a copy of the applicable safeguards (e.g., SCCs), please contact us at: dpo@coinsmax.io."
+    },
+    "10": {
+      "title": "Use of Cookies",
+      "0": "When you access or use our Website, we may use industry standard technologies such as “cookies” or similar technologies, which store certain information on your computer and which will allow us to enable automatic activation of certain features, thereby improving the overall user experience. You may restrict the use of certain cookies by modifying your preferences through the Website's cookie settings link. Most web browsers provide the option to erase cookies from your device, block their acceptance, or receive a warning prior to storage. However, blocking or erasing cookies may limit your online experience.",
+      "1": "If you do not wish your browser to allow us to use trackers, please use your browser’s “Do Not Track” option. Our system is set to respond to such signals.",
+      "2": "Further information on how We use cookies and other tracking mechanisms is laid out in our Cookie Policy."
+    },
+    "11": {
+      "title": "Security",
+      "0": "We take appropriate organizational and technical security measures to maintain the security and integrity of our service and prevent unauthorized access to it or use thereof through generally accepted industry standard technologies and internal procedures.",
+      "1": "Please note, however, that there are inherent risks in transmission of information over the Internet or other methods of electronic storage, and we cannot guarantee that unauthorized access or use will never occur.",
+      "2": "We will comply with applicable law in the event of any breach of the security, confidentiality, or integrity of your Personal Data and will inform you of such breach if required by applicable law.",
+      "3": "To the extent that we implement the required security measures under applicable law, we shall not be responsible or liable for unauthorized access, hacking, or other security intrusions or failure to store or the theft, deletion, corruption, destruction, damage, or loss of any data or information included in the Personal Data."
+    },
+    "12": {
+      "title": "Data protection of using digital assets and blockchains",
+      "0": "Your use of digital assets may be recorded on a public blockchain. Public blockchains are distributed ledgers, intended to immutably record transactions across wide networks of computer systems. Many blockchains are open to forensic analysis which can lead to re-identification of transacting individuals and the revelation of Personal Data, especially when blockchain data is combined with other data.",
+      "1": "As blockchains are decentralized or third-party networks which are not controlled or operated by the Company, we are not able to erase, modify, or alter Personal Data on such networks."
+    },
+    "13": {
+      "title": "Data Retention",
+      "0": "We retain your Personal Data as long as required under applicable law and as long as you use our Services. We will cease to retain your Personal Data, or remove the means by which the Personal Data can be associated with particular individuals, as soon as it is reasonable to assume that:",
+      "list": {
+        "0": "the purpose for which that Personal Data was collected is no longer being served by its retention; and",
+        "1": "retention is no longer necessary for legal, accounting or business purposes."
+      },
+      "1": "Please note that certain laws may require us to retain records of transactions or profile for a certain period of time, for example The Law on the Prevention of Money Laundering and Terrorist Financing of the Republic of Slovakia",
+      "2": "To determine the appropriate retention period for Personal Data, we consider the amount, nature, and sensitivity of the Personal Data, the potential risk of harm from unauthorized use or disclosure of your Personal Data, the purposes for which we process your Personal Data and whether we can achieve those purposes through other means, and the applicable legal requirements and recommendations.",
+      "3": "How long do we store your information?",
+      "4": "We will not retain your information longer than necessary for the purposes of processing, except as required by law, which may mandate a longer retention period:",
+      "list2": {
+        "0": "We store copies of documents confirming the client’s identity (e.g., identity documents, beneficiary identity data, documentation of accounts and agreements, and other information related to the customer application and due diligence process), correspondence related to business relations, and records of monetary or crypto transactions (e.g., documents, data, and other legally valid information confirming or relating to monetary or crypto transactions) for up to 8 years from the date of the end of the business relationship with the client.",
+        "1": "Recruitment Data: We process and retain Personal Data obtained through our recruitment processes only for as long as necessary to assess your application, in accordance with applicable data protection laws and regulations. With your explicit consent, we may retain your information for a longer period in order to consider you for future employment opportunities.",
+        "2": "Marketing Communications: We will process your Personal Data for marketing purposes for the duration of your relationship with us and for a period of up to three (3) years thereafter, based on our legitimate interest or your prior consent, unless you opt out of receiving such communications at any time."
+      },
+      "5": "Additional information on the data retention period below",
+      "6": "Join Now",
+      "7": "Contact Us"
+    },
+    "14": {
+      "title": "Marketing And Online Communication",
+      "0": "We may process your Personal Data to send you marketing communications (e.g., email marketing, exclusive offers, etc.). In some cases, we will obtain your explicit consent to do so. In other instances, we may rely on legitimate business interests to send you such communications, in accordance with applicable data protection laws.",
+      "1": "If you are a new customer, we will contact you by electronic means (email or SMS) for marketing purposes only if you have consented to such communication. If you are a current customer, we will only contact you by electronic means with information about our Services that are similar to those which were the subject of a previous sale or negotiations of a sale to you.",
+      "2": "If you do not want us to use your Personal Data for direct marketing purposes or to pass your Personal Data on to third parties for marketing purposes, you can withdraw your consent by logging into your account or by contacting us at dpo@coinsmax.io. Direct marketing includes any communications to you that are only based on advertising or promoting products and services"
+    },
+    "15": {
+      "title": "Children under 18",
+      "0": "Our Services are not intended for individuals under the age of 18. We do not knowingly collect or process personal data from individuals under 18 without appropriate legal basis, such as parental consent where required. If we become aware that we have collected personal data from a child without the necessary legal basis, we will delete such information in accordance with applicable law.",
+      "1": "If you have reasons to suspect that we collected Personal Data from children under the age of eighteen (18), please notify us at dpo@coinsmax.io."
+    },
+    "16": {
+      "title": "How to Contact Us",
+      "0": "If you have questions or concerns regarding this Policy or if you have a complaint, please contact us by our appointed Data Protection Officer (DPO) at dpo@coinsmax.io. If we are unable to satisfactorily address your concerns, you have the right to communicate with a relevant supervisory authority. We can direct you to the relevant supervisory authority in your jurisdiction.",
+      "1": "If you have any additional questions or concerns, you can also contact us via:",
+      "2": "Phone number: +421233058122",
+      "3": "Address: Černyševského 1287/10, 851 01 Bratislava – Petržalka, Slovak Republic",
+      "4": "Business Hours:",
+      "5": "Weekdays: GMT 06:00 – 23:00 | EST 01:00 – 18:00",
+      "6": "Weekends: Closed"
+    },
+    "17": {
+      "title": "Updates to the Privacy Policy",
+      "0": "We reserve the right to alter, amend or modify this Policy from time to time, in our sole discretion. We will provide you with notice of such changes by sending you an email, providing notice on the homepage of the Website and/or by posting the amended Policy on the Platform and updating the “Last Updated” date at the bottom of the Policy. The amended Policy will be deemed effective immediately upon posting on the Platform. Your continued use of the Platform and/or our Services constitutes your agreement to be bound by any such changes to this Policy. If you do not agree with this Policy or any amendment to it, you should discontinue access and use of the Platform and our Services."
+    },
+    "18": {
+      "title": "Last updated 9 September 2025."
+    }
   }
 }
