@@ -14,7 +14,7 @@ export default async function ComplaintsProcedurePage() {
   return (
     <PolicyLayout>
       <div className="flex flex-col items-center justify-center gap-3 text-center">
-        <Title as="h1" className="leading-20">
+        <Title size="5xl" as="h1" className="text-center max-md:text-[32px]">
           {t('title', { fallback: 'Complaints Handling Procedures' })}
         </Title>
         <Text size="xl" color="faded">

@@ -946,5 +946,80 @@
       "fromDate": "",
       "retention": "Up to 2 additional years"
     }
+  },
+  "templateForTheSubmissionOfComplaints": {
+    "title": "Annex No. 3: Template for the submission of complaints",
+    "0": {
+      "title": "SUBMISSION OF A COMPLAINT",
+      "0": "(to be sent by the Customer to the Company)"
+    },
+    "1": {
+      "title": "1. Personal data of the complainant",
+      "table": {
+        "0": "LAST NAME",
+        "1": "FIRST NAME",
+        "2": "ID NUMBER",
+        "3": "CLIENT REFERENCE (IF AVAILABLE)"
+      },
+      "table2": {
+        "0": "ADDRESS: STREET, NUMBER, FLOOR",
+        "1": "POSTCODE",
+        "2": "CITY",
+        "3": "COUNTRY"
+      }
+    },
+    "2": {
+      "title": "2.a. Personal data of the legal representative (if applicable) (a power of attorney or other official document as proof of the appointment of the representative)",
+      "table": {
+        "0": "LAST NAME",
+        "1": "FIRST NAME/LEGAL ENTITY NAME",
+        "2": "REGISTRATION NUMBER AND LEI (IF AVAILABLE)"
+      },
+      "table2": {
+        "0": "ADDRESS: STREET, NUMBER, FLOOR (for firms registered office)",
+        "1": "POSTCODE",
+        "2": "CITY",
+        "3": "COUNTRY"
+      },
+      "table3": {
+        "0": "TELEPHONE",
+        "1": "EMAIL"
+      }
+    },
+    "3": {
+      "title": "2.b. Contact details (if different from 2.a.)",
+      "table": {
+        "0": "LAST NAME/LEGAL ENTITY NAME",
+        "1": "FIRST NAME"
+      },
+      "table2": {
+        "0": "ADDRESS: STREET, NUMBER, FLOOR (for firms registered office)",
+        "1": "POSTCODE",
+        "2": "CITY",
+        "3": "COUNTRY"
+      },
+      "table3": {
+        "0": "TELEPHONE",
+        "1": "EMAIL"
+      }
+    },
+    "4": {
+      "title": "3. Information about the complaint",
+      "0": "3.a. Full reference of the crypto-asset service or agreement to which the complaint relates (i.e. name of the crypto-asset service provider, crypto-asset service reference number, or other references of the relevant transactions…)"
+    },
+    "5": {
+      "title": "3.c. Date(s) of the facts that have led to the complaint"
+    },
+    "6": {
+      "title": "3.d. Description of damage, loss or detriment caused (where relevant)"
+    },
+    "7": {
+      "title": "3.e. Other comments or relevant information (where relevant)",
+      "0": "In ________(place) on ________ (date)"
+    },
+    "8": {
+      "0": "SIGNATURE",
+      "1": "COMPLAINANT/LEGAL REPRESENTATIVE"
+    }
   }
 }

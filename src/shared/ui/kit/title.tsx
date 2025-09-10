@@ -11,7 +11,7 @@ const titleVariants = cva('transition duration-300 ease-in-out', {
       lg: 'text-lg',
       xl: 'text-xl',
       '2xl': 'text-2xl',
-      '3xl': 'text-[32px]',
+      '3xl': 'text-[32px] max-md:text-[24px]',
       '4xl': 'text-[40px] max-md:text-[32px]',
       '5xl': 'text-5xl',
       '6xl': 'text-[64px] max-md:text-[42px]',
