@@ -40,10 +40,12 @@
     "legal": {
       "title": "Legal",
       "items": {
-        "termsOfUse": "Terms of Use",
+        "termsAndConditions": "Terms & Conditions",
         "privacyPolicy": "Privacy Policy",
-        "refundPolicy": "Refund Policy",
-        "cookiePolicy": "Cookie Policy"
+        "complaintsProcedure": "Complains Procedure",
+        "templateForTheSub": "Template for the submission of complaints_ENG",
+        "cookiePolicy": "Cookie Policy",
+        "riskDisclosure": "Risk Disclosure"
       }
     },
     "addresses": {

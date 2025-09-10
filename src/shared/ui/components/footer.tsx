@@ -94,10 +94,10 @@ export const Footer = () => {
             title={t('legal.title', { fallback: 'Legal' })}
             items={[
               {
-                label: t('legal.items.termsOfUse', {
-                  fallback: 'Terms of Use',
+                label: t('legal.items.termsAndConditions', {
+                  fallback: 'Terms & Conditions',
                 }),
-                href: '/terms-of-use',
+                href: '/terms-and-conditions',
               },
               {
                 label: t('legal.items.privacyPolicy', {
@@ -106,16 +106,28 @@ export const Footer = () => {
                 href: '/privacy-policy',
               },
               {
-                label: t('legal.items.refundPolicy', {
-                  fallback: 'Refund Policy',
+                label: t('legal.items.complaintsProcedure', {
+                  fallback: 'Complaints Procedure',
                 }),
-                href: '/refund-policy',
+                href: '/complains-procedure',
+              },
+              {
+                label: t('legal.items.templateForTheSub', {
+                  fallback: 'Template for the submission of complaints_ENG',
+                }),
+                href: '/template-for-the-submission-of-complaints',
               },
               {
                 label: t('legal.items.cookiePolicy', {
                   fallback: 'Cookie Policy',
                 }),
                 href: '/cookie-policy',
+              },
+              {
+                label: t('legal.items.riskDisclosure', {
+                  fallback: 'Risk Disclosure',
+                }),
+                href: '/risk-disclosure',
               },
             ]}
           />
@@ -182,7 +194,7 @@ const NavCol = ({
   title: string;
   items: { label: ReactNode; href?: string }[];
 }) => (
-  <div className="flex flex-col gap-6">
+  <div className="flex max-w-[140px] flex-col gap-6 max-md:max-w-full">
     <Text size="base" color="white">
       {title}
     </Text>
