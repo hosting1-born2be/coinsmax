@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
 import { PolicyLayout } from '@/features/policies/ui/policy-layout';
@@ -226,10 +227,22 @@ export default async function ComplaintsProcedurePage() {
         </PolicyText>
         <PolicyText className="pl-6" flex>
           <span>3.1.3</span>
-          {t('2.14', {
-            fallback:
-              'Aiming for the most efficient Complaint handling procedure, we recommend submitting your Complaint using the complaint form, which can be accessed here. However, we may also accept other form for complaints purposes as it may be deemed convenient for you. In such case, please make sure that you indicate all circumstance in detail, as specified in the Complaint form, for you to understand the subject matter and other key details as well as the main problem(s) of the complaint, aiming to provide feedback to you.',
-          })}
+          <span>
+            {t('2.14.0', {
+              fallback:
+                'Aiming for the most efficient Complaint handling procedure, we recommend submitting your Complaint using the complaint form, which can be accessed',
+            })}{' '}
+            <Link
+              href="/files/Annex_No_3_Template_for_the_submission_of_complaints_Dark.pdf"
+              className="text-warning font-semibold underline"
+            >
+              {t('2.14.1', { fallback: 'here.' })}
+            </Link>{' '}
+            {t('2.14.2', {
+              fallback:
+                'However, we may also accept other form for complaints purposes as it may be deemed convenient for you. In such case, please make sure that you indicate all circumstance in detail, as specified in the Complaint form, for you to understand the subject matter and other key details as well as the main problem(s) of the complaint, aiming to provide feedback to you.',
+            })}
+          </span>
         </PolicyText>
         <PolicyText className="pl-6" flex>
           <span>3.1.4</span>

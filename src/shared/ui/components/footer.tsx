@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Divider } from '@/shared/ui/kit/divider';
 import { Text } from '@/shared/ui/kit/text';
 
+import { WarningIcon } from '../icons/warning-icon';
 import { SocialNetworks } from './social-networks';
 import { Link } from '@/i18n/navigation';
 
@@ -21,7 +22,7 @@ export const Footer = () => {
             <Image src="/logo.svg" alt="Coinsmax" width={128} height={30} />
             <Text size="base" color="tint">
               {t('subtitle', {
-                fallback: 'Coinsmax: Your Gateway to Crypto and Cash.',
+                fallback: 'Coinsmax: Your Gateway to Crypto and Fiat.',
               })}
             </Text>
           </div>
@@ -112,12 +113,6 @@ export const Footer = () => {
                 href: '/complains-procedure',
               },
               {
-                label: t('legal.items.templateForTheSub', {
-                  fallback: 'Template for the submission of complaints_ENG',
-                }),
-                href: '/template-for-the-submission-of-complaints',
-              },
-              {
                 label: t('legal.items.cookiePolicy', {
                   fallback: 'Cookie Policy',
                 }),
@@ -151,11 +146,14 @@ export const Footer = () => {
           />
         </div>
       </section>
-      <div className="text-center">
-        <Text size="xs" color="tint">
-          <span className="font-bold">
-            {t('importantNotice.title', { fallback: 'Important Notice:' })}:
-          </span>{' '}
+      <div className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-[#161616] p-6 text-center">
+        <div className="flex items-center gap-3">
+          <WarningIcon />
+          <Text color="warning" weight={700}>
+            {t('importantNotice.title', { fallback: 'Important Notice' })}
+          </Text>
+        </div>
+        <Text color="tint">
           {t('importantNotice.text', {
             fallback:
               'This website and its content are intended only for users outside the United Kingdom. The information presented here is not directed to, or intended for use by, individuals or entities based in the UK. The services offered on Coinsmax.io are not available to UK retail clients. Please note that in the UK, cryptoassets are classified as Restricted Mass Market Investments — a high-risk category that may not be appropriate for most retail investors.',

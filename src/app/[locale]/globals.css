@@ -8,11 +8,13 @@ body {
 :root {
   --primary: #fb129f;
   --danger: #ff3b5e;
+  --warning: #ffa500;
 }
 
 @theme inline {
   --color-primary: var(--primary);
   --color-danger: var(--danger);
+  --color-warning: var(--warning);
 }
 
 @keyframes slideUpAndFade {

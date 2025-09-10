@@ -6,6 +6,7 @@ import { useTranslations } from 'use-intl';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 
+import { WarningIcon } from '../icons/warning-icon';
 import { BurgerMenu } from './burger-menu';
 import { LangSwitcher } from './lang-switcher';
 import { SocialNetworks } from './social-networks';
@@ -17,15 +18,18 @@ export const Header = () => {
   return (
     <header className="z-50 flex flex-col">
       <section className="flex items-center justify-between gap-[96px] bg-[#101010] px-[130px] py-3 max-md:gap-3 max-md:px-4">
-        <Text>
-          <span className="font-bold">
-            {t('text.0', { fallback: 'Notice:' })}
-          </span>{' '}
-          {t('text.1', {
-            fallback:
-              'Coinsmax.io services are not available to users based in the United Kingdom. If you are accessing this website from the UK, please exit the site. At this time, our services are not accessible to Retail Clients residing in the UK.',
-          })}
-        </Text>
+        <div className="flex items-center gap-3 max-md:items-start">
+          <WarningIcon />
+          <Text>
+            <span className="text-warning font-bold">
+              {t('text.0', { fallback: 'Notice:' })}
+            </span>{' '}
+            {t('text.1', {
+              fallback:
+                'Coinsmax.io services are not available to users based in the United Kingdom. If you are accessing this website from the UK, please exit the site. At this time, our services are not accessible to Retail Clients residing in the UK.',
+            })}
+          </Text>
+        </div>
         <section className="flex items-center gap-6 max-md:hidden">
           <SocialNetworks />
           <LangSwitcher />
