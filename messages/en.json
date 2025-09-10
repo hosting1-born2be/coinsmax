@@ -808,5 +808,38 @@
     "18": {
       "title": "Last updated 9 September 2025."
     }
+  },
+  "additionalInfoTable": {
+    "typeOfData": "Type of Data",
+    "fromDate": "Start of Retention Period",
+    "retention": "Storage Duration",
+    "8years": "8 years",
+    "0": {
+      "typeOfData": "Registers data",
+      "fromDate": "From date of termination of transaction or business relationship"
+    },
+    "1": {
+      "typeOfData": "Copies of identity documents, data received during identification, account/ agreement documentation, other supporting documents obtained from Customer",
+      "fromDate": "From date of termination of transaction or business relationship",
+      "retention": "8 years"
+    },
+    "2": {
+      "typeOfData": "Documents confirming operations/transactions, other related legal documents/data related to the execution of operations or conclusion of transactions",
+      "fromDate": "From date of execution or conclusion of transaction"
+    },
+    "3": {
+      "typeOfData": "Information linking crypto-asset address to owner identity",
+      "fromDate": "From date of termination of transactions or business relationship"
+    },
+    "4": {
+      "typeOfData": "Business correspondence with the Customer",
+      "fromDate": "From date of termination of transactions or business relationship",
+      "retention": "5 years"
+    },
+    "5": {
+      "typeOfData": "Extension for all above data for the protection of our legal interests",
+      "fromDate": "",
+      "retention": "Up to 2 additional years"
+    }
   }
 }
