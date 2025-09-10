@@ -44,12 +44,14 @@ export const Title = ({
   as = 'h2',
   capitalize = false,
   style,
+  id,
 }: PropsWithChildren<
   {
     className?: string;
     style?: React.CSSProperties;
     as?: ElementType;
     capitalize?: boolean;
+    id?: string;
   } & TitleVariants
 >) => {
   const Tag = as as keyof JSX.IntrinsicElements;
@@ -62,6 +64,7 @@ export const Title = ({
         className,
       )}
       style={style}
+      id={id}
     >
       {children}
     </Tag>
