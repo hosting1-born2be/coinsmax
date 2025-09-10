@@ -531,9 +531,6 @@ export default async function ComplaintsProcedurePage() {
         </PolicyText>
         <PolicyText className="pl-12" flex>
           <span>3.6.2.13</span>
-        </PolicyText>
-        <PolicyText className="pl-12" flex>
-          <span>3.6.2.14</span>
           {t('2.59', {
             fallback:
               'the  copies of documentation(s) and all relevant communication with you.',
