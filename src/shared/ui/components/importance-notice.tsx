@@ -13,7 +13,6 @@ import {
   Trigger,
 } from '@radix-ui/react-dialog';
 
-import { lsRead, lsWrite } from '@/shared/lib/utils/ls';
 import { CloseIcon } from '@/shared/ui/icons/close';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -23,22 +22,8 @@ export const ImportantNoticeDialog = () => {
 
   const t = useTranslations('importantNoticeDialog');
 
-  useEffect(() => {
-    const hasAcceptedImportantNotice = lsRead('isImportantNoticeAccepted');
-
-    if (!hasAcceptedImportantNotice) {
-      setIsOpen(true);
-    } else {
-      setIsOpen(false);
-    }
-  }, []);
-
   const onOpenHandle = (open: boolean) => {
     setIsOpen(open);
-
-    if (!open) {
-      lsWrite('isImportantNoticeAccepted', 'true');
-    }
   };
 
   return (

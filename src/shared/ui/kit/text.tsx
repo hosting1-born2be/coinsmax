@@ -22,6 +22,7 @@ const textVariants = cva('transition duration-300 ease-in-out', {
       tint: 'text-[#B3B3B5]',
       faded: 'text-[rgba(179,179,181,0.60)]',
       danger: 'text-danger',
+      warning: 'text-warning',
     },
     weight: {
       300: 'font-light',
