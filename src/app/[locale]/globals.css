@@ -17,6 +17,10 @@ body {
   --color-warning: var(--warning);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes slideUpAndFade {
   from {
     opacity: 0;
