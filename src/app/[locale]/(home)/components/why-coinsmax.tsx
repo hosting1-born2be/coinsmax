@@ -54,12 +54,13 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
 
 export const WhyCoinsmax = () => {
   const t = useTranslations('home.whyCoinsmax');
+  const cards = getCards(t);
 
   return (
     <section className="flex flex-col items-center gap-[60px] px-[160px] py-[80px] max-md:px-4 max-md:py-16">
       <Title>{t('title', { fallback: 'Why Coinsmax' })}</Title>
       <section className="flex gap-8 max-lg:flex-col">
-        {getCards(t).map(item => (
+        {cards.map(item => (
           <InfoCard key={item.imgUrl} {...item} />
         ))}
       </section>
