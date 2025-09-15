@@ -48,10 +48,10 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Header />
           {children}
-          <Footer />
           <Toaster />
           <ImportantNoticeDialog />
           <ThankYouDialog />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
