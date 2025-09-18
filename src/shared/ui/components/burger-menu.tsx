@@ -120,7 +120,7 @@ const NavBtn = ({ href, label }: { href: string; label: string }) => (
     >
       {label}
     </Title>
-    <div className="group-hover:bg-primary flex h-12 w-12 items-center justify-center rounded-full border border-white/15 transition duration-300 ease-in-out">
+    <div className="group-hover:bg-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 transition duration-300 ease-in-out">
       <ChevronRightIcon />
     </div>
   </Link>
