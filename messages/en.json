@@ -1468,5 +1468,30 @@
     "chargebackFee": "Chargeback fee",
     "50Eur": "50 EUR + 4% from transaction value",
     "100Eur": "100 EUR"
+  },
+  "returnAndCancellationPolicy": {
+    "title": "Return and Cancellation Policy",
+    "lastUpdate": "Last updated: 15.09.2025",
+    "0": {
+      "title": "1. Refunds",
+      "0": {
+        "title": "No Refunds",
+        "0": "All order execution operations, including sales and purchases of Crypto-assets via the Website, are final and non-refundable.",
+        "1": "Coinsmax does not accept returns and will not provide refunds unless explicitly stated otherwise in our Terms of Use. Transactions involving Crypto-assets are conducted on a public blockchain and are therefore irreversible.",
+        "2": "You are solely responsible for ensuring the accuracy of transaction details, including wallet addresses. Coinsmax shall not be liable for any loss due to user error or incorrect transaction data."
+      }
+    },
+    "1": {
+      "title": "2. Order Cancellations (Buying/Selling)",
+      "0": {
+        "title": "Cancellation of Orders",
+        "0": "You may cancel an order placed through the transaction order form only if the cancellation request is received before Coinsmax begins execution of the order.",
+        "1": "Once Coinsmax has executed your order, you may not amend or cancel your authorization to complete the transaction.",
+        "2": "If your order has been partially filled, you may cancel the unfilled portion.",
+        "3": "If an order cannot be executed due to insufficient payment of funds, Coinsmax reserves the right to cancel the entire order.",
+        "4": "Coinsmax shall not be held liable for delays or failed order execution caused by network congestion, third-party provider issues, force majeure events, or unforeseen technical failures beyond its control.",
+        "5": "Coinsmax reserves the right to withhold, cancel, delay or refuse to execute any order if required to comply with AML, KYC, or other regulatory obligations."
+      }
+    }
   }
 }
