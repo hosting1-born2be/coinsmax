@@ -101,10 +101,22 @@ export const Footer = () => {
                 href: '/terms-and-conditions',
               },
               {
+                label: t('legal.items.amlPolicy', {
+                  fallback: 'AML Policy',
+                }),
+                href: '/aml-policy',
+              },
+              {
                 label: t('legal.items.privacyPolicy', {
                   fallback: 'Privacy Policy',
                 }),
                 href: '/privacy-policy',
+              },
+              {
+                label: t('legal.items.returnAndCancellation', {
+                  fallback: 'Return and Cancellation Policy',
+                }),
+                href: '/return-and-cancellation-policy',
               },
               {
                 label: t('legal.items.complaintsProcedure', {
