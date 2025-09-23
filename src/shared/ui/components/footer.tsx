@@ -116,7 +116,7 @@ export const Footer = () => {
                 label: t('legal.items.returnAndCancellation', {
                   fallback: 'Return and Cancellation Policy',
                 }),
-                href: '/return-and-cancellation-policy',
+                href: '/return-policy',
               },
               {
                 label: t('legal.items.complaintsProcedure', {
