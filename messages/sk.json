@@ -829,7 +829,7 @@
   },
   "burgerMenu": {
     "contactUs": "Kontaktujte nás",
-    "cryptoInsights": "Crypto Insights",
+    "cryptoInsights": "Vpogledi v kriptovalute",
     "insideCoinsmax": "Vnútri Coinsmax",
     "logIn": "Prihlásenie",
     "partnership": "Partnerstvo",
@@ -1274,7 +1274,7 @@
     "copyright": "Coinsmax.io - Krypto. Fiat. Vymenené.",
     "customer": {
       "items": {
-        "cryptoInsights": "Crypto Insights",
+        "cryptoInsights": "Vpogledi v kriptovalute",
         "qa": "OTÁZKY A ODPOVEDE",
         "userEssentials": "Základné informácie pre používateľa"
       },
@@ -1283,8 +1283,8 @@
     "company": {
       "title": "KOMPANIJA",
       "items": {
-        "insideCoinsmax": "Inside Coinsmax",
-        "partnership": "Partnership",
+        "insideCoinsmax": "Vnútri Coinsmax",
+        "partnership": "Partnerstvo",
         "contactUs": "Kontaktirajte nas"
       }
     },
@@ -1641,16 +1641,25 @@
       "button": "Začnite",
       "cards": {
         "0": {
-          "text": "Od registrácie až po výmenu je všetko jasné, minimálne a jednoduché.",
-          "title": "Jednoduché podľa dizajnu"
+          "title": {
+            "0": "Jednoduchý",
+            "1": "dizajn"
+          },
+          "text": "Od registrácie po výmenu – všetko je jasné, minimálne a ľahko sa sleduje."
         },
         "1": {
-          "text": "Transakcie sa spracúvajú rýchlo a bez zbytočných krokov.",
-          "title": "Rýchle výsledky"
+          "title": {
+            "0": "Rýchle",
+            "1": "výsledky"
+          },
+          "text": "Transakcie sa spracúvajú rýchlo, bez zbytočných krokov medzi nimi."
         },
         "2": {
-          "text": "Náš tím podpory je tu, aby vám pomohol na každom kroku, pričom sa zameriava na bezpečnosť a transparentnosť.",
-          "title": "Podpora, ktorá sa stará"
+          "title": {
+            "0": "Podpora, ktorá",
+            "1": "sa stará"
+          },
+          "text": "Náš tím podpory je tu, aby vám pomohol na každom kroku, so zameraním na bezpečnosť a transparentnosť."
         }
       },
       "title": "Prečo Coinsmax"
@@ -1746,24 +1755,33 @@
     "whoCanJoin": {
       "cards": {
         "0": {
-          "text": "Váš hlas môže viesť vaše publikum k tomu, aby zistilo, aké jednoduché je vymieňať si kryptografiu.",
-          "title": "Vplyvné osoby"
+          "title": {
+            "0": "Názoroví",
+            "1": "Lídri"
+          },
+          "text": "Váš hlas môže viesť vaše publikum k objaveniu, aké jednoduché je vymieňať kryptomeny."
         },
         "1": {
-          "text": "Premeňte svoj dosah na príležitosť a predstavte svojmu publiku službu určenú na kryptografické platby.",
-          "title": "Affiliate Marketers"
+          "title": {
+            "0": "Affiliate",
+            "1": "Marketéri"
+          },
+          "text": "Premeňte svoj dosah na príležitosť predstavením vášmu publiku službu navrhnutú pre kryptomenové platby."
         },
         "2": {
-          "text": "Vysvetľujete čitateľom kryptografiu. My im ponúkame dôveryhodnú platformu, ktorú môžu používať.",
-          "title": "Priemyselné médiá"
+          "title": {
+            "0": "Odborové",
+            "1": "Médiá"
+          },
+          "text": "Vysvetľujete kryptomeny čitateľom. My ponúkame dôveryhodnú platformu, ktorú môžu používať."
         },
         "3": {
-          "text": "Pomôžte študentom objaviť praktické kryptografické nástroje, ktoré zjednodušujú platby.",
-          "title": "Vzdelávacie platformy"
+          "title": "Vzdelávacie platformy",
+          "text": "Pomôžte študentom objaviť praktické krypto nástroje, ktoré zjednodušujú platby."
         },
         "4": {
-          "text": "Ak máte komunitu, ktorá skúma finančné technológie, poskytujeme kryptografické platobné služby, ktoré môžu uplatniť v praxi.",
-          "title": "Vývojári a Fintech"
+          "title": "Vývojári a Fintech firmy",
+          "text": "Ak máte komunitu, ktorá skúma finančné technológie, poskytujeme krypto platobnú službu, ktorú môžu prakticky využiť."
         }
       },
       "text": "Spoločnosť Coinsmax je otvorená partnerom, ktorých nasledovníci, čitatelia alebo klienti skúmajú kryptografiu ako spôsob platby:",
