@@ -8,7 +8,7 @@ import { LinkedinIcon } from '@/shared/ui/icons/socials/linkedin';
 
 export const SocialNetworks = () => (
   <div className="flex items-center gap-3">
-    <Link href="https://www.instagram.com/coinsmaxgroup/">
+    <Link href="https://www.instagram.com/coinsmaxio">
       <InstagramIcon />
     </Link>
     <Link href="https://www.linkedin.com/company/limitless-technologies-s-r-o/">

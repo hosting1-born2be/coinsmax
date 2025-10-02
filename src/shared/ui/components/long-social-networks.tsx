@@ -11,7 +11,7 @@ import { LinkedinIcon } from '../icons/socials/linkedin';
 
 const networks = [
   {
-    url: 'https://www.instagram.com/coinsmaxgroup/',
+    url: 'https://www.instagram.com/coinsmaxio',
     icon: InstagramIcon,
     text: 'INSTAGRAM',
   },
