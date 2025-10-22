@@ -47,7 +47,7 @@ export const ComplianceAndProtection = () => {
     <section className="flex flex-col items-center gap-[60px] px-[160px] py-[80px] max-md:px-4 max-md:py-16">
       <Title className="text-center">
         {t('title', { fallback: 'Compliance & Protection' })} <br />
-        {t('at', { fallback: 'at' })} Coinsmax
+        {t('at', { fallback: 'at' })}
       </Title>
       <section className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
         {getCards(t).map(item => (
