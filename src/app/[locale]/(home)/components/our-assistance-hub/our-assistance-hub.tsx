@@ -38,7 +38,7 @@ export const OurAssistanceHub = () => {
         </div>
         <div className="flex w-full justify-center gap-4 max-md:flex-col">
           <Link href="/qa">
-            <Button variant="secondary" className="w-[201px] max-md:w-full">
+            <Button variant="secondary" className="min-w-[201px] max-md:w-full">
               {t('button', { fallback: 'Q&A' })}
             </Button>
           </Link>

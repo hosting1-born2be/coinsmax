@@ -830,7 +830,7 @@
   "burgerMenu": {
     "contactUs": "Kontaktujte nás",
     "cryptoInsights": "Vpogledi v kriptovalute",
-    "insideCoinsmax": "Vnútri Coinsmax",
+    "insideCoinsmax": "Vnútri Coinsmaxu",
     "logIn": "Prihlásenie",
     "partnership": "Partnerstvo",
     "qa": "OTÁZKY A ODPOVEDE",
@@ -985,8 +985,8 @@
     "title": "Kontaktný formulár"
   },
   "contacts": {
-    "text": "Máte otázky alebo problémy? Obráťte sa na nás. Sme vám k dispozícii len na jednu správu!",
-    "title": "Vždy tu na pomoc"
+    "text": "Máte otázky alebo problémy? Obráťte sa na nás. Sme vám k dispozícii!",
+    "title": "Vždy tu"
   },
   "contactUs": {
     "businessHours": "Pracovný čas:",
@@ -1177,9 +1177,9 @@
     "contactUs": "Kontaktujte nás",
     "hero": {
       "description": "Základné informácie, ktoré potrebujete vedieť.",
-      "title": "Crypto Insights"
+      "title": "Prehľad o kryptomenách"
     },
-    "joinNow": "Pripojte sa teraz",
+    "joinNow": "Pridajte sa teraz",
     "read": "Prečítajte si"
   },
   "detailedContactForm": {
@@ -1267,16 +1267,16 @@
   "footer": {
     "aboutOurAgency": "O našej agentúre",
     "addresses": {
-      "title": "Adresy"
+      "title": "Adresa"
     },
     "contactUs": "Kontaktujte nás",
     "cookiePolicy": "Zásady používania súborov cookie",
     "copyright": "Coinsmax.io - Krypto. Fiat. Vymenené.",
     "customer": {
       "items": {
-        "cryptoInsights": "Vpogledi v kriptovalute",
+        "cryptoInsights": "Prehľad o kryptomenách",
         "qa": "OTÁZKY A ODPOVEDE",
-        "userEssentials": "Základné informácie pre používateľa"
+        "userEssentials": "Spoločnosť"
       },
       "title": "Zákazník"
     },
@@ -1285,20 +1285,20 @@
       "items": {
         "insideCoinsmax": "Vnútri Coinsmax",
         "partnership": "Partnerstvo",
-        "contactUs": "Kontaktirajte nas"
+        "contactUs": "Kontakujte nas"
       }
     },
     "legal": {
-      "title": "PRAVNI",
+      "title": "Právne informácie",
       "items": {
-        "termsAndConditions": "Uslovi i pravila",
-        "privacyPolicy": "Politika privatnosti",
-        "complaintsProcedure": "Postupak za žalbe",
+        "termsAndConditions": "Zmluvné podmienky",
+        "privacyPolicy": "Zásady ochrany osobných údajov",
+        "complaintsProcedure": "Postup pri podávaní sťažností",
         "templateForTheSub": "Obrazac za podnošenje",
-        "cookiePolicy": "Politika kolačića",
-        "riskDisclosure": "Otkrivanje rizika",
+        "cookiePolicy": "Zásady používania súborov cookie",
+        "riskDisclosure": "Zverejnenie rizík",
         "amlPolicy": "AML Politika",
-        "returnAndCancellation": "Politika povrata i otkazivanja"
+        "returnAndCancellation": "Zásady vrátenia a zrušenia objednávky"
       }
     },
     "description": "Coinsmax vlastní a prevádzkuje spoločnosť Limitless Technologies s.r.o. - licencovaná spoločnosť registrovaná na Slovensku na základe živnostenského oprávnenia č. 55 165 451, ktoré vydal Odbor živnostenského podnikania, Obvodný úrad Bratislava, dňa 13. januára 2023.",
@@ -1356,7 +1356,7 @@
       "title": "Ak hľadáte marketingového partnera, ktorý..."
     },
     "complianceAndProtection": {
-      "at": "na adrese",
+      "at": "v Coinsmaxe",
       "cards": {
         "0": {
           "text": "Overenie dokumentov sa vyžaduje od všetkých klientov. Je to prísna požiadavka pre každú licencovanú finančnú službu a pomáha udržiavať platformu v súlade s predpismi a dôveryhodnú.",
@@ -1372,13 +1372,13 @@
         },
         "3": {
           "text": "Ak máte otázky počas overovania alebo platby, náš tím je tu, aby vám pomohol krok za krokom.",
-          "title": "Užitočná podpora"
+          "title": "Užitočné informácie"
         }
       },
-      "title": "Dodržiavanie predpisov a ochrana"
+      "title": "Compliance a ochrana zakaznika"
     },
     "contactOurTeam": {
-      "title": "Náš tím je o jeden formulár ďalej!"
+      "title": "Náš tím je na dosah!"
     },
     "coreServices": {
       "cards": {
@@ -1425,7 +1425,7 @@
       "cards": {
         "0": "Vytvorte si konto za pár minút",
         "1": "Potvrďte svoju totožnosť pomocou rýchleho overenia",
-        "2": "Vyberte si menu, krypto a choďte!"
+        "2": "Vyberte si menu, krypto a idete!"
       },
       "register": "Registrácia",
       "title": "Ako začať"
@@ -1513,14 +1513,14 @@
       "button": "Preskúmať Coinsmax",
       "cards": {
         "0": "Coinsmax funguje ako burza kryptomien, ktorá je postavená na jasných a regulovaných procesoch. Naša platforma umožňuje konverziu medzi digitálnymi aktívami a fiat menami v transparentnom prostredí podporovanom robustnou technológiou.",
-        "1": "Spoločnosť Coinsmax uplatňuje komplexný ochranný rámec určený na boj proti interným rizikám a ochranu údajov, finančných prostriedkov a transakcií. Každá transakcia prechádza dôkladnou kontrolou a preskúmaním s cieľom zachovať bezpečnosť platformy a jej používateľov."
+        "1": "Spoločnosť Coinsmax uplatňuje komplexný ochranný rámec určený na boj proti interným rizikám a ochranu údajov, finančných prostriedkov a transakcií. Každá transakcia prechádza dôkladným preverovaním a kontrolou, aby sa zachovala bezpečnosť platformy a jej používateľov."
       },
-      "title": "Zoznámte sa s Coinsmax!"
+      "title": "Zoznámte sa s Coinsmaxom!"
     },
     "ourAssistanceHub": {
       "button": "OTÁZKY A ODPOVEDE",
       "button2": "Novinky a postrehy",
-      "text": "Vieme, že kryptografický obchod je frustrujúci - preto sme pripravili zdroje, ktoré vám uľahčia prácu.",
+      "text": "Vieme, že krypto obchod je frustrujúci - preto sme pripravili zdroje, ktoré vám uľahčia prácu.",
       "title": "Naše centrum pomoci"
     },
     "outcomes": {
@@ -1627,15 +1627,15 @@
       "title": "Veľké výhry, odvážne kroky a merateľný vplyv"
     },
     "tip": {
-      "button": "Skontrolujte stránku .",
+      "button": "Prehlad stránky.",
       "text": "Ak chcete začať hladšie, pozrite si našu časť Základné informácie pre používateľa - vysvetľuje požiadavky a pomáha vám rýchlejšie dokončiť registráciu a overenie.",
-      "text2": "Dôležité upozornenie o čase spracovania!",
-      "text3": "Väčšina transakcií sa spracúva okamžite, ale načasovanie môže závisieť od siete blockchain a požadovaných kontrol súladu. Coinsmax zabezpečuje, že vaša transakcia bude spracovaná najspoľahlivejším spôsobom, takže získate finančné prostriedky bez zbytočných oneskorení.",
+      "text2": "Dôležité upozornenie o rýchlosti spracovania objednavky!",
+      "text3": "Väčšina transakcií sa spracúva okamžite, ale načasovanie môže závisieť od siete blockchain a rôznych overení, ktoré sa od nás vyžadujú. Coinsmax zabezpečuje, že vaša transakcia bude spracovaná najspoľahlivejším spôsobom, takže získate finančné prostriedky bez zbytočných oneskorení.",
       "title": "Tip"
     },
     "trustedBy": {
       "text": "Dôveryhodné autoritatívne kryptografické médiá po celom svete!",
-      "title": "Dôveryhodný"
+      "title": "Dôveryhodnosť"
     },
     "whyCoinsmax": {
       "button": "Začnite",
@@ -1656,10 +1656,10 @@
         },
         "2": {
           "title": {
-            "0": "Podpora, ktorá",
-            "1": "sa stará"
+            "0": "Podpora, ktorej",
+            "1": "na Vás záleží"
           },
-          "text": "Náš tím podpory je tu, aby vám pomohol na každom kroku, so zameraním na bezpečnosť a transparentnosť."
+          "text": "Náš tím zákazníckej podpory je tu, aby vám pomohol na každom kroku, pričom sa zameriava na bezpečnosť a transparentnosť."
         }
       },
       "title": "Prečo Coinsmax"
@@ -1678,11 +1678,11 @@
       "button": "Pridajte sa k nám",
       "text": "Spoločnosť Coinsmax prevádzkuje licencovaná spoločnosť, ktorú podporuje kvalifikovaný tím so solídnymi skúsenosťami v oblasti finančných a digitálnych aktív.",
       "text2": "Poskytujeme spoľahlivú službu výmeny pre nováčikov v oblasti kryptomien aj pre tých, ktorí už trh poznajú.",
-      "title": "Výmena s odborníkmi"
+      "title": "Diskusia s odborníkmi"
     },
     "hero": {
-      "text": "Sme radi, že ste sa tu dozvedeli viac o tom, kto sme, za čím si stojíme a ako vidíme budúcnosť výmeny kryptomien.",
-      "title": "Vitajte na stránke Coinsmax"
+      "text": "Kto sme, za čím si stojíme a ako vidíme budúcnosť výmeny kryptomien.",
+      "title": "Vitajte na stránke Coinsmaxu"
     },
     "whoWeAre": {
       "text": "Spoločnosť Coinsmax tvorí tím odborníkov na kryptografiu a technológie, ktorých spája jediná vízia: urobiť digitálne aktíva praktickými v každodennom živote.",
@@ -2120,7 +2120,7 @@
         "items": {
           "0": {
             "a": "V súčasnosti Coinsmax podporuje iba Bitcoin (BTC) a Ethereum (ETH).",
-            "q": "Ktoré digitálne meny si môžem vymeniť na Coinsmax?"
+            "q": "Ktoré digitálne meny si môžem zameniť na Coinsmaxe?"
           }
         },
         "title": "Kryptomeny"
@@ -2132,7 +2132,7 @@
             "q": "Ako dlho trvá, kým sa Bitcoin alebo Ethereum odošle do mojej peňaženky?"
           },
           "1": {
-            "a": "Keď sa kryptografická transakcia potvrdí v blockchaine, nemožno ju zrušiť ani zvrátiť. Ak si všimnete problém pred spracovaním platby, okamžite kontaktujte náš tím podpory a požiadajte o pomoc.",
+            "a": "Keď sa kryptografická transakcia potvrdí v blockchaine, nemožno ju zrušiť ani zmeniiť. Ak si všimnete problém pred spracovaním platby, okamžite kontaktujte náš tím podpory a požiadajte o pomoc.",
             "q": "Môžem zrušiť platbu po jej odoslaní?"
           },
           "2": {
@@ -2157,7 +2157,7 @@
             "q": "V ktorom okamihu je výmenný kurz pevne stanovený?"
           }
         },
-        "title": "Výmenné kurzy a konverzie"
+        "title": "Výmenné kurzy"
       },
       "howToPay": {
         "items": {
@@ -2176,7 +2176,7 @@
         "items": {
           "0": {
             "a": "Poznaj svojho zákazníka je zákonná požiadavka pre finančné služby vrátane kryptografických platieb. V spoločnosti Coinsmax vyžadujeme KYC od všetkých používateľov, aby sme zabezpečili súlad s predpismi a zaistili bezpečnú a transparentnú výmenu.",
-            "q": "Prečo musím vyplniť KYC s Coinsmax?"
+            "q": "Prečo musím vyplniť KYC s Coinsmaxom?"
           },
           "1": {
             "a": "Overenie chráni vás aj platobný proces. Potvrdením vašej totožnosti predchádzame podvodom, praniu špinavých peňazí a zneužitiu digitálnych aktív a zároveň zabezpečujeme, aby vaše transakcie prebehli bez problémov a boli akceptované všetkými stranami.",
@@ -2196,7 +2196,7 @@
             "q": "Kedy príde kryptomena do mojej peňaženky?"
           },
           "1": {
-            "a": "Nie. V záujme dodržiavania medzinárodných predpisov musia všetci používatelia pred uskutočnením platieb vyplniť KYC. Pomáha to chrániť vaše transakcie a zabezpečuje, že faktúry sú platené bezpečne a bez oneskorenia.",
+            "a": "Nie. V záujme dodržiavania medzinárodných predpisov musia všetci používatelia pred uskutočnením platieb vyplniť KYC informácie. Pomáha to chrániť vaše transakcie a zabezpečuje, že faktúry sú platené bezpečne a bez oneskorenia.",
             "q": "Môžem používať Coinsmax bez overenia totožnosti?"
           }
         },
@@ -2206,11 +2206,11 @@
         "items": {
           "0": {
             "a": "Áno, na posielanie Bitcoinov alebo Etherea budete potrebovať vlastnú peňaženku. Coinsmax pre vás peňaženky nevytvára ani neukladá - my len spracúvame vaše výmenné transakcie.",
-            "q": "Potrebujem na používanie služby Coinsmax kryptografickú peňaženku?"
+            "q": "Potrebujem na používanie služby Coinsmax krypto peňaženku?"
           },
           "1": {
             "a": "Každá transakcia, ktorú vykonáte, sa zaznamená do blockchainu. Zadaním adresy peňaženky alebo ID transakcie do verejného prieskumníka blockchainu (napríklad blockchain.com) môžete zistiť, kedy bola vaša platba odoslaná, overená a prijatá.",
-            "q": "Ako môžem potvrdiť, že moja platba v kryptoch prebehla?"
+            "q": "Ako si môžem skontrolovať, že moja platba v kryptoch prebehla?"
           }
         },
         "title": "Peňaženky a transakcie"
@@ -3325,7 +3325,7 @@
       "cards": {
         "0": {
           "text": "Falšované, ukradnuté alebo pozmenené doklady totožnosti.",
-          "title": "Neplatné alebo podvodné"
+          "title": "Neplatné alebo falšované"
         },
         "1": {
           "text": "Skeny alebo fotografie, ktoré sú rozmazané, orezané, zle osvetlené alebo inak nejasné.",
@@ -3347,16 +3347,16 @@
       "button": "Výmena s Coinsmax",
       "cards": {
         "0": {
-          "text": "Zaregistrujte sa na Coinsmax za pár minút. Registrácia je bezplatná a jednoduchá, stačí vyplniť formulár a potvrdiť svoj účet.",
+          "text": "Zaregistrujte sa na Coinsmaxe za pár minút. Registrácia je bezplatná a jednoduchá, stačí vyplniť formulár a potvrdiť svoj účet.",
           "title": "Zaregistrujte sa a vytvorte si profil"
         },
         "1": {
-          "text": "Overenie sa môže líšiť v závislosti od výšky transakcie. Predloženie požadovaných dokumentov zabezpečuje súlad s predpismi a udržuje vaše výmeny v bezpečí.",
-          "title": "Úplné overenie"
+          "text": "Rámec overenia sa môže líšiť v závislosti od výšky transakcie. Predloženie požadovaných dokumentov zabezpečuje súlad s predpismi a udržuje vaše výmeny v bezpečí.",
+          "title": "Overenie"
         },
         "2": {
           "text": "Spoločnosť Coinsmax nedrží vaše finančné prostriedky. Na výmenu kryptomien pripojte svoju osobnú peňaženku, odporúčame používať oficiálne peňaženky Bitcoin alebo Ethereum alebo dôveryhodnú peňaženku pre viacero mien podľa vlastného výberu.",
-          "title": "Prepojenie kryptografickej peňaženky"
+          "title": "Prepojenie krypto peňaženky"
         },
         "3": {
           "text": "Vyberte si, čo potrebujete: kúpiť alebo predať krypto, mince a burzu.",
@@ -3367,7 +3367,7 @@
           "title": "Potvrdenie a sledovanie transakcie"
         }
       },
-      "title": "Ako vymeniť s Coinsmax"
+      "title": "Zámena s Coinsmaxom"
     },
     "importantMsg": {
       "pleaseNote": "Upozorňujeme",
@@ -3388,14 +3388,14 @@
         },
         "1": {
           "text": "Nedávne doklady potvrdzujúce vaše bydlisko, napr. výpis z účtu za komunálne služby, bankový záznam alebo účet za telekomunikačné služby (vystavený za posledné tri mesiace).",
-          "title": "Dôkaz o obytných priestoroch"
+          "title": "Dôkaz o adrese pobytu"
         },
         "2": {
           "text": "Vyplnené vyhlásenie o zdroji finančných prostriedkov spolu s podpornými dôkazmi na potvrdenie pôvodu použitých aktív.",
           "title": "Finančné pozadie"
         },
         "3": {
-          "text": "Všetky kontroly totožnosti sa vykonávajú prostredníctvom akreditovaných poskytovateľov tretích strán. V niektorých prípadoch si rozšírená hĺbková kontrola môže vyžadovať dodatočný dotazník alebo krátky videorozhovor.",
+          "text": "Všetky kontroly totožnosti sa vykonávajú prostredníctvom akreditovaných poskytovateľov tretích strán. V niektorých prípadoch si rozšírená hĺbková kontrola môže vyžadovať dodatočný dotazník alebo krátky videohovor.",
           "title": "Postupy overovania"
         },
         "4": {
