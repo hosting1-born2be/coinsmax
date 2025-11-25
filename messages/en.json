@@ -212,8 +212,32 @@
     "contactUs": "Contact Us"
   },
   "contacts": {
-    "title": "Always Here to Help",
-    "text": "Have questions or issues? Reach out. We’re just a message away!"
+    "hero": {
+      "title": "Always Here to Help",
+      "text": "Have questions or issues? Reach out. We’re just a message away!",
+      "button": "Open Helpdesk"
+    },
+    "resourceHub": {
+      "title": "Your Go-To Resource Hub",
+      "text": "From onboarding steps to exchange walkthroughs — many answers are already here.",
+      "button": {
+        "0": "Insights",
+        "1": "Q&A"
+      }
+    },
+    "updatesTips": {
+      "title": {
+        "0": "Updates, Tips & Announcements: ",
+        "1": "Join Us Online"
+      },
+      "text": "Follow us for product updates, practical explanations, and behind-the-scenes information."
+    },
+    "banner": {
+      "title": {
+        "0": "We are here for your crypto journey!",
+        "1": "Every step of the way."
+      }
+    }
   },
   "insideCoinsmax": {
     "hero": {
