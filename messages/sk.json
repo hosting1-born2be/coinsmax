@@ -985,8 +985,32 @@
     "title": "Kontaktný formulár"
   },
   "contacts": {
-    "text": "Máte otázky alebo problémy? Obráťte sa na nás. Sme vám k dispozícii!",
-    "title": "Vždy tu"
+    "hero": {
+      "text": "Máte otázky alebo problémy? Obráťte sa na nás. Sme vám k dispozícii!",
+      "title": "Vždy tu",
+      "button": "Otevriť Helpdesk"
+    },
+    "resourceHub": {
+      "title": "Váš zdrojový centrum",
+      "text": "Od krokov na registrácii po prehľad výmeny — mnoho odpovedí už tu je",
+      "button": {
+        "0": "Vpogledi",
+        "1": "OTÁZKY A ODPOVEDE"
+      }
+    },
+    "updatesTips": {
+      "title": {
+        "0": "Aktualizácie, tipy a oznámenia:",
+        "1": "Pridajte sa k nám online"
+      },
+      "text": "Sledujte nás pre aktualizácie produktu, praktické vysvetlenia a informácie o fungovaní za zábradlí."
+    },
+    "banner": {
+      "title": {
+        "0": "Sme tu pre váš krypto cestu!",
+        "1": "Každým krokom."
+      }
+    }
   },
   "contactUs": {
     "businessHours": "Pracovný čas:",
