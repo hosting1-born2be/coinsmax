@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { PageHero } from '@/shared/ui/components/page-hero';
 
-import { ApplyNow, HowToJoin, OurOffer, WhoCanJoin } from './components';
+import { HowToJoin, OurOffer, WhoCanJoin } from './components';
 
 export const metadata: Metadata = {
   title: 'Partnership | Coinsmax',
@@ -36,7 +36,7 @@ export default async function PartnershipPage() {
       <OurOffer />
       <WhoCanJoin />
       <HowToJoin />
-      <ApplyNow />
+      {/* <ApplyNow /> */}
     </main>
   );
 }
