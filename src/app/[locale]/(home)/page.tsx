@@ -1,8 +1,6 @@
-import type { Metadata } from 'next';
-
 import {
   ComplianceAndProtection,
-  ContactOurTeam,
+  // ContactOurTeam,
   Hero,
   HowToGetStarted,
   MeetCoinsmax,
@@ -23,7 +21,7 @@ export default function Home() {
       <TrustedBy />
       <ComplianceAndProtection />
       <OurAssistanceHub />
-      <ContactOurTeam />
+      {/* <ContactOurTeam /> */}
     </main>
   );
 }
