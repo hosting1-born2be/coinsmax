@@ -93,7 +93,10 @@ export default async function TermsAndConditionsPage() {
           </Link>
           <Link href="#applicableLaw">
             <PolicyText>
-              {t('0.12', { fallback: '13. Applicable Law' })}
+              {t('0.12', {
+                fallback:
+                  '13. Applicable Law, Languages and Dispute Resolution',
+              })}
             </PolicyText>
           </Link>
           <Link href="#miscellaneous">
@@ -1974,7 +1977,7 @@ export default async function TermsAndConditionsPage() {
       </PolicySectionLayout>
       <PolicySectionLayout
         title={t('13.title', {
-          fallback: 'Applicable Law',
+          fallback: 'Applicable Law, Languages and Dispute Resolution',
         })}
         titleId="applicableLaw"
       >
@@ -1982,18 +1985,71 @@ export default async function TermsAndConditionsPage() {
           <span>13.1</span>
           <span>
             {t('13.0', {
-              fallback: 'Jurisdiction.',
+              fallback: 'Governing Law',
             })}
           </span>
         </PolicyText>
-        <PolicyText className="pl-6" flex>
-          <span>13.1.1</span>
+        <PolicyText flex>
+          {t('13.1', {
+            fallback:
+              'These Terms and Conditions, including all rights, obligations, and legal relationships arising between the Parties in connection with the provision of crypto-asset services, shall be governed by and interpreted in accordance with the laws of the Slovak Republic, without prejudice to mandatory consumer protection rules under EU law, including Regulation (EU) 2023/1114 (MiCA).',
+          })}
+        </PolicyText>
+        <PolicyText flex>
+          <span>13.2</span>
           <span>
-            {t('13.1', {
-              fallback:
-                'The Terms of Use shall be governed by, construed and enforced according to the laws of Slovakia, without giving effect to the principles of conflicts of law.',
+            {t('13.2', {
+              fallback: 'Language of Communication',
             })}
           </span>
+        </PolicyText>
+        <PolicyText flex>
+          {t('13.3', {
+            fallback:
+              'All contractual documentation, notifications, statements, and communication between the Parties shall be provided in Slovak or English. In the event of any inconsistency between language versions, the Slovak version shall prevail, unless explicitly stated otherwise or where mandatory consumer law requires a different interpretation.',
+          })}
+        </PolicyText>
+        <PolicyText flex>
+          <span>13.3</span>
+          <span>
+            {t('13.4', {
+              fallback: 'Internal Resolution and Negotiation',
+            })}
+          </span>
+        </PolicyText>
+        <PolicyText flex>
+          {t('13.5', {
+            fallback:
+              'The Parties shall make reasonable efforts to resolve any disagreement, complaint, or dispute relating to the provision of services through good-faith negotiations and, where applicable, through the Company’s internal complaint-handling procedure established in accordance with MiCA.',
+          })}
+        </PolicyText>
+        <PolicyText flex>
+          <span>13.4</span>
+          <span>
+            {t('13.6', {
+              fallback: 'Judicial Competence',
+            })}
+          </span>
+        </PolicyText>
+        <PolicyText flex>
+          {t('13.7', {
+            fallback:
+              'If the Parties fail to reach an amicable settlement, the dispute shall be resolved in accordance with the procedural laws of the Slovak Republic. Any dispute not resolved through negotiations shall fall under the exclusive jurisdiction of the competent courts in Bratislava, according to the registered office of the Company.',
+          })}
+        </PolicyText>
+        <PolicyText flex>
+          <span>13.5</span>
+          <span>
+            {t('13.8', {
+              fallback: 'Supervisory Authority',
+            })}
+          </span>
+        </PolicyText>
+        <PolicyText flex>
+          {t('13.9', {
+            fallback:
+              'Nothing in this section limits the Client’s right to submit a complaint to a competent supervisory authority, including the National Bank of Slovakia (Národná banka Slovenska), in accordance with MiCA and applicable national legislation.',
+          })}
         </PolicyText>
       </PolicySectionLayout>
       <PolicySectionLayout
