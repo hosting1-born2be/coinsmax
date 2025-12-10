@@ -1169,7 +1169,7 @@
       "9": "10. Customer Complaints Procedure",
       "10": "11. Discontinuance of Service, Suspension and Termination",
       "11": "12. Limitation of Liability, Disclaimer of Warranties",
-      "12": "13. Applicable Law",
+      "12": "13. Applicable Law, Languages and Dispute Resolution",
       "13": "14. Miscellaneous"
     },
     "1": {
@@ -1449,9 +1449,17 @@
       "5": "You are aware that information you store or transfer through the Coinsmax Services may become irretrievably lost, corrupted, or temporarily unavailable due to various causes, including but not limited to software failures, protocol changes, Force Majeure Events, denial-of-service attacks, maintenance, or other causes. You acknowledge the above-stated risk and confirm you are solely responsible for backing up any information you store or transfer through the Services."
     },
     "13": {
-      "title": "13. Applicable Law",
-      "0": "Jurisdiction.",
-      "1": "The Terms of Use shall be governed by, construed and enforced according to the laws of Slovakia, without giving effect to the principles of conflicts of law. These Terms and Conditions are governed by and shall be interpreted in accordance with the Act No. 297/2008 Coll. on the Prevention of the Legalization of the Proceeds of Crime and the Financing of Terrorism, Civil Code of the Slovak Republic (Act No. 40/1964 Coll.) , the Act No. 250/2007 Coll. on Consumer Protection, the MICA Regulation (where relevant), the resolutions of the National Bank of Slovakia, the resolutions of the Financial Intelligence Unit (FIU), as well as the instructions of the Financial Administration of the Slovak Republic and applicable tax legislation, and the instructions of supervisory authorities of the Slovak Republic (and, where applicable, the instructions of supervisory authorities of other EU Member States), as well as any other applicable legal acts, which are updated from time to time. For transparency purposes, we regularly publish both the current and previous versions of these Terms and Conditions on our website, enabling clients to properly exercise their rights and ensuring our compliance with applicable legal requirements, as well as the proper handling of complaints in accordance with the Terms and Conditions in force at the relevant time."
+      "title": "13. Applicable Law, Languages and Dispute Resolution",
+      "0": "Governing Law",
+      "1": "These Terms and Conditions, including all rights, obligations, and legal relationships arising between the Parties in connection with the provision of crypto-asset services, shall be governed by and interpreted in accordance with the laws of the Slovak Republic, without prejudice to mandatory consumer protection rules under EU law, including Regulation (EU) 2023/1114 (MiCA).",
+      "2": "Language of Communication",
+      "3": "All contractual documentation, notifications, statements, and communication between the Parties shall be provided in Slovak or English. In the event of any inconsistency between language versions, the Slovak version shall prevail, unless explicitly stated otherwise or where mandatory consumer law requires a different interpretation.",
+      "4": "Internal Resolution and Negotiation",
+      "5": "The Parties shall make reasonable efforts to resolve any disagreement, complaint, or dispute relating to the provision of services through good-faith negotiations and, where applicable, through the Company’s internal complaint-handling procedure established in accordance with MiCA.",
+      "6": "Judicial Competence",
+      "7": "If the Parties fail to reach an amicable settlement, the dispute shall be resolved in accordance with the procedural laws of the Slovak Republic. Any dispute not resolved through negotiations shall fall under the exclusive jurisdiction of the competent courts in Bratislava, according to the registered office of the Company.",
+      "8": "Supervisory Authority",
+      "9": "Nothing in this section limits the Client’s right to submit a complaint to a competent supervisory authority, including the National Bank of Slovakia (Národná banka Slovenska), in accordance with MiCA and applicable national legislation."
     },
     "14": {
       "title": "14. Miscellaneous",

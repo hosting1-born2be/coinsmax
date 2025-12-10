@@ -2855,7 +2855,7 @@
       "9": "10. Postup pri sťažnostiach zákazníkov",
       "10": "11. Prerušenie služby, pozastavenie a ukončenie",
       "11": "12. Obmedzenie zodpovednosti, odmietnutie záruk",
-      "12": "13. Uplatniteľné právo",
+      "12": "13. Príslušné právo, jazyky a riešenie sporov",
       "13": "14. Rôzne",
       "title": "Obsah:"
     },
@@ -3173,9 +3173,17 @@
       "title": "12. Obmedzenie zodpovednosti, odmietnutie záruk"
     },
     "13": {
-      "0": "Súdna právomoc.",
-      "1": "Podmienky používania sa riadia, vykladajú a uplatňujú podľa slovenského práva bez ohľadu na kolízne normy. Tieto Podmienky sa riadia a vykladajú v súlade so zákonom č. 297/2008 Z. z. o ochrane pred legalizáciou príjmov z trestnej činnosti a o ochrane pred financovaním terorizmu, Občianskym zákonníkom Slovenskej republiky (zákon č. 40/1964 Zb.) , zákonom č. 250/2007 Z. z. o ochrane spotrebiteľa, nariadením MICA (ak je to relevantné), rozhodnutiami Národnej banky Slovenska, rozhodnutiami Finančnej spravodajskej jednotky (FIU), ako aj pokynmi Finančnej správy Slovenskej republiky a platnými daňovými predpismi a pokynmi orgánov dohľadu Slovenskej republiky (a prípadne pokynmi orgánov dohľadu iných členských štátov EÚ), ako aj ďalšími platnými právnymi predpismi, ktoré sú priebežne aktualizované. Z dôvodu transparentnosti pravidelne zverejňujeme aktuálne aj predchádzajúce znenie týchto Obchodných podmienok na našej internetovej stránke, čím umožňujeme klientom riadne uplatnenie ich práv a zabezpečujeme dodržiavanie platných právnych predpisov, ako aj riadne vybavovanie reklamácií v súlade s Obchodnými podmienkami platnými v danom čase.",
-      "title": "13. Uplatniteľné právo"
+      "title": "13. Príslušné právo, jazyky a riešenie sporov",
+      "0": "Rozhodné právo",
+      "1": "Tieto Podmienky a všetky práva, povinnosti a právne vzťahy medzi stranami vznikajúce v súvislosti s poskytovaním služieb kryptomenových aktív sa budú riadiť a interpretovať v súlade so zákonom Slovenskej republiky, bez ohľadu na povinné ochranné pravidlá podľa právnych predpisov EÚ, vrátane smernice (EÚ) 2023/1114 (MiCA).",
+      "2": "Jazyk komunikácie",
+      "3": "Všetky kontraktuálne dokumenty, oznámenia, výroky a komunikácia medzi stranami sa poskytujú v slovenskom alebo anglickom jazyku. V prípade akýchkoľvek rozporností medzi jazykovými verziami, slovenská verzia prevláda, okrem akéhokoľvek explicitného uvedenia inak alebo ak právne predpisy vyžadujú inú interpretáciu.",
+      "4": "Interné riešenie a dohľad",
+      "5": "Strany sa budú snažiť uskutočniť rozumné úsilie na riešenie akýchkoľvek nesúhlasníc, nárokov alebo sporov týkajúcich sa poskytovania služieb prostredníctvom dobrej viery a dohľadu a, ak je to vhodné, prostredníctvom interného postupu správcovania nárokov zavedeného v súlade s MiCA.",
+      "6": "Súdne právomoc",
+      "7": "Ak strany neuspeli dosiahnuť dohodu, spôsobuje sporov riešenie v súlade so zákonom Slovenskej republiky. Akýkoľvek spôsobujúci sporov nesúhlasníc nevyriešených prostredníctvom dohľadu spadá pod exkluzívnu jurisdikciu zodpovedných súdov v Bratislave, podľa záznamového miesta spoločnosti.",
+      "8": "Dozorný orgán",
+      "9": "Nič v tejto časti neobmedzuje klientovo právo podať nárok na dozorný orgán, vrátane Národnej banky Slovenska (Národná banka Slovenska), v súlade s MiCA a platnými národnými právnymi predpismi."
     },
     "14": {
       "0": "Úplná dohoda.",
