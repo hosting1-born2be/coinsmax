@@ -17,6 +17,14 @@
         @media screen and (max-width: 1024px) {
             grid-template-columns: 1fr;
         }
+
+        @media screen and (min-width: 1025px) {
+            &>*:last-child {
+                grid-column: 1 / -1;
+                max-width: 544px;
+                margin-inline: auto;
+            }
+        }
     }
 
     &__item {

@@ -1,8 +1,8 @@
-import CareersHero from './components/hero/CareersHero';
-import CareersPositions from '@/app/careers/components/careersPositions/careersPositions';
-import CareersSeeRole from '@/app/careers/components/careersSeeRole/careersSeeRole';
-import CareersWhatOffer from '@/app/careers/components/careersWhatOffer/careersWhatOffer';
-import CareersWhyWork from '@/app/careers/components/careersWhyWork/CareersWhyWork';
+import CareersHero from './components/CareersHero/CareersHero';
+import CareersPositions from './components/CareersPositions/CareersPositions';
+import CareersSeeRole from './components/CareersSeeRole/CareersSeeRole';
+import CareersWhatOffer from './components/CareersWhatOffer/CareersWhatOffer';
+import CareersWhyWork from './components/CareersWhyWork/CareersWhyWork';
 
 export default function CareersPage() {
   return (
