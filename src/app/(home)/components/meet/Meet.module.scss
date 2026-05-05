@@ -1,0 +1,39 @@
+.home_meet {
+    margin-bottom: 80px;
+    
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 64px
+    }
+
+    &__description {
+        margin: 0 auto 40px auto;
+        max-width: 826px;
+    }
+
+    &__top {
+        margin-bottom: 60px;
+    }
+
+    &__images {
+        display: grid;
+        align-items: center;
+        gap: 60px;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+
+            img {
+                margin-inline: auto;
+            }
+
+            &>:first-child {
+                display: none;
+            }
+
+            &>:last-child {
+                display: none;
+            }
+        }
+    }
+}

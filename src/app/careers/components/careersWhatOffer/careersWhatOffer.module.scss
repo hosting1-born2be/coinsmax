@@ -1,0 +1,49 @@
+.careers_what_offer {
+    margin-bottom: 160px;
+    
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        border-radius: 32px;
+        background: #222;
+        padding: 32px;
+    }
+
+    &__item_image {
+        margin-bottom: 32px;
+        width: 81px;
+        height: 81px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: auto;
+        }
+    }
+
+    &__item_description {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: left;
+    }
+}
