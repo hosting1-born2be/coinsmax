@@ -1,0 +1,45 @@
+.careers_why_work {
+    margin-bottom: 160px;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 64px;
+    }
+
+    &__top {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px 40px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        flex-shrink: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__description {
+            text-align: left;
+        }
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

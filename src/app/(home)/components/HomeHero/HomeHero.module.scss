@@ -1,0 +1,24 @@
+.home_hero {
+  background: linear-gradient(
+      180deg,
+      rgba(22, 22, 22, 0.7) 0%,
+      rgba(22, 22, 22, 0.3) 20%,
+      rgba(22, 22, 22, 0.3) 80%,
+      rgba(22, 22, 22, 0.7) 100%
+    ),
+  linear-gradient(180deg, rgba(22, 22, 22, 0) 0%, #161616 95%),
+  url('/images/home/hero.jpg') lightgray 50% / cover no-repeat;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  @media screen and (max-width: 1024px) {
+    min-height: 700px;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+  }
+}

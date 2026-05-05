@@ -1,0 +1,92 @@
+.careers_positions {
+    margin-bottom: 160px;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        border-radius: 32px;
+        background: #222;
+        padding: 32px;
+    }
+
+    &__item_title {
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    &__item_price {
+        color: #FFF;
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 24px;
+    }
+
+    &__item_address {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: left;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__item_description {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &__item_responsibilities_list_title {
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    &__item_responsibilities_list {
+        list-style-type: disc;
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: normal;
+        padding-left: 26px;
+        margin-bottom: 8px;
+    }
+
+    &__item_see_more {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.2857;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+    }
+
+    &__item_list_wrapper {
+        margin-bottom: 48px;
+    }
+
+    &__item_list_wrapper>*:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
