@@ -16,7 +16,7 @@ export default function Meet() {
             supported by robust technology.
           </p>
           <div className="text-center">
-            <Link href="/" className="btn btn-white">
+            <Link href="/careers" className="btn btn-white">
               View Careers
             </Link>
           </div>

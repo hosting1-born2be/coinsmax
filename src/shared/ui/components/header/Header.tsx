@@ -1,26 +1,13 @@
 'use client';
 
-import type { MouseEvent } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { scrollToSection } from '@/shared/lib/utils/scrollToSection';
 
 import styles from './Header.module.scss';
 
 export default function Header() {
-  const handleScrollToSection = (
-    id: string,
-    e: MouseEvent<HTMLAnchorElement>,
-  ) => {
-    e.preventDefault();
-
-    const el = document.getElementById(id);
-
-    el?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  };
-
   return (
     <header className={styles.header}>
       <div className={`${styles.header__container} container--big container`}>
@@ -90,13 +77,15 @@ export default function Header() {
               Careers
             </Link>
 
-            <Link
-              href="/"
+            <button
+              type={'button'}
               className={`${styles.header__link} btn btn-white`}
-              onClick={e => handleScrollToSection('home-be-first-section', e)}
+              onClick={() => {
+                scrollToSection('home-be-first-section');
+              }}
             >
               Join
-            </Link>
+            </button>
           </div>
         </div>
       </div>

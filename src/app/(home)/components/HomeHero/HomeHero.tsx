@@ -1,4 +1,6 @@
-import Link from 'next/link';
+'use client';
+
+import { scrollToSection } from '@/shared/lib/utils/scrollToSection';
 
 import styles from './HomeHero.module.scss';
 
@@ -9,9 +11,15 @@ export default function HomeHero() {
       <p className={`${styles.home_hero__description} text-style`}>
         We&apos;re building innovative financial technology
       </p>
-      <Link href="/" className="btn btn-white">
-        Start Now
-      </Link>
+      <button
+        type={'button'}
+        className="btn btn-white"
+        onClick={() => {
+          scrollToSection('home-be-first-section');
+        }}
+      >
+        Subscribe
+      </button>
     </section>
   );
 }

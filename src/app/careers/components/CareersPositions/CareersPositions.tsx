@@ -1,5 +1,8 @@
-import Link from 'next/link';
+'use client';
 
+import { useMemo, useState } from 'react';
+
+import { CareerApplyDialog } from './CareerApplyDialog';
 import styles from './CareersPositions.module.scss';
 
 const items = [
@@ -146,6 +149,16 @@ const items = [
 ];
 
 export default function CareersPositions() {
+  const [isApplyOpen, setIsApplyOpen] = useState(false);
+  const [selectedPositionId, setSelectedPositionId] = useState<string | null>(
+    null,
+  );
+
+  const selectedPosition = useMemo(
+    () => items.find(i => i.id === selectedPositionId) ?? null,
+    [selectedPositionId],
+  );
+
   return (
     <section className={styles.careers_positions}>
       <div className="container">
@@ -240,12 +253,25 @@ export default function CareersPositions() {
                 </div>
               </div>
 
-              <Link href="/" className="btn btn-white">
+              <button
+                type="button"
+                className="btn btn-white"
+                onClick={() => {
+                  setSelectedPositionId(item.id);
+                  setIsApplyOpen(true);
+                }}
+              >
                 Apply Now
-              </Link>
+              </button>
             </li>
           ))}
         </ul>
+
+        <CareerApplyDialog
+          open={isApplyOpen}
+          onOpenChangeAction={setIsApplyOpen}
+          positionTitle={selectedPosition?.title ?? 'Apply'}
+        />
       </div>
     </section>
   );

@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  watchOptions:
+    process.env.NODE_ENV === 'development'
+      ? {
+          pollIntervalMs: 500,
+        }
+      : undefined,
 };
 
 export default nextConfig;
