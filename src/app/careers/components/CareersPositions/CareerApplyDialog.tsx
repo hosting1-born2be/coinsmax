@@ -16,6 +16,8 @@ import {
   submitCareerApplyForm,
 } from '@/features/career-apply/api/submitCareerApplyForm';
 
+import { notifyError, notifySuccess } from '@/shared/lib/utils/notify';
+
 import styles from './CareersPositions.module.scss';
 
 type FormValues = {
@@ -30,23 +32,6 @@ type FormValues = {
   experienceTools: string[];
   experienceOther: string;
 };
-
-// const EXPERIENCE_AREAS = [
-//   'Transaction monitoring',
-//   'Customer due diligence (CDD/KYC)',
-//   'Enhanced due diligence (EDD)',
-//   'Investigations & case management',
-//   'Sanctions / PEP screening',
-//   'Regulatory reporting',
-// ];
-
-// const EXPERIENCE_TOOLS = [
-//   'Excel / Google Sheets',
-//   'SQL',
-//   'BI tools (Tableau/Looker/Power BI)',
-//   'Case management systems',
-//   'Monitoring systems',
-// ];
 
 export function CareerApplyDialog({
   open,
@@ -139,6 +124,7 @@ export function CareerApplyDialog({
 
               const res = await submitCareerApplyForm(payload);
               if (!res.success) {
+                notifyError('Failed to send application. Please try again.');
                 setError('root', {
                   type: 'server',
                   message: 'Failed to send application. Please try again.',
@@ -146,6 +132,7 @@ export function CareerApplyDialog({
                 return;
               }
 
+              notifySuccess('Application sent successfully.');
               onOpenChangeAction(false);
             })}
           >
@@ -269,72 +256,6 @@ export function CareerApplyDialog({
             </section>
 
             <section className={styles.apply_dialog__section}>
-              {/*<h3 className={styles.apply_dialog__section_title}>Experience</h3>*/}
-
-              {/*<div className={styles.apply_dialog__field}>*/}
-              {/*  <span className={styles.apply_dialog__label}>*/}
-              {/*    Select the areas you have experience in*/}
-              {/*  </span>*/}
-              {/*  <Controller*/}
-              {/*    control={control}*/}
-              {/*    name="experienceAreas"*/}
-              {/*    render={({ field }) => (*/}
-              {/*      <div className={styles.apply_dialog__check_grid}>*/}
-              {/*        {EXPERIENCE_AREAS.map(option => (*/}
-              {/*          <label*/}
-              {/*            key={option}*/}
-              {/*            className={styles.apply_dialog__check}*/}
-              {/*          >*/}
-              {/*            <input*/}
-              {/*              type="checkbox"*/}
-              {/*              checked={field.value.includes(option)}*/}
-              {/*              onChange={e => {*/}
-              {/*                const next = e.target.checked*/}
-              {/*                  ? [...field.value, option]*/}
-              {/*                  : field.value.filter(v => v !== option);*/}
-              {/*                field.onChange(next);*/}
-              {/*              }}*/}
-              {/*            />*/}
-              {/*            <span>{option}</span>*/}
-              {/*          </label>*/}
-              {/*        ))}*/}
-              {/*      </div>*/}
-              {/*    )}*/}
-              {/*  />*/}
-              {/*</div>*/}
-
-              {/*<div className={styles.apply_dialog__field}>*/}
-              {/*  <span className={styles.apply_dialog__label}>*/}
-              {/*    Tools you’re comfortable with*/}
-              {/*  </span>*/}
-              {/*  <Controller*/}
-              {/*    control={control}*/}
-              {/*    name="experienceTools"*/}
-              {/*    render={({ field }) => (*/}
-              {/*      <div className={styles.apply_dialog__check_grid}>*/}
-              {/*        {EXPERIENCE_TOOLS.map(option => (*/}
-              {/*          <label*/}
-              {/*            key={option}*/}
-              {/*            className={styles.apply_dialog__check}*/}
-              {/*          >*/}
-              {/*            <input*/}
-              {/*              type="checkbox"*/}
-              {/*              checked={field.value.includes(option)}*/}
-              {/*              onChange={e => {*/}
-              {/*                const next = e.target.checked*/}
-              {/*                  ? [...field.value, option]*/}
-              {/*                  : field.value.filter(v => v !== option);*/}
-              {/*                field.onChange(next);*/}
-              {/*              }}*/}
-              {/*            />*/}
-              {/*            <span>{option}</span>*/}
-              {/*          </label>*/}
-              {/*        ))}*/}
-              {/*      </div>*/}
-              {/*    )}*/}
-              {/*  />*/}
-              {/*</div>*/}
-
               <label className={styles.apply_dialog__field}>
                 <span className={styles.apply_dialog__label}>
                   Anything else we should know?
