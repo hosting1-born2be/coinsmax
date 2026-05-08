@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Image from 'next/image';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -12,13 +11,10 @@ import {
 } from '@/features/waitlist/model/waitlist.schema';
 
 import { notifyError, notifySuccess } from '@/shared/lib/utils/notify';
-import { Button } from '@/shared/ui/kit/button';
 
 import styles from './HomeFirst.module.scss';
 
 export default function HomeFirst() {
-  const [isSuccess, setIsSuccess] = useState(false);
-
   const {
     register,
     handleSubmit,
@@ -32,14 +28,11 @@ export default function HomeFirst() {
   });
 
   const onSubmit = handleSubmit(async data => {
-    setIsSuccess(false);
-
     try {
       const res = await submitWaitlistForm(data);
       if (!res?.success) throw new Error('Submit waitlist failed');
 
       notifySuccess('Thanks! You’ve joined the waitlist.');
-      setIsSuccess(true);
       reset();
     } catch (err) {
       console.error(err);
@@ -69,11 +62,6 @@ export default function HomeFirst() {
               {errors.email?.message && (
                 <p className={styles.home_first__hint}>
                   {errors.email.message}
-                </p>
-              )}
-              {isSuccess && (
-                <p className={styles.home_first__success}>
-                  You’re on the list.
                 </p>
               )}
             </div>
