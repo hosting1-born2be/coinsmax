@@ -18,7 +18,7 @@ export default function HomeHero() {
           scrollToSection('home-be-first-section');
         }}
       >
-        Subscribe
+        Join Waitlist
       </button>
     </section>
   );

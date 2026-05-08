@@ -84,7 +84,7 @@ export default function Header() {
                 scrollToSection('home-be-first-section');
               }}
             >
-              Join
+              Join Waitlist
             </button>
           </div>
         </div>

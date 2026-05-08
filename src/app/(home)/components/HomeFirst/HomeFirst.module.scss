@@ -62,6 +62,14 @@
         }
     }
 
+    &__field {
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            max-width: 400px;
+        }
+    }
+
     &__input {
         border-radius: 32px;
         background: rgba(255, 255, 255, 0.10);
@@ -71,10 +79,39 @@
         font-size: 20px;
         font-weight: 300;
         line-height: normal;
+        width: 100%;
+        outline: none;
+        transition: opacity 0.2s ease-in-out;
+        border: none;
+        height: 57px;
 
-        @media screen and (min-width: 768px) {
-            max-width: 400px;
-            width: 100%;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.60);
         }
+
+        &:focus {
+            opacity: 0.9;
+        }
+
+    }
+
+    &__hint {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #ff5a5a;
+        text-align: left;
+    }
+
+    &__success {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.80);
+        text-align: left;
+    }
+
+    &__button {
+        white-space: nowrap;
     }
 }
