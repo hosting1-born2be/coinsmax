@@ -2,12 +2,16 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import { scrollToSection } from '@/shared/lib/utils/scrollToSection';
 
 import styles from './Header.module.scss';
 
 export default function Header() {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   return (
     <header className={styles.header}>
       <div className={`${styles.header__container} container--big container`}>
@@ -77,15 +81,24 @@ export default function Header() {
               Careers
             </Link>
 
-            <button
-              type={'button'}
-              className={`${styles.header__link} btn btn-white`}
-              onClick={() => {
-                scrollToSection('home-be-first-section');
-              }}
-            >
-              Join Waitlist
-            </button>
+            {isHomePage ? (
+              <button
+                type="button"
+                className={`${styles.header__link} btn btn-white`}
+                onClick={() => {
+                  scrollToSection('home-be-first-section');
+                }}
+              >
+                Join Waitlist
+              </button>
+            ) : (
+              <Link
+                href="/#home-be-first-section"
+                className={`${styles.header__link} btn btn-white`}
+              >
+                Join Waitlist
+              </Link>
+            )}
           </div>
         </div>
       </div>
