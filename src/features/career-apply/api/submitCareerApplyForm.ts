@@ -1,8 +1,6 @@
 'use server';
 
 import sgMail from '@sendgrid/mail';
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
 
 import { ADMIN_EMAIL, FROM_EMAIL, SENDGRID_API_KEY } from '@/shared/config/env';
 
@@ -20,28 +18,97 @@ const toStringArray = (v: FormDataEntryValue | null) => {
 };
 
 const buildApplicantConfirmationHtml = (positionTitle: string) => `
-<table role="presentation" style="width:100%;background:#f4f4f6;padding:32px 0;font-family:Arial,Helvetica,sans-serif;color:#222;">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="640" style="background-color: #000; width: 640px;">
   <tr>
-    <td align="center">
-      <table role="presentation" style="width:100%;max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;">
-        <tr>
-          <td style="padding:32px 32px 16px;text-align:center;">
-            <img src="cid:logo" alt="Coinsmax" style="display:block;margin:0 auto;max-width:160px;height:auto;" />
-            <p style="margin:16px 0 0;font-size:14px;letter-spacing:0.04em;color:#888;">Limitless Technologies</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:8px 32px 32px;font-size:16px;line-height:1.6;color:#222;">
-            <p style="margin:0 0 16px;">Hello,</p>
-            <p style="margin:0 0 16px;">Thank you for applying for the position of <strong>${positionTitle}</strong> at Coinsmax.</p>
-            <p style="margin:0 0 16px;">We confirm that we have successfully received your CV and application details. Our HR team will now review your submission carefully.</p>
-            <p style="margin:0 0 16px;">Please note that the review process may take some time. Once the evaluation is completed, a member of our HR team will contact you regarding the next steps.</p>
-            <p style="margin:0 0 24px;">Thank you for your interest in joining Coinsmax.</p>
-            <p style="margin:0;">Best regards,<br/>Coinsmax HR Team</p>
-          </td>
-        </tr>
-      </table>
+    <td>&nbsp;</td>
+    <td class="container">
+      <div class="header">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center" style="padding-top: 24px;">
+              <a href="https://coinsmax.io/">
+                <img src="https://coinsmax.io/logo.svg" height="30" alt="Coinsmax" style="display:block;">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <p style="color: #B3B3B5; margin: 0; line-height: 1.25;">
+                Limitless Technologies
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <table role="presentation" class="main" style="background-color: #222222; padding: 16px; border-radius: 32px; margin: 40px 32px;">
+          <tr>
+            <td class="wrapper">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="font-size: 36px; color: #fff; line-height: 1.25; display: block; margin-bottom: 20px;">
+                      Hello,
+                    </p>
+
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for applying for the position of ${positionTitle} at Coinsmax.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">We confirm that we have successfully received your CV and application details. Our HR team will now review your submission carefully.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Please note that the review process may take some time. Once the evaluation is completed, a member of our HR team will contact you regarding the next steps.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for your interest in joining Coinsmax.</p>
+                    <p style="font-size: 20px; font-weight:300; color: #fff; line-height: 1.25; display: block; margin-top: 0; margin-bottom: 0;">Best regards,</p>
+                    <p style="font-size: 20px; font-weight:300; color: #fff; line-height: 1.25; display: block; margin-top: 0; margin-bottom: 0;">Coinsmax HR Team</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <div class="footer">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td
+                align="center"
+                background="https://coinsmax.io/images/careers/see_role.png"
+                style="
+                  background-image: url('https://coinsmax.io/images/careers/see_role.png');
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  padding: 24px 0;
+                  border-top-left-radius: 32px;
+                  border-top-right-radius: 32px;
+                "
+              >
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center">
+                      <a href="https://coinsmax.io/">
+                        <img
+                          src="https://coinsmax.io/logo.svg"
+                          height="30"
+                          alt="Coinsmax"
+                          style="display:block;"
+                        >
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="color:#B3B3B5; margin:0;">
+                        Limitless Technologies
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </td>
+    <td>&nbsp;</td>
   </tr>
 </table>
 `;
@@ -108,23 +175,11 @@ export const submitCareerApplyForm = async (formData: FormData) => {
 
     if (email) {
       try {
-        const logoPath = path.join(process.cwd(), 'public', 'logo_email.png');
-        const logoBuffer = await readFile(logoPath);
-
         const applicantMsg = {
           to: email,
           from: FROM_EMAIL,
           subject: 'Application received — Coinsmax',
           html: buildApplicantConfirmationHtml(positionTitle || 'Coinsmax'),
-          attachments: [
-            {
-              content: logoBuffer.toString('base64'),
-              filename: 'logo.png',
-              type: 'image/png',
-              disposition: 'inline',
-              content_id: 'logo',
-            },
-          ],
         };
 
         await sgMail.send(applicantMsg);

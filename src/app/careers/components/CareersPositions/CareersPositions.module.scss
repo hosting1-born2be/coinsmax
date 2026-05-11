@@ -71,6 +71,35 @@
         line-height: 1.25;
         text-underline-offset: 5px;
     }
+
+    &__item_list_wrapper {
+        margin-bottom: 32px;
+
+        &>*:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__item_responsibilities_list_title {
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    &__item_responsibilities_list {
+        list-style-type: disc;
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: normal;
+        padding-left: 26px;
+
+        li + li {
+            margin-top: 4px;
+        }
+    }
+
 }
 
 .apply_dialog {
@@ -215,6 +244,10 @@
         height: 73px;
     }
 
+    &__input_error {
+        border: 1px solid #FF3B5E;
+    }
+
     &__textarea {
         resize: none;
         min-height: 150px;
@@ -296,6 +329,10 @@
     &__dropzone__dragging {
         border-color: rgba(255, 255, 255, 0.55);
         background: rgba(255, 255, 255, 0.06);
+    }
+
+    &__dropzone_error {
+        border-color: #FF3B5E;
     }
 
     &__upload_btn {

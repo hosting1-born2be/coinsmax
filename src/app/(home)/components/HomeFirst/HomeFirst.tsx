@@ -19,6 +19,7 @@ export default function HomeFirst() {
     register,
     handleSubmit,
     reset,
+    setError,
     formState: { errors, isSubmitting },
   } = useForm<WaitlistFormSchema>({
     resolver: zodResolver(waitlistFormSchema),
@@ -28,16 +29,23 @@ export default function HomeFirst() {
   });
 
   const onSubmit = handleSubmit(async data => {
-    try {
-      const res = await submitWaitlistForm(data);
-      if (!res?.success) throw new Error('Submit waitlist failed');
+    const res = await submitWaitlistForm(data);
 
+    if (res.success) {
       notifySuccess('Thanks! You’ve joined the waitlist.');
       reset();
-    } catch (err) {
-      console.error(err);
-      notifyError('Failed to send. Please try again later.');
+      return;
     }
+
+    if (res.error === 'duplicate') {
+      setError('email', {
+        type: 'duplicate',
+        message: 'This email address is already subscribed.',
+      });
+      return;
+    }
+
+    notifyError('We could not process your request. Please try again later.');
   });
 
   return (

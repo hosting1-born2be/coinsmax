@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { positions } from '../../data/positions';
 import styles from './CareersPositions.module.scss';
 
+const PREVIEW_LIST_COUNT = 2;
+
 export default function CareersPositions() {
   return (
     <section className={styles.careers_positions}>
@@ -42,6 +44,70 @@ export default function CareersPositions() {
               >
                 {item.description}
               </p>
+
+              <div className={styles.careers_positions__item_list_wrapper}>
+                <div>
+                  <p
+                    className={
+                      styles.careers_positions__item_responsibilities_list_title
+                    }
+                  >
+                    {item.responsibilitiesTitle}
+                  </p>
+                  <ul
+                    className={
+                      styles.careers_positions__item_responsibilities_list
+                    }
+                  >
+                    {item.responsibilitiesList
+                      .slice(0, PREVIEW_LIST_COUNT)
+                      .map((responsibilitiesItem, index, arr) => {
+                        const isLastVisible = index === arr.length - 1;
+                        const hasMore =
+                          item.responsibilitiesList.length > PREVIEW_LIST_COUNT;
+                        return (
+                          <li key={index}>
+                            <p>
+                              {responsibilitiesItem.value}
+                              {isLastVisible && hasMore ? ' ...' : ''}
+                            </p>
+                          </li>
+                        );
+                      })}
+                  </ul>
+                </div>
+
+                <div>
+                  <p
+                    className={
+                      styles.careers_positions__item_responsibilities_list_title
+                    }
+                  >
+                    {item.requirementsTitle}
+                  </p>
+                  <ul
+                    className={
+                      styles.careers_positions__item_responsibilities_list
+                    }
+                  >
+                    {item.requirementsList
+                      .slice(0, PREVIEW_LIST_COUNT)
+                      .map((requirementsItem, index, arr) => {
+                        const isLastVisible = index === arr.length - 1;
+                        const hasMore =
+                          item.requirementsList.length > PREVIEW_LIST_COUNT;
+                        return (
+                          <li key={index}>
+                            <p>
+                              {requirementsItem.value}
+                              {isLastVisible && hasMore ? ' ...' : ''}
+                            </p>
+                          </li>
+                        );
+                      })}
+                  </ul>
+                </div>
+              </div>
 
               <Link
                 href={`/careers/${item.slug}`}

@@ -227,7 +227,12 @@ export function CareerApplyDialog({
                       </span>
                     </p>
                     <input
-                      className={styles.apply_dialog__input}
+                      className={[
+                        styles.apply_dialog__input,
+                        formState.errors.name
+                          ? styles.apply_dialog__input_error
+                          : '',
+                      ].join(' ')}
                       placeholder="Enter your full name"
                       {...register('name', {
                         required: 'Please enter your full name.',
@@ -246,7 +251,12 @@ export function CareerApplyDialog({
                     </p>
                     <input
                       type="email"
-                      className={styles.apply_dialog__input}
+                      className={[
+                        styles.apply_dialog__input,
+                        formState.errors.email
+                          ? styles.apply_dialog__input_error
+                          : '',
+                      ].join(' ')}
                       placeholder="Enter your email address"
                       {...register('email', {
                         required: 'Please provide a valid email address.',
@@ -270,7 +280,12 @@ export function CareerApplyDialog({
                       ) : null}
                     </p>
                     <input
-                      className={styles.apply_dialog__input}
+                      className={[
+                        styles.apply_dialog__input,
+                        formState.errors.links
+                          ? styles.apply_dialog__input_error
+                          : '',
+                      ].join(' ')}
                       placeholder="Enter your linkedin"
                       {...register('links', {
                         pattern: {
@@ -286,7 +301,7 @@ export function CareerApplyDialog({
                 <div className={styles.apply_dialog__section}>
                   <label className={styles.apply_dialog__field}>
                     <p className={styles.apply_dialog__label}>
-                      Upload File for CV
+                      CV Upload
                       {cvError ? <span> ({cvError})</span> : null}
                     </p>
 
@@ -307,6 +322,7 @@ export function CareerApplyDialog({
                         isDragging
                           ? styles.apply_dialog__dropzone__dragging
                           : '',
+                        cvError ? styles.apply_dialog__dropzone_error : '',
                       ].join(' ')}
                       onDragEnter={e => {
                         e.preventDefault();
