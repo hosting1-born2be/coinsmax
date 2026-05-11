@@ -28,9 +28,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(outfit.variable, 'antialiased')}>
         <Header />
-        {children}
         <Toaster />
-        {/*<ThankYouDialog />*/}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

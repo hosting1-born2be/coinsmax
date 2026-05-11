@@ -6,12 +6,12 @@ import CareersWhyWork from './components/CareersWhyWork/CareersWhyWork';
 
 export default function CareersPage() {
   return (
-    <main>
+    <>
       <CareersHero />
       <CareersWhyWork />
       <CareersWhatOffer />
       <CareersPositions />
       <CareersSeeRole />
-    </main>
+    </>
   );
 }
