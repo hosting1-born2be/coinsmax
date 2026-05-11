@@ -1,0 +1,83 @@
+.career_position {
+    padding-block: 80px;
+
+    @media screen and (max-width: 1024px) {
+        padding-block: 40px;
+    }
+
+    &__back {
+        background: #1C1C1C;
+        border-radius: 16px;
+        padding: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 16px;
+        text-decoration: none;
+    }
+
+    &__card {
+        border-radius: 32px;
+        background: #222;
+        padding: 32px;
+
+        &>*:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    &__price {
+        color: #FFF;
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    &__address {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__description {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    &__list_title {
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    &__list {
+        list-style-type: disc;
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.25;
+        padding-left: 32px;
+    }
+
+    &__apply_btn {
+        margin-top: 24px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
