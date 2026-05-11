@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Image from 'next/image';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -10,11 +11,14 @@ import {
   waitlistFormSchema,
 } from '@/features/waitlist/model/waitlist.schema';
 
-import { notifyError, notifySuccess } from '@/shared/lib/utils/notify';
+import { notifyError } from '@/shared/lib/utils/notify';
+import { SuccessDialog } from '@/shared/ui/components/success-dialog/SuccessDialog';
 
 import styles from './HomeFirst.module.scss';
 
 export default function HomeFirst() {
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -32,8 +36,8 @@ export default function HomeFirst() {
     const res = await submitWaitlistForm(data);
 
     if (res.success) {
-      notifySuccess('Thanks! You’ve joined the waitlist.');
       reset();
+      setIsSuccessOpen(true);
       return;
     }
 
@@ -92,6 +96,13 @@ export default function HomeFirst() {
           </div>
         </div>
       </div>
+
+      <SuccessDialog
+        open={isSuccessOpen}
+        onOpenChangeAction={setIsSuccessOpen}
+        title="Subscription successful!"
+        text="You are now subscribed to Coinsmax updates and newsletter."
+      />
     </section>
   );
 }
