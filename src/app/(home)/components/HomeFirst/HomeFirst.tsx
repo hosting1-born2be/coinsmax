@@ -80,7 +80,7 @@ export default function HomeFirst() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="btn btn-white"
+              className="btn btn-white test"
             >
               {isSubmitting ? 'Joining…' : 'Join Waitlist'}
             </button>
