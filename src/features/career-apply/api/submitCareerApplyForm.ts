@@ -17,7 +17,20 @@ const toStringArray = (v: FormDataEntryValue | null) => {
   }
 };
 
-const buildApplicantConfirmationHtml = (positionTitle: string) => `
+const buildApplicantConfirmationHtml = (positionTitle: string) => {
+  const body = positionTitle
+    ? `
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for applying for the position of ${positionTitle} at Coinsmax.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">We confirm that we have successfully received your CV and application details. Our HR team will now review your submission carefully.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Please note that the review process may take some time. Once the evaluation is completed, a member of our HR team will contact you regarding the next steps.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for your interest in joining Coinsmax.</p>`
+    : `
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for submitting your open application to Coinsmax.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">We confirm that we have successfully received your CV and application details for the selected department. Our team will carefully review your profile and experience.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Please note that the evaluation process may take some time. If your background matches our current or upcoming opportunities, our HR team will contact you regarding the next steps.</p>
+                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">We appreciate your interest in joining Coinsmax.</p>`;
+
+  return `
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="640" style="background-color: #000; width: 640px;">
   <tr>
     <td>&nbsp;</td>
@@ -51,11 +64,7 @@ const buildApplicantConfirmationHtml = (positionTitle: string) => `
                     <p style="font-size: 36px; color: #fff; line-height: 1.25; display: block; margin-bottom: 20px;">
                       Hello,
                     </p>
-
-                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for applying for the position of ${positionTitle} at Coinsmax.</p>
-                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">We confirm that we have successfully received your CV and application details. Our HR team will now review your submission carefully.</p>
-                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Please note that the review process may take some time. Once the evaluation is completed, a member of our HR team will contact you regarding the next steps.</p>
-                    <p style="font-size: 16px; font-weight:300; color: rgba(255,255,255,0.6); line-height: 1.25; display: block; margin-top: 0; margin-bottom: 20px;">Thank you for your interest in joining Coinsmax.</p>
+${body}
                     <p style="font-size: 20px; font-weight:300; color: #fff; line-height: 1.25; display: block; margin-top: 0; margin-bottom: 0;">Best regards,</p>
                     <p style="font-size: 20px; font-weight:300; color: #fff; line-height: 1.25; display: block; margin-top: 0; margin-bottom: 0;">Coinsmax HR Team</p>
                   </td>
@@ -112,6 +121,7 @@ const buildApplicantConfirmationHtml = (positionTitle: string) => `
   </tr>
 </table>
 `;
+};
 
 export const submitCareerApplyForm = async (formData: FormData) => {
   try {
@@ -146,13 +156,15 @@ export const submitCareerApplyForm = async (formData: FormData) => {
       });
     }
 
+    const adminLabel = positionTitle || 'General Inquiry';
+
     const adminMsg = {
       to: ADMIN_EMAIL,
       from: FROM_EMAIL,
-      subject: `New Career Application: ${positionTitle}`,
+      subject: `New Career Application: ${adminLabel}`,
       html: `
         <h2>New Career Application</h2>
-        <p><strong>Position:</strong> ${positionTitle}</p>
+        <p><strong>Position:</strong> ${adminLabel}</p>
         <hr />
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
@@ -179,7 +191,7 @@ export const submitCareerApplyForm = async (formData: FormData) => {
           to: email,
           from: FROM_EMAIL,
           subject: 'Application received — Coinsmax',
-          html: buildApplicantConfirmationHtml(positionTitle || 'Coinsmax'),
+          html: buildApplicantConfirmationHtml(positionTitle),
         };
 
         await sgMail.send(applicantMsg);

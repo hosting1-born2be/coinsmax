@@ -144,8 +144,9 @@ export function CareerApplyDialog({
                 Application submitted successfully!
               </Title>
               <p className={styles.apply_dialog__success_text}>
-                Thank you for your application. Our team will review your
-                information and contact you soon.
+                {positionTitle
+                  ? 'Thank you for your application. Our team will review your information and contact you soon.'
+                  : 'Thank you for your interest in Coinsmax. We have received your application and CV. Our team will review your submission and contact you if your profile matches our current or future opportunities.'}
               </p>
               <button
                 type="button"
@@ -184,10 +185,7 @@ export function CareerApplyDialog({
                     }
 
                     const formData = new FormData();
-                    formData.set(
-                      'positionTitle',
-                      positionTitle || 'General Inquiry',
-                    );
+                    formData.set('positionTitle', positionTitle || '');
                     formData.set('name', values.name);
                     formData.set('email', values.email);
                     formData.set('links', values.links || '');
