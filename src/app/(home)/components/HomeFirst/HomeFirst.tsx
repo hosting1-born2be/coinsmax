@@ -48,8 +48,7 @@ export default function HomeFirst() {
             Be the First to Know
           </p>
           <p className={`${styles.home_first__description} text-style`}>
-            We know crypto feels frustrating — that’s why we’ve prepared
-            resources to make things easier.
+            Join our waitlist for updates when we launch.
           </p>
           <form className={styles.home_first__bottom} onSubmit={onSubmit}>
             <div className={styles.home_first__field}>

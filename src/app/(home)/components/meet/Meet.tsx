@@ -8,12 +8,10 @@ export default function Meet() {
     <section className={styles.home_meet}>
       <div className="container">
         <div className={styles.home_meet__top}>
-          <h2>Meet Coinsmax!</h2>
+          <h2>We&apos;re Hiring</h2>
           <p className={`${styles.home_meet__description} text-style`}>
-            Coinsmax functions as a cryptocurrency exchange, built on clear and
-            regulated processes. Our platform enables the conversion between
-            digital assets and fiat currencies in a transparent environment
-            supported by robust technology.
+            We&apos;re building an exceptional team. If you want to work on
+            challenging problems, explore our open positions.
           </p>
           <div className="text-center">
             <Link href="/careers" className="btn btn-white">

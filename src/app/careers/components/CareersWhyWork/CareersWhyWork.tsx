@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import styles from './CareersWhyWork.module.scss';
 
@@ -18,13 +17,6 @@ export default function CareersWhyWork() {
               what we&apos;re building.
             </p>
           </div>
-
-          <Link
-            href="/"
-            className={`${styles.careers_why_work__link} btn btn-white`}
-          >
-            View Careers
-          </Link>
         </div>
 
         <div className={styles.careers_why_work__images}>

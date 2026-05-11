@@ -3,7 +3,6 @@
 import { useState } from 'react';
 
 import { CareerApplyDialog } from '../components/CareersPositions/CareerApplyDialog';
-
 import styles from './CareerPosition.module.scss';
 
 export function CareerApplyButton({
