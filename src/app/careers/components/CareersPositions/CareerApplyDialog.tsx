@@ -27,7 +27,7 @@ type FormValues = {
 
 const MAX_CV_SIZE_BYTES = 10 * 1024 * 1024;
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const LINKEDIN_PATTERN = /^https?:\/\/([a-z]{2,3}\.)?linkedin\.com\/.+/i;
+const LINKEDIN_PATTERN = /^https?:\/\/([a-z]{2,4}\.)?linkedin\.com(\/.*)?$/i;
 
 export function CareerApplyDialog({
   open,
