@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import styles from './CareersSeeRole.module.scss';
+import { GetInTouchButton } from './GetInTouchButton';
 
 export default function CareersSeeRole() {
   return (
@@ -17,9 +17,7 @@ export default function CareersSeeRole() {
             you&apos;d like to join.
           </p>
           <div className="text-center">
-            <Link href="/" className="btn btn-white">
-              Get in Touch
-            </Link>
+            <GetInTouchButton />
           </div>
           <div className={styles.careers_see_role__image}>
             <Image

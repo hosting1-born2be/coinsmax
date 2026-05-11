@@ -6,7 +6,13 @@ import { ADMIN_EMAIL, FROM_EMAIL, SENDGRID_API_KEY } from '@/shared/config/env';
 
 import type { WaitlistFormSchema } from '../model/waitlist.schema';
 
-export const submitWaitlistForm = async (data: WaitlistFormSchema) => {
+export type SubmitWaitlistResult =
+  | { success: true }
+  | { success: false; error: 'duplicate' | 'server' };
+
+export const submitWaitlistForm = async (
+  data: WaitlistFormSchema,
+): Promise<SubmitWaitlistResult> => {
   try {
     sgMail.setApiKey(SENDGRID_API_KEY);
 
@@ -25,7 +31,6 @@ export const submitWaitlistForm = async (data: WaitlistFormSchema) => {
     return { success: true };
   } catch (err) {
     console.error(err);
-    return { success: false };
+    return { success: false, error: 'server' };
   }
 };
-

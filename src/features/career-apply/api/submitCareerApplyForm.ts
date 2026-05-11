@@ -1,6 +1,8 @@
 'use server';
 
 import sgMail from '@sendgrid/mail';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 
 import { ADMIN_EMAIL, FROM_EMAIL, SENDGRID_API_KEY } from '@/shared/config/env';
 
@@ -16,6 +18,33 @@ const toStringArray = (v: FormDataEntryValue | null) => {
     return [];
   }
 };
+
+const buildApplicantConfirmationHtml = (positionTitle: string) => `
+<table role="presentation" style="width:100%;background:#f4f4f6;padding:32px 0;font-family:Arial,Helvetica,sans-serif;color:#222;">
+  <tr>
+    <td align="center">
+      <table role="presentation" style="width:100%;max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;">
+        <tr>
+          <td style="padding:32px 32px 16px;text-align:center;">
+            <img src="cid:logo" alt="Coinsmax" style="display:block;margin:0 auto;max-width:160px;height:auto;" />
+            <p style="margin:16px 0 0;font-size:14px;letter-spacing:0.04em;color:#888;">Limitless Technologies</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 32px 32px;font-size:16px;line-height:1.6;color:#222;">
+            <p style="margin:0 0 16px;">Hello,</p>
+            <p style="margin:0 0 16px;">Thank you for applying for the position of <strong>${positionTitle}</strong> at Coinsmax.</p>
+            <p style="margin:0 0 16px;">We confirm that we have successfully received your CV and application details. Our HR team will now review your submission carefully.</p>
+            <p style="margin:0 0 16px;">Please note that the review process may take some time. Once the evaluation is completed, a member of our HR team will contact you regarding the next steps.</p>
+            <p style="margin:0 0 24px;">Thank you for your interest in joining Coinsmax.</p>
+            <p style="margin:0;">Best regards,<br/>Coinsmax HR Team</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+`;
 
 export const submitCareerApplyForm = async (formData: FormData) => {
   try {
@@ -50,7 +79,7 @@ export const submitCareerApplyForm = async (formData: FormData) => {
       });
     }
 
-    const msg = {
+    const adminMsg = {
       to: ADMIN_EMAIL,
       from: FROM_EMAIL,
       subject: `New Career Application: ${positionTitle}`,
@@ -75,7 +104,37 @@ export const submitCareerApplyForm = async (formData: FormData) => {
       ...(attachments.length ? { attachments } : {}),
     };
 
-    await sgMail.send(msg);
+    await sgMail.send(adminMsg);
+
+    if (email) {
+      try {
+        const logoPath = path.join(process.cwd(), 'public', 'logo_email.png');
+        const logoBuffer = await readFile(logoPath);
+
+        const applicantMsg = {
+          to: email,
+          from: FROM_EMAIL,
+          subject: 'Application received — Coinsmax',
+          html: buildApplicantConfirmationHtml(positionTitle || 'Coinsmax'),
+          attachments: [
+            {
+              content: logoBuffer.toString('base64'),
+              filename: 'logo.png',
+              type: 'image/png',
+              disposition: 'inline',
+              content_id: 'logo',
+            },
+          ],
+        };
+
+        await sgMail.send(applicantMsg);
+      } catch (confirmErr) {
+        console.error(
+          'Failed to send applicant confirmation email',
+          confirmErr,
+        );
+      }
+    }
 
     return { success: true as const };
   } catch (err) {
@@ -83,4 +142,3 @@ export const submitCareerApplyForm = async (formData: FormData) => {
     return { success: false as const };
   }
 };
-

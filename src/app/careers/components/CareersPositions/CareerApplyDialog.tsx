@@ -36,7 +36,7 @@ export function CareerApplyDialog({
 }: {
   open: boolean;
   onOpenChangeAction: (value: boolean) => void;
-  positionTitle: string;
+  positionTitle?: string;
 }) {
   const { register, handleSubmit, reset, setError, formState } =
     useForm<FormValues>({
@@ -157,15 +157,21 @@ export function CareerApplyDialog({
             </div>
           ) : (
             <>
-              <header className={styles.apply_dialog__header}>
-                <Title className={styles.apply_dialog__header_title}>
-                  {positionTitle}
-                </Title>
+              {positionTitle ? (
+                <header className={styles.apply_dialog__header}>
+                  <Title className={styles.apply_dialog__header_title}>
+                    {positionTitle}
+                  </Title>
 
-                <p className={styles.apply_dialog__header_subtitle}>
-                  Submit Your Application
-                </p>
-              </header>
+                  <p className={styles.apply_dialog__header_subtitle}>
+                    Submit Your Application
+                  </p>
+                </header>
+              ) : (
+                <Title className={styles.apply_dialog__visually_hidden}>
+                  Get in Touch
+                </Title>
+              )}
 
               <form
                 className={styles.apply_dialog__form}
@@ -178,7 +184,10 @@ export function CareerApplyDialog({
                     }
 
                     const formData = new FormData();
-                    formData.set('positionTitle', positionTitle);
+                    formData.set(
+                      'positionTitle',
+                      positionTitle || 'General Inquiry',
+                    );
                     formData.set('name', values.name);
                     formData.set('email', values.email);
                     formData.set('links', values.links || '');
@@ -219,7 +228,7 @@ export function CareerApplyDialog({
                     </p>
                     <input
                       className={styles.apply_dialog__input}
-                      placeholder="Your name"
+                      placeholder="Enter your full name"
                       {...register('name', {
                         required: 'Please enter your full name.',
                       })}
@@ -238,7 +247,7 @@ export function CareerApplyDialog({
                     <input
                       type="email"
                       className={styles.apply_dialog__input}
-                      placeholder="name@example.com"
+                      placeholder="Enter your email address"
                       {...register('email', {
                         required: 'Please provide a valid email address.',
                         pattern: {
@@ -255,14 +264,14 @@ export function CareerApplyDialog({
                   <h3 className={styles.apply_dialog__section_title}>Links</h3>
                   <label className={styles.apply_dialog__field}>
                     <p className={styles.apply_dialog__label}>
-                      Linkedin
+                      LinkedIn URL
                       {formState.errors.links?.message ? (
                         <span> ({formState.errors.links.message})</span>
                       ) : null}
                     </p>
                     <input
                       className={styles.apply_dialog__input}
-                      placeholder="https://..."
+                      placeholder="Enter your linkedin"
                       {...register('links', {
                         pattern: {
                           value: LINKEDIN_PATTERN,
