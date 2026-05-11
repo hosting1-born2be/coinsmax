@@ -1,0 +1,85 @@
+.success_dialog {
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 998;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(10px);
+    }
+
+    &__content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        width: 560px;
+        background: #161616;
+        padding: 60px;
+        color: #fff;
+        outline: none;
+        max-height: 90vh;
+        overflow: auto;
+        border-radius: 32px;
+
+        @media screen and (max-width: 1024px) {
+            width: 96%;
+            padding: 60px 16px 24px;
+        }
+    }
+
+    &__close {
+        background: #222;
+        border-radius: 32px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    &__image {
+        margin-bottom: 8px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0;
+        max-width: 420px;
+    }
+
+    &__btn {
+        margin-top: 16px;
+        padding-block: 24px;
+        width: 100%;
+    }
+}
