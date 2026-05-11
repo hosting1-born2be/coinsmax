@@ -5,10 +5,12 @@ import { useMemo, useState } from 'react';
 import { CareerApplyDialog } from './CareerApplyDialog';
 import styles from './CareersPositions.module.scss';
 
+const PREVIEW_LIST_COUNT = 2;
+
 const items = [
   {
     id: 'position-1',
-    title: 'Central Location',
+    title: 'AML Team Lead',
     price: '€2,500 - €3,500',
     address: 'Bratislava, Slovakia (Hybrid)',
     description:
@@ -21,6 +23,21 @@ const items = [
       {
         value: 'Oversee transaction monitoring and investigation processes',
       },
+      {
+        value: 'Ensure regulatory compliance and reporting',
+      },
+      {
+        value: 'Develop and maintain AML policies and procedures',
+      },
+      {
+        value: 'Liaise with regulators and senior management',
+      },
+      {
+        value: 'Conduct team training and quality assurance',
+      },
+      {
+        value: 'Handle complex cases and escalations',
+      },
     ],
     requirementsTitle: 'Requirements',
     requirementsList: [
@@ -32,6 +49,21 @@ const items = [
       },
       {
         value: 'Strong knowledge of EU AML regulations',
+      },
+      {
+        value: 'Experience with MiCA framework (advantage)',
+      },
+      {
+        value: 'Understanding of cryptocurrency and blockchain (strong advantage)',
+      },
+      {
+        value: 'Excellent leadership and communication skills',
+      },
+      {
+        value: 'CAMS or similar certification (preferred)',
+      },
+      {
+        value: 'Fluent in English',
       },
     ],
   },
@@ -50,6 +82,21 @@ const items = [
       {
         value: 'Analyze patterns and trends in financial data',
       },
+      {
+        value: 'Develop risk scoring models and methodologies',
+      },
+      {
+        value: 'Support enhanced due diligence processes',
+      },
+      {
+        value: 'Prepare risk reports for management',
+      },
+      {
+        value: 'Monitor regulatory changes and assess impact',
+      },
+      {
+        value: 'Collaborate with operations and compliance teams',
+      },
     ],
     requirementsTitle: 'Requirements',
     requirementsList: [
@@ -59,6 +106,21 @@ const items = [
       },
       {
         value: '2–4 years of AML or risk analysis experience',
+      },
+      {
+        value: 'Strong analytical and data interpretation skills',
+      },
+      {
+        value: 'Knowledge of AML regulations and frameworks',
+      },
+      {
+        value: 'Understanding of cryptocurrency (advantage)',
+      },
+      {
+        value: 'Proficiency in Excel and data analysis tools',
+      },
+      {
+        value: 'Fluent in English',
       },
     ],
   },
@@ -78,6 +140,21 @@ const items = [
         value:
           'Conduct research to verify the legitimacy of flagged activities',
       },
+      {
+        value: 'Document findings and prepare reports for senior team review',
+      },
+      {
+        value: 'Support customer due diligence (CDD) processes',
+      },
+      {
+        value: 'Assist with Suspicious Activity Reports (SARs)',
+      },
+      {
+        value: 'Stay updated on AML regulations and best practices',
+      },
+      {
+        value: 'Collaborate with team members on investigations',
+      },
     ],
     requirementsTitle: 'Requirements',
     requirementsList: [
@@ -87,6 +164,25 @@ const items = [
       },
       {
         value: 'Strong attention to detail and analytical thinking',
+      },
+      {
+        value: 'Good organizational and time management skills',
+      },
+      {
+        value: 'Basic understanding of financial transactions',
+      },
+      {
+        value: 'Excellent written and verbal communication',
+      },
+      {
+        value: 'Proficiency in Microsoft Office (Excel, Word)',
+      },
+      {
+        value:
+          'Understanding of cryptocurrency and blockchain technology (strong advantage)',
+      },
+      {
+        value: 'Fluent in English (additional EU languages a plus)',
       },
     ],
   },
@@ -105,6 +201,24 @@ const items = [
       {
         value: 'Ensure high-quality customer service across all channels',
       },
+      {
+        value: 'Handle escalated customer issues and complaints',
+      },
+      {
+        value: 'Develop support procedures and quality standards',
+      },
+      {
+        value: 'Monitor team performance and provide coaching',
+      },
+      {
+        value: 'Analyze support metrics and identify improvements',
+      },
+      {
+        value: 'Collaborate with product and operations teams',
+      },
+      {
+        value: 'Contribute to knowledge base and documentation',
+      },
     ],
     requirementsTitle: 'Requirements',
     requirementsList: [
@@ -116,6 +230,21 @@ const items = [
       },
       {
         value: 'Strong communication and problem-solving skills',
+      },
+      {
+        value: 'Experience with support tools and CRM systems',
+      },
+      {
+        value: 'Knowledge of fintech or financial services (advantage)',
+      },
+      {
+        value: 'Understanding of cryptocurrency (advantage)',
+      },
+      {
+        value: 'Excellent organizational and leadership abilities',
+      },
+      {
+        value: 'Fluent in English (additional EU languages a plus)',
       },
     ],
   },
@@ -134,6 +263,21 @@ const items = [
       {
         value: 'Resolve customer issues efficiently and professionally',
       },
+      {
+        value: 'Document customer interactions and issues',
+      },
+      {
+        value: 'Escalate complex issues to senior team members',
+      },
+      {
+        value: 'Help maintain and update knowledge base',
+      },
+      {
+        value: 'Gather customer feedback for product improvements',
+      },
+      {
+        value: 'Support onboarding of new customers',
+      },
     ],
     requirementsTitle: 'Requirements',
     requirementsList: [
@@ -144,6 +288,24 @@ const items = [
       {
         value: '0–2 years of customer service experience',
       },
+      {
+        value: 'Excellent communication and interpersonal skills',
+      },
+      {
+        value: 'Strong problem-solving abilities',
+      },
+      {
+        value: 'Patient, friendly, and professional demeanor',
+      },
+      {
+        value: 'Basic technical aptitude',
+      },
+      {
+        value: 'Understanding of cryptocurrency (advantage)',
+      },
+      {
+        value: 'Fluent in English (additional EU languages a plus)',
+      },
     ],
   },
 ];
@@ -153,11 +315,16 @@ export default function CareersPositions() {
   const [selectedPositionId, setSelectedPositionId] = useState<string | null>(
     null,
   );
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
   const selectedPosition = useMemo(
     () => items.find(i => i.id === selectedPositionId) ?? null,
     [selectedPositionId],
   );
+
+  const toggleExpanded = (key: string) => {
+    setExpanded(prev => ({ ...prev, [key]: !prev[key] }));
+  };
 
   return (
     <section className={styles.careers_positions}>
@@ -213,18 +380,26 @@ export default function CareersPositions() {
                       styles.careers_positions__item_responsibilities_list
                     }
                   >
-                    {item.responsibilitiesList.map(
-                      (responsibilitiesItem, index) => (
-                        <li key={index}>
-                          <p>{responsibilitiesItem.value}</p>
-                        </li>
-                      ),
-                    )}
+                    {(expanded[`${item.id}-resp`]
+                      ? item.responsibilitiesList
+                      : item.responsibilitiesList.slice(0, PREVIEW_LIST_COUNT)
+                    ).map((responsibilitiesItem, index) => (
+                      <li key={index}>
+                        <p>{responsibilitiesItem.value}</p>
+                      </li>
+                    ))}
                   </ul>
 
-                  <p className={styles.careers_positions__item_see_more}>
-                    See more
-                  </p>
+                  {item.responsibilitiesList.length > PREVIEW_LIST_COUNT && (
+                    <button
+                      type="button"
+                      className={styles.careers_positions__item_see_more}
+                      onClick={() => toggleExpanded(`${item.id}-resp`)}
+                      aria-expanded={!!expanded[`${item.id}-resp`]}
+                    >
+                      {expanded[`${item.id}-resp`] ? 'See less' : 'See more'}
+                    </button>
+                  )}
                 </div>
 
                 <div>
@@ -240,16 +415,26 @@ export default function CareersPositions() {
                       styles.careers_positions__item_responsibilities_list
                     }
                   >
-                    {item.requirementsList.map((requirementsItem, index) => (
+                    {(expanded[`${item.id}-req`]
+                      ? item.requirementsList
+                      : item.requirementsList.slice(0, PREVIEW_LIST_COUNT)
+                    ).map((requirementsItem, index) => (
                       <li key={index}>
                         <p>{requirementsItem.value}</p>
                       </li>
                     ))}
                   </ul>
 
-                  <p className={styles.careers_positions__item_see_more}>
-                    See more
-                  </p>
+                  {item.requirementsList.length > PREVIEW_LIST_COUNT && (
+                    <button
+                      type="button"
+                      className={styles.careers_positions__item_see_more}
+                      onClick={() => toggleExpanded(`${item.id}-req`)}
+                      aria-expanded={!!expanded[`${item.id}-req`]}
+                    >
+                      {expanded[`${item.id}-req`] ? 'See less' : 'See more'}
+                    </button>
+                  )}
                 </div>
               </div>
 

@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
-import { Controller, useForm } from 'react-hook-form';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import {
   Close,
   Content,
@@ -11,10 +11,7 @@ import {
   Title,
 } from '@radix-ui/react-dialog';
 
-import {
-  type CareerApplyPayload,
-  submitCareerApplyForm,
-} from '@/features/career-apply/api/submitCareerApplyForm';
+import { submitCareerApplyForm } from '@/features/career-apply/api/submitCareerApplyForm';
 
 import { notifyError, notifySuccess } from '@/shared/lib/utils/notify';
 
@@ -58,8 +55,22 @@ export function CareerApplyDialog({
       },
     });
 
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [cvFile, setCvFile] = useState<File | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const cvHint = useMemo(
+    () => (cvFile ? `Selected: ${cvFile.name}` : 'PDF, DOC, DOCX up to 10MB'),
+    [cvFile],
+  );
+
   useEffect(() => {
-    if (!open) reset();
+    if (!open) {
+      reset();
+      setCvFile(null);
+      setIsDragging(false);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    }
   }, [open, reset]);
 
   return (
@@ -100,7 +111,7 @@ export function CareerApplyDialog({
           </Close>
 
           <header className={styles.apply_dialog__header}>
-            <Title className={styles.apply_dialog__title}>
+            <Title className={styles.apply_dialog__header_title}>
               {positionTitle}
             </Title>
           </header>
@@ -108,21 +119,27 @@ export function CareerApplyDialog({
           <form
             className={styles.apply_dialog__form}
             onSubmit={handleSubmit(async values => {
-              const payload: CareerApplyPayload = {
-                positionTitle,
-                name: values.name,
-                email: values.email,
-                links: values.links,
-                coinsmaxWhy: values.coinsmaxWhy,
-                coinsmaxFit: values.coinsmaxFit,
-                currentLocation: values.currentLocation,
-                sponsorship: values.sponsorship,
-                experienceAreas: values.experienceAreas,
-                experienceTools: values.experienceTools,
-                experienceOther: values.experienceOther,
-              };
+              const formData = new FormData();
+              formData.set('positionTitle', positionTitle);
+              formData.set('name', values.name);
+              formData.set('email', values.email);
+              formData.set('links', values.links || '');
+              formData.set('coinsmaxWhy', values.coinsmaxWhy || '');
+              formData.set('coinsmaxFit', values.coinsmaxFit || '');
+              formData.set('currentLocation', values.currentLocation || '');
+              formData.set('sponsorship', values.sponsorship || '');
+              formData.set(
+                'experienceAreas',
+                JSON.stringify(values.experienceAreas || []),
+              );
+              formData.set(
+                'experienceTools',
+                JSON.stringify(values.experienceTools || []),
+              );
+              formData.set('experienceOther', values.experienceOther || '');
+              if (cvFile) formData.set('cvFile', cvFile);
 
-              const res = await submitCareerApplyForm(payload);
+              const res = await submitCareerApplyForm(formData);
               if (!res.success) {
                 notifyError('Failed to send application. Please try again.');
                 setError('root', {
@@ -136,10 +153,10 @@ export function CareerApplyDialog({
               onOpenChangeAction(false);
             })}
           >
-            <section className={styles.apply_dialog__grid2}>
+            <div className={styles.apply_dialog__top}>
               <label className={styles.apply_dialog__field}>
                 <p className={styles.apply_dialog__label}>
-                  Name <span>(This field is required)</span>
+                  Full name <span>(This field is required)</span>
                 </p>
                 <input
                   className={styles.apply_dialog__input}
@@ -159,101 +176,82 @@ export function CareerApplyDialog({
                   {...register('email', { required: true })}
                 />
               </label>
-            </section>
+            </div>
 
-            <section className={styles.apply_dialog__section}>
+            <div className={styles.apply_dialog__section}>
               <h3 className={styles.apply_dialog__section_title}>Links</h3>
               <label className={styles.apply_dialog__field}>
-                <span className={styles.apply_dialog__label}>
-                  LinkedIn / Portfolio / Other
-                </span>
+                <span className={styles.apply_dialog__label}>Linkedin</span>
                 <input
                   className={styles.apply_dialog__input}
                   placeholder="https://..."
                   {...register('links')}
                 />
               </label>
-            </section>
+            </div>
 
-            <section className={styles.apply_dialog__section}>
-              <h3 className={styles.apply_dialog__section_title}>Coinsmax</h3>
-
-              <div className={styles.apply_dialog__section_grid}>
-                <label className={styles.apply_dialog__field}>
-                  <span className={styles.apply_dialog__label}>
-                    Why are you interested in Coinsmax?
-                  </span>
-                  <textarea
-                    className={styles.apply_dialog__textarea}
-                    rows={3}
-                    placeholder="Enter your answer"
-                    {...register('coinsmaxWhy')}
-                  />
-                </label>
-
-                <label className={styles.apply_dialog__field}>
-                  <span className={styles.apply_dialog__label}>
-                    What is your favorite aspect of our platform?
-                  </span>
-                  <textarea
-                    className={styles.apply_dialog__textarea}
-                    rows={3}
-                    placeholder="Enter your answer"
-                    {...register('coinsmaxFit')}
-                  />
-                </label>
-              </div>
-              <div className={styles.apply_dialog__field}>
-                <span className={styles.apply_dialog__label}>
-                  Have you used a Coinsmax product in the last six months?
-                </span>
-                <Controller
-                  control={control}
-                  name="sponsorship"
-                  render={({ field }) => (
-                    <div className={styles.apply_dialog__radio_row}>
-                      <label className={styles.apply_dialog__radio}>
-                        <input
-                          type="radio"
-                          name={field.name}
-                          value="yes"
-                          checked={field.value === 'yes'}
-                          onChange={() => field.onChange('yes')}
-                        />
-                        <span>Yes</span>
-                      </label>
-                      <label className={styles.apply_dialog__radio}>
-                        <input
-                          type="radio"
-                          name={field.name}
-                          value="no"
-                          checked={field.value === 'no'}
-                          onChange={() => field.onChange('no')}
-                        />
-                        <span>No</span>
-                      </label>
-                    </div>
-                  )}
-                />
-              </div>
-            </section>
-
-            <section className={styles.apply_dialog__section}>
-              <h3 className={styles.apply_dialog__section_title}>
-                Work Location
-              </h3>
-
+            <div className={styles.apply_dialog__section}>
               <label className={styles.apply_dialog__field}>
                 <span className={styles.apply_dialog__label}>
-                  Where are you currently located?
+                  Upload File for CV
                 </span>
+
                 <input
-                  className={styles.apply_dialog__input}
-                  placeholder="City, Country"
-                  {...register('currentLocation')}
+                  ref={fileInputRef}
+                  type="file"
+                  className={styles.apply_dialog__file_input}
+                  accept=".pdf,.doc,.docx"
+                  onChange={e => {
+                    const file = e.target.files?.[0] ?? null;
+                    setCvFile(file);
+                  }}
                 />
+
+                <div
+                  className={[
+                    styles.apply_dialog__dropzone,
+                    isDragging ? styles.apply_dialog__dropzone__dragging : '',
+                  ].join(' ')}
+                  onDragEnter={e => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setIsDragging(true);
+                  }}
+                  onDragOver={e => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setIsDragging(true);
+                  }}
+                  onDragLeave={e => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setIsDragging(false);
+                  }}
+                  onDrop={e => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setIsDragging(false);
+                    const file = e.dataTransfer.files?.[0] ?? null;
+                    setCvFile(file);
+                    if (fileInputRef.current) {
+                      fileInputRef.current.files = e.dataTransfer.files;
+                    }
+                  }}
+                >
+                  <button
+                    type="button"
+                    className={styles.apply_dialog__upload_btn}
+                    onClick={() => fileInputRef.current?.click()}
+                  >
+                    Upload File
+                  </button>
+                  <span className={styles.apply_dialog__dropzone_text}>
+                    or drag and drop here
+                  </span>
+                </div>
+                <p>{cvHint}</p>
               </label>
-            </section>
+            </div>
 
             <section className={styles.apply_dialog__section}>
               <label className={styles.apply_dialog__field}>
@@ -270,7 +268,7 @@ export function CareerApplyDialog({
 
             <button
               type="submit"
-              className="btn btn-white"
+              className={`btn btn-white ${styles.apply_dialog__btn_send}`}
               disabled={formState.isSubmitting}
             >
               Send Application
