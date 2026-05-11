@@ -47,7 +47,7 @@ export const positions: Position[] = [
     slug: 'aml-risk-analyst',
     title: 'AML Risk Analyst',
     price: '€2,200 - €3,200',
-    address: 'Bratislava, Slovakia',
+    address: 'Bratislava, Slovakia (Hybrid)',
     description:
       'Conduct AML risk assessments and help strengthen our compliance framework. This role combines analytical skills with regulatory knowledge.',
     responsibilitiesTitle: 'Key Responsibilities',
@@ -83,7 +83,9 @@ export const positions: Position[] = [
       "Entry-level position for someone starting their career in financial crime prevention. You'll help monitor transactions, identify suspicious activity, and ensure we meet regulatory requirements.",
     responsibilitiesTitle: 'Key Responsibilities',
     responsibilitiesList: [
-      { value: 'Review and analyze transactions flagged by monitoring systems' },
+      {
+        value: 'Review and analyze transactions flagged by monitoring systems',
+      },
       {
         value:
           'Conduct research to verify the legitimacy of flagged activities',
@@ -115,8 +117,8 @@ export const positions: Position[] = [
   {
     slug: 'customer-support-team-lead',
     title: 'Customer Support Team Lead',
-    price: '€1,800 - €2,500',
-    address: 'Bratislava, Slovakia',
+    price: '€2,000 - €3,000',
+    address: 'Bratislava, Slovakia (Hybrid)',
     description:
       'Lead our customer support team and ensure exceptional service delivery. This role requires experience in customer service management and a passion for building great user experiences.',
     responsibilitiesTitle: 'Key Responsibilities',
